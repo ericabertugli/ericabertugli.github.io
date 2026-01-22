@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erica Bertugli</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-pic-placeholder {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #1a1a1a;
+            border: 3px solid #ffffff;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+
+        .info-item {
+            padding: 20px;
+            background-color: #0a0a0a;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+        }
+
+        .info-item:hover {
+            background-color: #1a1a1a;
+            border-color: #ffffff;
+            transform: translateY(-2px);
+            cursor: pointer;
+        }
+
+        .info-item .emoji {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .info-item .text {
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .contacts {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 12px 24px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .contact-link:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .profile-pic-placeholder {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic-placeholder">
+            [Your Photo Here]
+        </div>
+        
+        <h1>Erica Bertugli</h1>
+        
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="emoji">📍</span>
+                <span class="text">Barcelona</span>
+            </div>
+            
+            <a href="traveling.html" class="info-item">
+                <span class="emoji">🗺️</span>
+                <span class="text">Traveling</span>
+            </a>
+            
+            <a href="skating.html" class="info-item">
+                <span class="emoji">🛼</span>
+                <span class="text">Inline Skating</span>
+            </a>
+            
+            <a href="developer.html" class="info-item">
+                <span class="emoji">💻</span>
+                <span class="text">SW Developer</span>
+            </a>
+            
+            <a href="cats.html" class="info-item">
+                <span class="emoji">😼</span>
+                <span class="text">Cats</span>
+            </a>
+        </div>
+
+        <div class="contacts">
+            <a href="https://github.com/ericabertugli" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/erica-bertugli-38482258/" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
