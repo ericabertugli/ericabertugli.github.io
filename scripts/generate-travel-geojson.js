@@ -152,12 +152,19 @@ async function reverseGeocodeAll(points, cache) {
     }
 
     if (processed % 50 === 0 || processed === uncachedCount) {
-      const elapsed = (Date.now() - startTime) / 1000;
-      const rate = processed / elapsed;
-      const remaining = Math.round((uncachedCount - processed) / rate);
-      console.log(
-        `  [${i + 1}/${points.length}] ${processed}/${uncachedCount} geocoded (ETA ~${Math.floor(remaining / 60)}m ${remaining % 60}s)`,
-      );
+      // Avoid dividing by zero when there are no uncached points or none processed yet.
+      if (processed === 0 || uncachedCount === 0) {
+        console.log(
+          `  [${i + 1}/${points.length}] 0/${uncachedCount} geocoded via API (all points served from cache so far)`,
+        );
+      } else {
+        const elapsed = (Date.now() - startTime) / 1000;
+        const rate = processed / elapsed;
+        const remaining = Math.round((uncachedCount - processed) / rate);
+        console.log(
+          `  [${i + 1}/${points.length}] ${processed}/${uncachedCount} geocoded (ETA ~${Math.floor(remaining / 60)}m ${remaining % 60}s)`,
+        );
+      }
     } else if (processed <= 5) {
       console.log(
         `  [${i + 1}/${points.length}] "${point.name}" -> ${regionName}, ${country}`,
