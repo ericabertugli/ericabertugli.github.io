@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
       * {
         margin: 0;
@@ -18,64 +23,138 @@
       }
 
       body {
-        background-color: #000000;
-        color: #ffffff;
+        background-color: #0a0a0a;
+        color: #e4e4e7;
         font-family: "Inter", sans-serif;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 40px 20px;
       }
 
       .container {
-        max-width: 800px;
+        max-width: 680px;
         width: 100%;
-        text-align: center;
+      }
+
+      .subtitle {
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #71717a;
+        margin-bottom: 12px;
       }
 
       h1 {
-        font-size: 2.5rem;
-        font-weight: 300;
-        margin-bottom: 30px;
-        letter-spacing: 2px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+        letter-spacing: -0.5px;
+        color: #ffffff;
       }
 
-      .emoji {
-        font-size: 4rem;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: 1.2rem;
-        color: #888888;
+      #map {
+        width: 100%;
+        height: 450px;
+        border-radius: 8px;
         margin-bottom: 40px;
       }
 
       .back-link {
-        color: #ffffff;
+        color: #e4e4e7;
         text-decoration: none;
-        font-size: 1rem;
-        padding: 12px 24px;
-        border: 1px solid #ffffff;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-        letter-spacing: 1px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 10px 20px;
+        border: 1px solid #27272a;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        letter-spacing: 0.5px;
         display: inline-block;
       }
 
       .back-link:hover {
-        background-color: #ffffff;
-        color: #000000;
+        border-color: #52525b;
+        background-color: #18181b;
+      }
+
+      .leaflet-popup-content-wrapper {
+        background: #1a1a1a;
+        color: #ffffff;
+        border-radius: 6px;
+        font-family: "Inter", sans-serif;
+      }
+
+      .leaflet-popup-tip {
+        background: #1a1a1a;
+      }
+
+      .leaflet-popup-content {
+        margin: 10px 14px;
+        font-size: 0.85rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        #map {
+          height: 350px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="emoji">🗺️</div>
-      <h1>Traveling</h1>
-      <p>Coming soon: Interactive travel map</p>
+      <p class="subtitle">Exploring the world</p>
+      <h1>Travel Map</h1>
+      <div id="map"></div>
       <a href="index.html" class="back-link">← Back Home</a>
     </div>
+    <script>
+      const map = L.map("map", {
+        zoomControl: false,
+      }).setView([30, 10], 2);
+
+      L.control.zoom({ position: "bottomright" }).addTo(map);
+
+      L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+        {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+          subdomains: "abcd",
+          maxZoom: 19,
+        },
+      ).addTo(map);
+
+      async function loadLayers() {
+        const res = await fetch(
+          "data/geojson/travel-regions-simplified.geojson",
+        );
+        const regions = await res.json();
+
+        L.geoJSON(regions, {
+          style: {
+            color: "#e0a800",
+            weight: 1,
+            fillColor: "#FFD700",
+            fillOpacity: 0.25,
+          },
+          onEachFeature: function (feature, layer) {
+            const p = feature.properties;
+            layer.bindPopup(
+              `<strong>${p.name}</strong><br>${p.country}<br>${p.point_count} place${p.point_count > 1 ? "s" : ""} visited`,
+            );
+          },
+        }).addTo(map);
+      }
+
+      loadLayers();
+    </script>
   </body>
 </html>
