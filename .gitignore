@@ -1,1 +1,4 @@
 .idea
+node_modules/
+data/cache/
+data/geojson/travel-regions.geojson

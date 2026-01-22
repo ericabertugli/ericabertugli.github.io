@@ -1,0 +1,16 @@
+{
+  "name": "ericabertugli-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate-map": "node scripts/generate-travel-geojson.js",
+    "simplify-map": "mapshaper data/geojson/travel-regions.geojson -simplify visvalingam 1% -o data/geojson/travel-regions-simplified.geojson format=geojson",
+    "build-map": "npm run generate-map && npm run simplify-map"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "mapshaper": "0.6.75"
+  }
+}
