@@ -16,6 +16,10 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.fullscreen@3.0.2/Control.FullScreen.css"
+    />
     <style>
       * {
         margin: 0;
@@ -100,6 +104,48 @@
         border-radius: 4px;
         margin-bottom: 30px;
       }
+
+      .map-legend {
+        background: white;
+        color: #333;
+        padding: 8px 12px;
+        border-radius: 4px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      .map-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .map-legend-line {
+        width: 24px;
+        height: 3px;
+        border-radius: 2px;
+      }
+
+      .map-legend-line.good {
+        background: #22c55e;
+      }
+
+      .map-legend-line.no-skating {
+        background: #ef4444;
+        position: relative;
+      }
+
+      .map-legend-line.no-skating::after {
+        content: "✕";
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ef4444;
+        font-size: 10px;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
@@ -131,14 +177,34 @@
       crossorigin=""
     ></script>
     <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
+    <script src="https://unpkg.com/leaflet.fullscreen@3.0.2/Control.FullScreen.js"></script>
     <script>
-      const map = L.map("map").setView([41.3874, 2.1686], 13);
+      const map = L.map("map", {
+        fullscreenControl: true,
+      }).setView([41.3874, 2.1686], 13);
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
+
+      const legend = L.control({ position: "bottomright" });
+      legend.onAdd = function () {
+        const div = L.DomUtil.create("div", "map-legend");
+        div.innerHTML = `
+          <div class="map-legend-item">
+            <span class="map-legend-line good"></span>
+            <span>Good for skating</span>
+          </div>
+          <div class="map-legend-item">
+            <span class="map-legend-line no-skating"></span>
+            <span>Skating not allowed</span>
+          </div>
+        `;
+        return div;
+      };
+      legend.addTo(map);
 
       fetch("data/routes.geojson")
         .then((response) => {
