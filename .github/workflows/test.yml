@@ -16,6 +16,9 @@ jobs:
 
       - run: npm ci
 
+      - name: JavaScript unit tests
+        run: npm run test:js
+
       - name: HTML validation
         run: npm run test:html
 
@@ -24,3 +27,25 @@ jobs:
 
       - name: Accessibility check
         run: npm run test:a11y
+
+  test-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Python unit tests
+        working-directory: scripts/skatingmap
+        run: uv run --group dev pytest test_scripts.py -v
+
+  validate-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Validate GeoJSON output
+        working-directory: scripts/skatingmap
+        run: uv run --group dev pytest test_geojson_output.py -v

@@ -16,6 +16,7 @@ Requires Node.js >= 18.
 
 ### Generate GeoJSON from KML
 
+The script expects `data/kml/travelmap.kml` to exist. This file should include all the coordinates of all the points visited (e.g. a file exported from Google MyMaps or similar tools).
 Parses `data/kml/travelmap.kml`, reverse-geocodes each point via Nominatim to identify admin regions, and fetches boundary polygons. Results are cached in `data/cache/` so re-runs are fast.
 
 ```bash
@@ -37,3 +38,7 @@ Runs both steps in sequence:
 ```bash
 npm run build-map
 ```
+
+## Skating Map Scripts
+
+See [scripts/skatingmap/README.md](scripts/skatingmap/README.md) for documentation on fetching and updating the skating_route database to display.

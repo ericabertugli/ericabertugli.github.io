@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate-map": "node scripts/generate-travel-geojson.js",
+    "generate-map": "node scripts/travelmap/generate-travel-geojson.js",
+    "test:js": "node --test scripts/travelmap/*.test.js",
     "simplify-map": "mapshaper data/geojson/travel-regions.geojson -simplify visvalingam 1% -o data/geojson/travel-regions-simplified.geojson format=geojson",
     "build-map": "npm run generate-map && npm run simplify-map",
     "test": "npm run test:html && npm run test:links && npm run test:a11y",
