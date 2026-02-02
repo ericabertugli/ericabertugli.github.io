@@ -38,3 +38,14 @@ jobs:
       - name: Python unit tests
         working-directory: scripts/skatingmap
         run: uv run --group dev pytest test_scripts.py -v
+
+  validate-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Validate GeoJSON output
+        working-directory: scripts/skatingmap
+        run: uv run --group dev pytest test_geojson_output.py -v
