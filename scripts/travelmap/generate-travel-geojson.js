@@ -6,7 +6,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(__dirname, "..");
+const ROOT = resolve(__dirname, "../..");
 
 const KML_PATH = resolve(ROOT, "data/kml/travelmap.kml");
 const CACHE_PATH = resolve(ROOT, "data/cache/geocode-cache.json");
@@ -323,7 +323,12 @@ async function main() {
   console.log(`\nDone in ${mins}m ${secs}s.\n`);
 }
 
-main().catch((err) => {
-  console.error("Fatal error:", err);
-  process.exit(1);
-});
+const isMain = process.argv[1]?.endsWith("generate-travel-geojson.js");
+if (isMain) {
+  main().catch((err) => {
+    console.error("Fatal error:", err);
+    process.exit(1);
+  });
+}
+
+export { parseKml, cacheKey, deduplicateRegions, buildPointsGeoJson };
