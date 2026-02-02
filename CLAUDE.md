@@ -5,6 +5,11 @@
 - Format HTML files with Prettier: `npx prettier --write "*.html"`
 - Run Prettier after any HTML file changes before committing.
 
+## Python
+
+- Use `uv` for dependency management.
+- Define dependencies in `pyproject.toml`, not `requirements.txt`.
+
 ## Development Guidelines
 
 - Write concise, factual documentation.

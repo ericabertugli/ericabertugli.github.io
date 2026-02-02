@@ -1,0 +1,12 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 10000
+  },
+  "urls": [
+    "./index.html",
+    "./developer.html",
+    "./traveling.html",
+    "./skating.html"
+  ]
+}
