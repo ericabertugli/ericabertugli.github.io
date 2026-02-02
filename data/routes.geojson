@@ -222,6 +222,74 @@
     {
       "type": "Feature",
       "properties": {
+        "osm_id": 4751870,
+        "way_type": "no_skating",
+        "name": "Moll de Gregal",
+        "tags": {
+          "bicycle": "no",
+          "highway": "footway",
+          "inline_skates": "no",
+          "layer": "1",
+          "level": "1",
+          "name": "Moll de Gregal",
+          "name:ca": "Moll de Gregal",
+          "surface": "paving_stones",
+          "wheelchair": "yes"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.200484,
+            41.3890574
+          ],
+          [
+            2.2005507,
+            41.3890068
+          ],
+          [
+            2.2008113,
+            41.3888057
+          ],
+          [
+            2.2008557,
+            41.3887715
+          ],
+          [
+            2.2010468,
+            41.3886241
+          ],
+          [
+            2.2014009,
+            41.3883571
+          ],
+          [
+            2.2015662,
+            41.3882325
+          ],
+          [
+            2.2018721,
+            41.3880019
+          ],
+          [
+            2.2020834,
+            41.3878426
+          ],
+          [
+            2.2028742,
+            41.3872465
+          ],
+          [
+            2.2029794,
+            41.3871672
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "osm_id": 4754986,
         "way_type": "smooth_skating_paths",
         "name": "Carrer d'Andrea D\u00f2ria",

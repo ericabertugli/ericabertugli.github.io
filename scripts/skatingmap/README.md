@@ -12,20 +12,15 @@ Scripts to fetch skating-friendly paths from OpenStreetMap and export them as Ge
 - Reads the database and outputs `data/routes.geojson`
 - Can filter by way type or export all
 
-## Query
+## Queries
 
-`queries/smooth_paths.overpassql` searches Barcelona for:
-- **Highway types**: pedestrian, cycleway, or footway
-- **Smoothness**: excellent or good
-- **Not restricted**: excludes paths where `bicycle=no` or `inline_skates=no`
+**`queries/smooth_paths.overpassql`** - Skating-friendly paths:
+- Highway types: pedestrian, cycleway, or footway
+- Smoothness: excellent or good
+- Not restricted for skating
 
-```
-area[name="Barcelona"]["admin_level"="6"]
-way["highway"~"pedestrian|cycleway|footway"]
-   ["smoothness"~"excellent|good"]
-   ["bicycle"!="no"]
-   ["inline_skates"!="no"]
-```
+**`queries/no_skating.overpassql`** - Paths where skating is prohibited:
+- Ways tagged with `inline_skates=no`
 
 ## Output
 
@@ -39,6 +34,7 @@ A GeoJSON FeatureCollection at `data/routes.geojson` with LineString features co
 
 ```bash
 cd scripts/skatingmap
-uv run python overpass_to_db.py --query-file queries/smooth_paths.overpassql --type smooth_paths
+uv run python overpass_to_db.py --query-file queries/smooth_paths.overpassql --type smooth_skating_paths
+uv run python overpass_to_db.py --query-file queries/no_skating.overpassql --type no_skating
 uv run python export_geojson.py
 ```

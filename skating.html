@@ -130,6 +130,7 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
     <script>
       const map = L.map("map").setView([41.3874, 2.1686], 13);
 
@@ -147,27 +148,56 @@
           return response.json();
         })
         .then((data) => {
-          const wayTypeColors = {
-            smooth_skating_paths: "#22c55e",
+          const wayTypeStyles = {
+            smooth_skating_paths: { color: "#22c55e", weight: 3, opacity: 0.8 },
+            no_skating: { color: "#ef4444", weight: 3, opacity: 0.8 },
           };
-          const defaultColor = "#888888";
+          const defaultStyle = { color: "#888888", weight: 3, opacity: 0.8 };
+
+          const noSkatingLayers = [];
 
           L.geoJSON(data, {
-            style: (feature) => ({
-              color: wayTypeColors[feature.properties.way_type] || defaultColor,
-              weight: 3,
-              opacity: 0.8,
-            }),
+            style: (feature) =>
+              wayTypeStyles[feature.properties.way_type] || defaultStyle,
             onEachFeature: (feature, layer) => {
               const props = feature.properties;
               const name = props.name || "Unnamed path";
               const surface = props.tags?.surface || "unknown";
               const smoothness = props.tags?.smoothness || "unknown";
+              const noSkating = props.way_type === "no_skating";
+              const warning = noSkating
+                ? '<br><strong style="color:#ef4444;">Skating not allowed</strong>'
+                : "";
               layer.bindPopup(
-                `<strong>${name}</strong><br>Surface: ${surface}<br>Smoothness: ${smoothness}`,
+                `<strong>${name}</strong><br>Surface: ${surface}<br>Smoothness: ${smoothness}${warning}`,
               );
+              if (noSkating) {
+                noSkatingLayers.push(layer);
+              }
             },
           }).addTo(map);
+
+          noSkatingLayers.forEach((layer) => {
+            L.polylineDecorator(layer, {
+              patterns: [
+                {
+                  offset: 12,
+                  repeat: 24,
+                  symbol: L.Symbol.marker({
+                    rotate: true,
+                    markerOptions: {
+                      icon: L.divIcon({
+                        className: "",
+                        html: '<span style="color:#ef4444;font-weight:bold;font-size:12px;">✕</span>',
+                        iconSize: [12, 12],
+                        iconAnchor: [6, 6],
+                      }),
+                    },
+                  }),
+                },
+              ],
+            }).addTo(map);
+          });
         })
         .catch((error) => {
           console.error("Failed to load skating routes:", error);
