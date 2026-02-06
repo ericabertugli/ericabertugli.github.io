@@ -46,13 +46,13 @@ class TestStoreWays:
                 "geometry": [{"lat": 41.0, "lon": 2.0}, {"lat": 41.1, "lon": 2.1}],
             }
         ]
-        count = store_ways(conn, elements, "smooth_paths")
+        count = store_ways(conn, elements, "good_to_skate")
         assert count == 1
 
         cursor = conn.execute("SELECT * FROM ways WHERE osm_id = 12345")
         row = cursor.fetchone()
         assert row is not None
-        assert row[1] == "smooth_paths"
+        assert row[1] == "good_to_skate"
         assert row[2] == "Test Path"
 
     def test_skips_non_way_elements(self, temp_db):

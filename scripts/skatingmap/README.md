@@ -14,10 +14,14 @@ Scripts to fetch skating-friendly paths from OpenStreetMap and export them as Ge
 
 ## Queries
 
-**`queries/smooth_paths.overpassql`** - Skating-friendly paths:
+**`queries/good_to_skate.overpassql`** - Skating-friendly paths:
 - Highway types: pedestrian, cycleway, or footway
-- Smoothness: excellent or good
+- Either smoothness excellent/good OR asphalt surface
 - Not restricted for skating
+
+**`queries/30kmh_ways.overpassql`** - Streets with 30 km/h speed limit:
+- Roads with maxspeed=30
+- Not restricted for cycling or skating
 
 **`queries/no_skating.overpassql`** - Paths where skating is prohibited:
 - Ways tagged with `inline_skates=no`
@@ -34,7 +38,8 @@ A GeoJSON FeatureCollection at `data/routes.geojson` with LineString features co
 
 ```bash
 cd scripts/skatingmap
-uv run python overpass_to_db.py --query-file queries/smooth_paths.overpassql --type smooth_skating_paths
+uv run python overpass_to_db.py --query-file queries/good_to_skate.overpassql --type good_to_skate
+uv run python overpass_to_db.py --query-file queries/30kmh_ways.overpassql --type 30kmh_ways
 uv run python overpass_to_db.py --query-file queries/no_skating.overpassql --type no_skating
 uv run python export_geojson.py
 ```
