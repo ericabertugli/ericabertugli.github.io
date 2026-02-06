@@ -119,6 +119,19 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        cursor: pointer;
+        padding: 4px 6px;
+        margin: -4px -6px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+      }
+
+      .map-legend-item:hover {
+        background-color: #f0f0f0;
+      }
+
+      .map-legend-item.disabled {
+        opacity: 0.4;
       }
 
       .map-legend-line {
@@ -271,19 +284,42 @@
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
+      const layerGroups = {
+        smooth_skating_paths: L.layerGroup().addTo(map),
+        no_skating: L.layerGroup().addTo(map),
+      };
+      const layerVisibility = {
+        smooth_skating_paths: true,
+        no_skating: true,
+      };
+
       const legend = L.control({ position: "bottomright" });
       legend.onAdd = function () {
         const div = L.DomUtil.create("div", "map-legend");
         div.innerHTML = `
-          <div class="map-legend-item">
+          <div class="map-legend-item" data-layer="smooth_skating_paths">
             <span class="map-legend-line good"></span>
             <span>Good for skating</span>
           </div>
-          <div class="map-legend-item">
+          <div class="map-legend-item" data-layer="no_skating">
             <span class="map-legend-line no-skating"></span>
             <span>Skating not allowed</span>
           </div>
         `;
+        div.querySelectorAll(".map-legend-item").forEach((item) => {
+          item.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const layerType = item.dataset.layer;
+            layerVisibility[layerType] = !layerVisibility[layerType];
+            item.classList.toggle("disabled", !layerVisibility[layerType]);
+            if (layerVisibility[layerType]) {
+              map.addLayer(layerGroups[layerType]);
+            } else {
+              map.removeLayer(layerGroups[layerType]);
+            }
+          });
+        });
+        L.DomEvent.disableClickPropagation(div);
         return div;
       };
       legend.addTo(map);
@@ -312,21 +348,25 @@
               const name = props.name || "Unnamed path";
               const surface = props.tags?.surface || "unknown";
               const smoothness = props.tags?.smoothness || "unknown";
-              const noSkating = props.way_type === "no_skating";
+              const wayType = props.way_type;
+              const noSkating = wayType === "no_skating";
               const warning = noSkating
                 ? '<br><strong style="color:#ef4444;">Skating not allowed</strong>'
                 : "";
               layer.bindPopup(
                 `<strong>${name}</strong><br>Surface: ${surface}<br>Smoothness: ${smoothness}${warning}`,
               );
+              if (layerGroups[wayType]) {
+                layerGroups[wayType].addLayer(layer);
+              }
               if (noSkating) {
                 noSkatingLayers.push(layer);
               }
             },
-          }).addTo(map);
+          });
 
           noSkatingLayers.forEach((layer) => {
-            L.polylineDecorator(layer, {
+            const decorator = L.polylineDecorator(layer, {
               patterns: [
                 {
                   offset: 12,
@@ -344,7 +384,8 @@
                   }),
                 },
               ],
-            }).addTo(map);
+            });
+            layerGroups.no_skating.addLayer(decorator);
           });
         })
         .catch((error) => {
