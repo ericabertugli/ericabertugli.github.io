@@ -146,6 +146,59 @@
         font-size: 10px;
         font-weight: bold;
       }
+
+      .other-places {
+        text-align: left;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #333;
+      }
+
+      .other-places h2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      .route-card {
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .route-card h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: #ffffff;
+      }
+
+      .route-embeds {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .route-part {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .route-part-label {
+        font-size: 0.9rem;
+        color: #888888;
+        margin-bottom: 8px;
+      }
+
+      .route-part iframe {
+        border-radius: 4px;
+        border: none;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -167,6 +220,35 @@
       </div>
 
       <div id="map"></div>
+
+      <div class="other-places">
+        <h2>Other skating routes</h2>
+        <div class="route-card">
+          <h3>From València to Castelló de la Plana</h3>
+          <div class="route-embeds">
+            <div class="route-part">
+              <div class="route-part-label">Part 1</div>
+              <iframe
+                src="https://www.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=215260659&measures=off&title=off&maptype=S"
+                width="100%"
+                height="250"
+                loading="lazy"
+                title="Valencia to Xilxes route map"
+              ></iframe>
+            </div>
+            <div class="route-part">
+              <div class="route-part-label">Part 2</div>
+              <iframe
+                src="https://www.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=215350898&measures=off&title=off&maptype=S"
+                width="100%"
+                height="250"
+                loading="lazy"
+                title="Xilxes to Castello route map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <a href="index.html" class="back-link">← Back Home</a>
     </div>

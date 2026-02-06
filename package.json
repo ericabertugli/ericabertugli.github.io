@@ -9,7 +9,7 @@
     "build-map": "npm run generate-map && npm run simplify-map",
     "test": "npm run test:html && npm run test:links && npm run test:a11y",
     "test:html": "html-validate *.html",
-    "test:links": "linkinator *.html --recurse --skip 'linkedin|instagram'",
+    "test:links": "linkinator *.html --recurse --skip 'linkedin|instagram|wikiloc'",
     "test:a11y": "pa11y-ci"
   },
   "engines": {
