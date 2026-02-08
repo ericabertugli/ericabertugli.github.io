@@ -144,6 +144,10 @@
         background: #22c55e;
       }
 
+      .map-legend-line.slow-traffic {
+        background: #38bdf8;
+      }
+
       .map-legend-line.no-skating {
         background: #ef4444;
         position: relative;
@@ -285,11 +289,13 @@
       }).addTo(map);
 
       const layerGroups = {
-        smooth_skating_paths: L.layerGroup().addTo(map),
+        good_to_skate: L.layerGroup().addTo(map),
+        "30kmh_ways": L.layerGroup().addTo(map),
         no_skating: L.layerGroup().addTo(map),
       };
       const layerVisibility = {
-        smooth_skating_paths: true,
+        good_to_skate: true,
+        "30kmh_ways": true,
         no_skating: true,
       };
 
@@ -297,9 +303,13 @@
       legend.onAdd = function () {
         const div = L.DomUtil.create("div", "map-legend");
         div.innerHTML = `
-          <div class="map-legend-item" data-layer="smooth_skating_paths">
+          <div class="map-legend-item" data-layer="good_to_skate">
             <span class="map-legend-line good"></span>
             <span>Good for skating</span>
+          </div>
+          <div class="map-legend-item" data-layer="30kmh_ways">
+            <span class="map-legend-line slow-traffic"></span>
+            <span>30 km/h streets</span>
           </div>
           <div class="map-legend-item" data-layer="no_skating">
             <span class="map-legend-line no-skating"></span>
@@ -333,7 +343,8 @@
         })
         .then((data) => {
           const wayTypeStyles = {
-            smooth_skating_paths: { color: "#22c55e", weight: 3, opacity: 0.8 },
+            good_to_skate: { color: "#22c55e", weight: 3, opacity: 0.8 },
+            "30kmh_ways": { color: "#38bdf8", weight: 3, opacity: 0.8 },
             no_skating: { color: "#ef4444", weight: 3, opacity: 0.8 },
           };
           const defaultStyle = { color: "#888888", weight: 3, opacity: 0.8 };
