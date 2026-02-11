@@ -17,6 +17,7 @@ import requests
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "skating_routes.db"
+BBOX_FILE = Path(__file__).parent / "queries" / "bbox.overpassql"
 
 
 def init_db(db_path: Path) -> sqlite3.Connection:
@@ -35,18 +36,27 @@ def init_db(db_path: Path) -> sqlite3.Connection:
     return conn
 
 
-def fetch_overpass(query: str) -> dict:
+def load_bbox() -> str:
+    """Load bounding box from bbox.overpassql file."""
+    if BBOX_FILE.exists():
+        bbox = BBOX_FILE.read_text().strip()
+        return f"[bbox:{bbox}]"
+    return ""
+
+
+def fetch_overpass(query: str, bbox_setting: str = "") -> dict:
 
     query = re.sub(r"\{\{style:.*?\}\}", "", query, flags=re.DOTALL).strip()
     query = re.sub(r"\[out:\w+\]", "", query).strip()
     query = re.sub(r"\[timeout:\d+\]", "", query).strip()
+    query = re.sub(r"\[bbox:[^\]]+\]", "", query).strip()
     query = re.sub(r"out\s*(geom|body|skel|ids|meta|tags)?[^;]*;\s*$", "", query, flags=re.MULTILINE).strip()
     query = re.sub(r";+", ";", query)
     query = query.strip(";").strip()
 
-    full_query = f"[out:json][timeout:120];{query};out geom;"
+    full_query = f"[out:json][timeout:300]{bbox_setting};{query};out geom;"
     try:
-        response = requests.post(OVERPASS_URL, data={"data": full_query}, timeout=180)
+        response = requests.post(OVERPASS_URL, data={"data": full_query}, timeout=360)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.Timeout:
@@ -97,9 +107,10 @@ def main():
     args = parser.parse_args()
 
     query = args.query or args.query_file.read_text().strip()
+    bbox_setting = load_bbox()
 
     print(f"Fetching from Overpass API...")
-    data = fetch_overpass(query)
+    data = fetch_overpass(query, bbox_setting)
 
     conn = init_db(args.db)
     count = store_ways(conn, data.get("elements", []), args.way_type)
