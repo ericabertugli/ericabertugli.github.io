@@ -140,8 +140,12 @@
         border-radius: 2px;
       }
 
-      .map-legend-line.good {
+      .map-legend-line.cycleways {
         background: #22c55e;
+      }
+
+      .map-legend-line.pedestrian-ways {
+        background: #a855f7;
       }
 
       .map-legend-line.slow-traffic {
@@ -289,12 +293,14 @@
       }).addTo(map);
 
       const layerGroups = {
-        good_to_skate: L.layerGroup().addTo(map),
+        cycleways: L.layerGroup().addTo(map),
+        pedestrian_ways: L.layerGroup().addTo(map),
         "30kmh_ways": L.layerGroup().addTo(map),
         no_skating: L.layerGroup().addTo(map),
       };
       const layerVisibility = {
-        good_to_skate: true,
+        cycleways: true,
+        pedestrian_ways: true,
         "30kmh_ways": true,
         no_skating: true,
       };
@@ -303,9 +309,13 @@
       legend.onAdd = function () {
         const div = L.DomUtil.create("div", "map-legend");
         div.innerHTML = `
-          <div class="map-legend-item" data-layer="good_to_skate">
-            <span class="map-legend-line good"></span>
-            <span>Good for skating</span>
+          <div class="map-legend-item" data-layer="cycleways">
+            <span class="map-legend-line cycleways"></span>
+            <span>Bike lanes</span>
+          </div>
+          <div class="map-legend-item" data-layer="pedestrian_ways">
+            <span class="map-legend-line pedestrian-ways"></span>
+            <span>Pedestrian ways</span>
           </div>
           <div class="map-legend-item" data-layer="30kmh_ways">
             <span class="map-legend-line slow-traffic"></span>
@@ -343,9 +353,10 @@
         })
         .then((data) => {
           const wayTypeStyles = {
-            good_to_skate: { color: "#22c55e", weight: 3, opacity: 0.8 },
-            "30kmh_ways": { color: "#38bdf8", weight: 3, opacity: 0.8 },
-            no_skating: { color: "#ef4444", weight: 3, opacity: 0.8 },
+            cycleways: { color: "#22c55e", weight: 1, opacity: 0.8 },
+            pedestrian_ways: { color: "#a855f7", weight: 1, opacity: 0.8 },
+            "30kmh_ways": { color: "#38bdf8", weight: 1, opacity: 0.8 },
+            no_skating: { color: "#ef4444", weight: 1, opacity: 0.8 },
           };
           const defaultStyle = { color: "#888888", weight: 3, opacity: 0.8 };
 
