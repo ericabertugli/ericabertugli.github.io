@@ -20,7 +20,7 @@ from pathlib import Path
 import h3
 from fitparse import FitFile
 
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 
