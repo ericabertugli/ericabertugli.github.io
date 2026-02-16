@@ -448,11 +448,14 @@
         });
 
       const drinkingWaterIcon = L.divIcon({
-        html: '<span style="font-size:6px;color:#7cb9e8;">●</span>',
+        html: '<span style="font-size:12px;">💧</span>',
         className: "",
-        iconSize: [8, 8],
-        iconAnchor: [3, 3],
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
       });
+
+      const drinkingWaterLayer = L.layerGroup();
+      const minZoomForWater = 15;
 
       fetch("data/drinking_water.geojson")
         .then((response) => response.json())
@@ -462,12 +465,24 @@
               L.marker(latlng, { icon: drinkingWaterIcon }),
             onEachFeature: (feature, layer) => {
               layer.bindPopup("Drinking water");
+              drinkingWaterLayer.addLayer(layer);
             },
-          }).addTo(map);
+          });
+          if (map.getZoom() >= minZoomForWater) {
+            map.addLayer(drinkingWaterLayer);
+          }
         })
         .catch((error) => {
           console.error("Failed to load drinking water locations:", error);
         });
+
+      map.on("zoomend", () => {
+        if (map.getZoom() >= minZoomForWater) {
+          map.addLayer(drinkingWaterLayer);
+        } else {
+          map.removeLayer(drinkingWaterLayer);
+        }
+      });
     </script>
   </body>
 </html>
