@@ -290,11 +290,14 @@
         fullscreenControl: true,
       }).setView([41.3874, 2.1686], 13);
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
+      L.tileLayer(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        {
+          maxZoom: 19,
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+        },
+      ).addTo(map);
 
       const layerGroups = {
         frequent_routes: L.layerGroup().addTo(map),
@@ -443,6 +446,43 @@
         .catch((error) => {
           console.error("Failed to load frequent routes:", error);
         });
+
+      const drinkingWaterIcon = L.divIcon({
+        html: '<span style="font-size:12px;">💧</span>',
+        className: "",
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
+      });
+
+      const drinkingWaterLayer = L.layerGroup();
+      const minZoomForWater = 15;
+
+      fetch("data/drinking_water.geojson")
+        .then((response) => response.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            pointToLayer: (feature, latlng) =>
+              L.marker(latlng, { icon: drinkingWaterIcon }),
+            onEachFeature: (feature, layer) => {
+              layer.bindPopup("Drinking water");
+              drinkingWaterLayer.addLayer(layer);
+            },
+          });
+          if (map.getZoom() >= minZoomForWater) {
+            map.addLayer(drinkingWaterLayer);
+          }
+        })
+        .catch((error) => {
+          console.error("Failed to load drinking water locations:", error);
+        });
+
+      map.on("zoomend", () => {
+        if (map.getZoom() >= minZoomForWater) {
+          map.addLayer(drinkingWaterLayer);
+        } else {
+          map.removeLayer(drinkingWaterLayer);
+        }
+      });
     </script>
   </body>
 </html>
