@@ -10,10 +10,14 @@ Usage:
 import argparse
 import csv
 import json
+import logging
 from collections import defaultdict
 from pathlib import Path
 
 import h3
+
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
 
 
 def cell_to_polygon(cell_id: str) -> list:
@@ -51,8 +55,11 @@ def csv_to_geojson(
                 "properties": {},
                 "geometry": {"type": "Polygon", "coordinates": polygon},
             })
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(
+                f"Failed to convert H3 cell to polygon: "
+                f"cell_id={cell_id}, error={e}"
+            )
 
     return {"type": "FeatureCollection", "features": features}
 
