@@ -13,11 +13,15 @@ Usage:
 
 import argparse
 import csv
+import logging
 from collections import Counter
 from pathlib import Path
 
 import h3
 from fitparse import FitFile
+
+logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
 
 
 def extract_gps_points(fit_path: Path) -> list[tuple[float, float, str]]:
@@ -52,8 +56,11 @@ def points_to_h3_cells(
         try:
             cell = h3.latlng_to_cell(lat, lon, resolution)
             cells.append((cell, activity_type))
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(
+                f"Failed to convert coordinate to H3 cell: "
+                f"lat={lat}, lon={lon}, resolution={resolution}, error={e}"
+            )
     return cells
 
 
