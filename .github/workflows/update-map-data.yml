@@ -1,0 +1,55 @@
+name: Update Map Static Data
+
+on:
+  schedule:
+    - cron: "0 6 1 * *" # First day of each month at 6:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: scripts/skatingmap
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Fetch routes from Overpass
+        run: |
+          uv run python overpass_to_db.py --query-file queries/cycleways.overpassql --type cycleways
+          uv run python overpass_to_db.py --query-file queries/pedestrian_ways.overpassql --type pedestrian_ways
+          uv run python overpass_to_db.py --query-file queries/30kmh_ways.overpassql --type 30kmh_ways
+          uv run python overpass_to_db.py --query-file queries/no_skating.overpassql --type no_skating
+
+      - name: Export routes to GeoJSON
+        run: uv run python export_geojson.py
+
+      - name: Fetch drinking water locations
+        run: uv run python fetch_drinking_water.py
+
+      - name: Create PR with changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ../../data/*.geojson
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          BRANCH="update-map-data-$(date +%Y%m%d)"
+          git checkout -b "$BRANCH"
+          git commit -m "Update map data from OSM"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Update map data from OSM" \
+            --body "Automated monthly refresh of map data from OpenStreetMap." \
+            --reviewer "${{ github.repository_owner }}"
