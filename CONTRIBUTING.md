@@ -42,3 +42,9 @@ npm run build-map
 ## Skating Map Scripts
 
 See [scripts/skatingmap/README.md](scripts/skatingmap/README.md) for documentation on fetching and updating the skating_route database to display.
+
+## From Tracks (.fit files) to Frequent Routes
+
+See [From Tracks to Frequent Routes](scripts/tracks-to-routes/) - Analyze GPS tracks from `.fit` files to identify frequently 
+traveled routes and generate GeoJSON for visualization on the site. 
+This script processes raw GPS data, applies clustering to find common paths, and outputs simplified GeoJSON files for use in the travel map.

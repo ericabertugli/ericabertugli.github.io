@@ -168,6 +168,10 @@
         font-weight: bold;
       }
 
+      .map-legend-line.frequent-routes {
+        background: #1e40af;
+      }
+
       .other-places {
         text-align: left;
         margin-top: 60px;
@@ -293,37 +297,43 @@
       }).addTo(map);
 
       const layerGroups = {
-        cycleways: L.layerGroup().addTo(map),
-        pedestrian_ways: L.layerGroup().addTo(map),
-        "30kmh_ways": L.layerGroup().addTo(map),
-        no_skating: L.layerGroup().addTo(map),
+        frequent_routes: L.layerGroup().addTo(map),
+        cycleways: L.layerGroup(),
+        pedestrian_ways: L.layerGroup(),
+        "30kmh_ways": L.layerGroup(),
+        no_skating: L.layerGroup(),
       };
       const layerVisibility = {
-        cycleways: true,
-        pedestrian_ways: true,
-        "30kmh_ways": true,
-        no_skating: true,
+        frequent_routes: true,
+        cycleways: false,
+        pedestrian_ways: false,
+        "30kmh_ways": false,
+        no_skating: false,
       };
 
       const legend = L.control({ position: "bottomright" });
       legend.onAdd = function () {
         const div = L.DomUtil.create("div", "map-legend");
         div.innerHTML = `
-          <div class="map-legend-item" data-layer="cycleways">
+          <div class="map-legend-item" data-layer="frequent_routes">
+            <span class="map-legend-line frequent-routes"></span>
+            <span>My frequent routes</span>
+          </div>
+          <div class="map-legend-item disabled" data-layer="cycleways">
             <span class="map-legend-line cycleways"></span>
-            <span>Bike lanes</span>
+            <span>Bike lanes (source: OSM)</span>
           </div>
-          <div class="map-legend-item" data-layer="pedestrian_ways">
+          <div class="map-legend-item disabled" data-layer="pedestrian_ways">
             <span class="map-legend-line pedestrian-ways"></span>
-            <span>Pedestrian ways</span>
+            <span>Pedestrian ways (source: OSM)</span>
           </div>
-          <div class="map-legend-item" data-layer="30kmh_ways">
+          <div class="map-legend-item disabled" data-layer="30kmh_ways">
             <span class="map-legend-line slow-traffic"></span>
-            <span>30 km/h streets</span>
+            <span>30 km/h streets (source: OSM)</span>
           </div>
-          <div class="map-legend-item" data-layer="no_skating">
+          <div class="map-legend-item disabled" data-layer="no_skating">
             <span class="map-legend-line no-skating"></span>
-            <span>Skating not allowed</span>
+            <span>Skating not allowed (source: OSM)</span>
           </div>
         `;
         div.querySelectorAll(".map-legend-item").forEach((item) => {
@@ -414,6 +424,24 @@
           console.error("Failed to load skating routes:", error);
           document.getElementById("map").innerHTML =
             '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#616161;">Unable to load routes. Please try again later.</div>';
+        });
+
+      fetch("data/frequent_routes.geojson")
+        .then((response) => response.json())
+        .then((data) => {
+          L.geoJSON(data, {
+            style: {
+              fillColor: "#1e40af",
+              fillOpacity: 0.7,
+              weight: 0,
+            },
+            onEachFeature: (feature, layer) => {
+              layerGroups.frequent_routes.addLayer(layer);
+            },
+          });
+        })
+        .catch((error) => {
+          console.error("Failed to load frequent routes:", error);
         });
     </script>
   </body>
