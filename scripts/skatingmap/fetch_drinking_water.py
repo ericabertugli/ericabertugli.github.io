@@ -24,9 +24,24 @@ def load_bbox() -> str:
 
 def fetch_drinking_water(bbox: str) -> list:
     query = f"[out:json][timeout:120][bbox:{bbox}];node[amenity=drinking_water];out;"
-    response = requests.post(OVERPASS_URL, data={"data": query}, timeout=180)
-    response.raise_for_status()
-    return response.json().get("elements", [])
+    try:
+        response = requests.post(OVERPASS_URL, data={"data": query}, timeout=180)
+        response.raise_for_status()
+        try:
+            data = response.json()
+        except json.JSONDecodeError as exc:
+            print(f"Error: Failed to parse Overpass API response as JSON: {exc}")
+            return []
+        return data.get("elements", [])
+    except requests.exceptions.Timeout:
+        print("Error: Request to Overpass API timed out. Please try again later.")
+    except requests.exceptions.ConnectionError:
+        print("Error: Failed to connect to Overpass API. Please check your network connection.")
+    except requests.exceptions.HTTPError as exc:
+        print(f"Error: Overpass API returned an HTTP error response: {exc}")
+    except requests.exceptions.RequestException as exc:
+        print(f"Error: An unexpected error occurred while contacting the Overpass API: {exc}")
+    return []
 
 
 def to_geojson(elements: list) -> dict:
