@@ -1,0 +1,1212 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2513269,
+          41.4611684
+        ]
+      },
+      "properties": {
+        "name": "les Guixeres",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1684339,
+          41.3830492
+        ]
+      },
+      "properties": {
+        "name": "Amigos Skate Shop",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1799167,
+          41.4846323
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "asphalt",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1663395,
+          41.3824729
+        ]
+      },
+      "properties": {
+        "name": "Rufus",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1807106,
+          41.3875784
+        ]
+      },
+      "properties": {
+        "name": "Al Carrer",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1665853,
+          41.3847705
+        ]
+      },
+      "properties": {
+        "name": "Petshop Skateboards",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1421105,
+          41.3799877
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1985244,
+          41.3909043
+        ]
+      },
+      "properties": {
+        "name": "Roex",
+        "poi_type": "skate_park",
+        "sport": "roller_skating",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1887096,
+          41.3707725
+        ]
+      },
+      "properties": {
+        "name": "Sea You Barcelona",
+        "poi_type": "skate_park",
+        "sport": "sup;skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2454129,
+          41.4583138
+        ]
+      },
+      "properties": {
+        "name": "Bobila Project",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1709783,
+          41.4432678
+        ]
+      },
+      "properties": {
+        "name": "Parc esportiu urb\u00e0 Via Fav\u00e8ncia",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.042486,
+          41.3888392
+        ]
+      },
+      "properties": {
+        "name": "Skate park municipal",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9845474,
+          41.2823868
+        ]
+      },
+      "properties": {
+        "name": "Parc per a Skate",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.220486,
+          41.4074166
+        ]
+      },
+      "properties": {
+        "name": "Skatepark Forum",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2103582,
+          41.3980811
+        ]
+      },
+      "properties": {
+        "name": "Skatepark Mar Bella",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Skatepark_Mar_Bella_(Barcelona)_2023.JPG?width=300"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0824503,
+          41.3619408
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0090904,
+          41.3873349
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1046326,
+          41.3290297
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.011117,
+          41.3861534
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0885323,
+          41.3276106
+        ]
+      },
+      "properties": {
+        "name": "Skatepark",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0732588,
+          41.3715778
+        ]
+      },
+      "properties": {
+        "name": "Mini Skate Park Parc de la Fontsanta",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1746088,
+          41.4939734
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.083206,
+          41.3794026
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "paved",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2619044,
+          41.4565822
+        ]
+      },
+      "properties": {
+        "name": "Skate Agora",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.162116,
+          41.4090321
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "handball;roller_skating;soccer;basketball",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0147542,
+          41.3704423
+        ]
+      },
+      "properties": {
+        "name": "Pista d'skate",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1912604,
+          41.4139223
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "roller_skating",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0424362,
+          41.4843916
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2026619,
+          41.4542862
+        ]
+      },
+      "properties": {
+        "name": "Skate park de Can Zam",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2311958,
+          41.4219478
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0734104,
+          41.3713041
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.046517,
+          41.4684271
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1998165,
+          41.4499084
+        ]
+      },
+      "properties": {
+        "name": "Parc Esportiu Urb\u00e0 Var\u00f3 de Viver. Skate Bon Pastor",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2078127,
+          41.4199992
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "roller_skating",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1463763,
+          41.485841
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.053929,
+          41.3319475
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9427902,
+          41.388965
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1913713,
+          41.4379127
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9763592,
+          41.4747018
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.167046,
+          41.3830059
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "paving_stones",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9613271,
+          41.4556533
+        ]
+      },
+      "properties": {
+        "name": "Skatepark de Sant Andreu",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9580686,
+          41.4488932
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "roller_skating",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1407263,
+          41.3564821
+        ]
+      },
+      "properties": {
+        "name": "Parc esportiu urb\u00e0 la Marina",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9842615,
+          41.4724013
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "asphalt",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9174784,
+          41.4810849
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.038441,
+          41.3504335
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "paved",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1168465,
+          41.3594102
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "paved",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0831541,
+          41.3699675
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.186623,
+          41.3852715
+        ]
+      },
+      "properties": {
+        "name": "Skatepla\u00e7a Parc de la Ciutadella",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "paving_stones",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1096682,
+          41.3485296
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "roller_skating",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0883769,
+          41.3753174
+        ]
+      },
+      "properties": {
+        "name": "Parc per a patinatge Pla\u00e7a Catalunya",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0764869,
+          41.3820709
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0755789,
+          41.3931927
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0796826,
+          41.3729596
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.083468,
+          41.3768236
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0931954,
+          41.3723882
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0709041,
+          41.3828413
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0191945,
+          41.2668929
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1156786,
+          41.3640942
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1091888,
+          41.3771898
+        ]
+      },
+      "properties": {
+        "name": "Parc esportiu urb\u00e0 \u00c1urea Cuadrado",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0192157,
+          41.3232654
+        ]
+      },
+      "properties": {
+        "name": "skatepark de Viladecans",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2039064,
+          41.3948014
+        ]
+      },
+      "properties": {
+        "name": "Picnic DIY",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.981242,
+          41.3530138
+        ]
+      },
+      "properties": {
+        "name": "Skatepark Torrelles",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9030446,
+          41.5071684
+        ]
+      },
+      "properties": {
+        "name": "Tuskate",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0716649,
+          41.357456
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1681894,
+          41.4957938
+        ]
+      },
+      "properties": {
+        "name": "Bowl",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "concrete",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0020834,
+          41.2975457
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1699304,
+          41.3755641
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0970131,
+          41.4726679
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0889831,
+          41.3143659
+        ]
+      },
+      "properties": {
+        "name": "Patin\u00f2drom",
+        "poi_type": "skate_park",
+        "sport": "roller_skating",
+        "surface": "",
+        "image": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9633411,
+          41.3970439
+        ]
+      },
+      "properties": {
+        "name": "",
+        "poi_type": "skate_park",
+        "sport": "skateboard",
+        "surface": "",
+        "image": ""
+      }
+    }
+  ]
+}
