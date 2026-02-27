@@ -3,7 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inline Skating - Erica Bertugli</title>
+    <title>Barcelona Inline Skating Routes - Erica Bertugli</title>
+    <meta
+      name="description"
+      content="Interactive map of Barcelona inline skating routes including bike lanes, pedestrian ways, and personal frequent routes."
+    />
+    <link rel="canonical" href="https://ericabertugli.github.io/skating.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Barcelona Inline Skating Routes",
+        "description": "Interactive map of Barcelona inline skating routes including bike lanes, pedestrian ways, and personal frequent routes.",
+        "author": {
+          "@type": "Person",
+          "name": "Erica Bertugli"
+        },
+        "about": {
+          "@type": "Place",
+          "name": "Barcelona",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Barcelona",
+            "addressCountry": "ES"
+          }
+        }
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -227,26 +253,28 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <img
-        class="icon"
-        src="icons/inline-skating-svgrepo-com.svg"
-        alt="Inline skating icon"
-      />
-      <h1>Inline Skating</h1>
-      <p>Barcelona skating routes</p>
+    <main class="container">
+      <header>
+        <img
+          class="icon"
+          src="icons/inline-skating-svgrepo-com.svg"
+          alt="Inline skating"
+        />
+        <h1>Inline Skating</h1>
+        <p>Barcelona skating routes</p>
+      </header>
 
-      <div class="disclaimer">
+      <aside class="disclaimer">
         <div class="disclaimer-title">Disclaimer</div>
         This map combines data from OpenStreetMap with personal observations I
         collected while skating. I am not responsible for the accuracy of the
         information displayed, nor for the legality of skating along the routes
         shown. Please use this map at your own risk.
-      </div>
+      </aside>
 
-      <div id="map"></div>
+      <section id="map" aria-label="Barcelona skating routes map"></section>
 
-      <div class="other-places">
+      <section class="other-places">
         <h2>Other skating routes</h2>
         <div class="route-card">
           <h3>From València to Castelló de la Plana</h3>
@@ -273,10 +301,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <a href="index.html" class="back-link">← Back Home</a>
-    </div>
+      <nav>
+        <a href="index.html" class="back-link">← Back Home</a>
+      </nav>
+    </main>
 
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Traveling - Erica Bertugli</title>
+    <title>Travel Map - Erica Bertugli</title>
+    <meta
+      name="description"
+      content="Interactive travel map showing regions and places visited around the world by Erica Bertugli."
+    />
+    <link
+      rel="canonical"
+      href="https://ericabertugli.github.io/traveling.html"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Travel Map - Erica Bertugli",
+        "description": "Interactive travel map showing regions and places visited around the world.",
+        "author": {
+          "@type": "Person",
+          "name": "Erica Bertugli"
+        }
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,12 +129,16 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <p class="subtitle">Exploring the world</p>
-      <h1>Travel Map</h1>
-      <div id="map"></div>
-      <a href="index.html" class="back-link">← Back Home</a>
-    </div>
+    <main class="container">
+      <header>
+        <p class="subtitle">Exploring the world</p>
+        <h1>Travel Map</h1>
+      </header>
+      <section id="map" aria-label="Interactive travel map"></section>
+      <nav>
+        <a href="index.html" class="back-link">← Back Home</a>
+      </nav>
+    </main>
     <script>
       const map = L.map("map", {
         zoomControl: false,
