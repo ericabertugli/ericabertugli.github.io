@@ -21,8 +21,6 @@
 
 - **Leaflet integration quirks** — react-leaflet works well but has edge cases. Direct DOM manipulation (like `polylineDecorator`) sometimes requires escaping React's model.
 
-- **Learning curve** — If you're not already fluent in React, the ramp-up time may not pay off for a personal project.
-
 ## Recommendation
 
 Wait until you feel the pain. Signs that would justify React:
