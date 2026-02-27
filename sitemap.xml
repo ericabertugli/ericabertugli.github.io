@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ericabertugli.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ericabertugli.github.io/developer.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ericabertugli.github.io/traveling.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ericabertugli.github.io/skating.html</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>

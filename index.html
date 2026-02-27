@@ -4,6 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erica Bertugli</title>
+    <meta
+      name="description"
+      content="Erica Bertugli is a Scala backend engineer based in Barcelona, passionate about functional programming, traveling, and inline skating."
+    />
+    <link rel="canonical" href="https://ericabertugli.github.io/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Erica Bertugli",
+        "url": "https://ericabertugli.github.io/",
+        "image": "https://ericabertugli.github.io/profile.jpeg",
+        "jobTitle": "Scala Backend Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Self-employed"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        },
+        "sameAs": [
+          "https://github.com/ericabertugli",
+          "https://www.linkedin.com/in/erica-bertugli-38482258/",
+          "https://www.instagram.com/bertuglierica"
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -155,13 +184,18 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <img src="profile.jpeg" alt="Erica Bertugli" class="profile-pic" />
+    <main class="container">
+      <header>
+        <img
+          src="profile.jpeg"
+          alt="Erica Bertugli, Scala backend developer based in Barcelona"
+          class="profile-pic"
+        />
+        <h1>Erica Bertugli</h1>
+        <p class="location">📍 Barcelona</p>
+      </header>
 
-      <h1>Erica Bertugli</h1>
-      <p class="location">📍 Barcelona</p>
-
-      <div class="info-grid">
+      <nav class="info-grid" aria-label="Main navigation">
         <a href="developer.html" class="info-item">
           <span class="emoji">💻</span>
           <span class="text">SW Developer</span>
@@ -176,13 +210,13 @@
           <img
             class="icon"
             src="icons/inline-skating-svgrepo-com.svg"
-            alt="Inline skating icon"
+            alt="Inline skating"
           />
           <span class="text">Inline Skater</span>
         </a>
-      </div>
+      </nav>
 
-      <div class="contacts">
+      <footer class="contacts">
         <a
           href="https://github.com/ericabertugli"
           class="contact-link"
@@ -234,7 +268,7 @@
           </svg>
           Instagram
         </a>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
