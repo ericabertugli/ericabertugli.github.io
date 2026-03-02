@@ -20,20 +20,26 @@
 - [x] Add structured data (JSON-LD) for rich snippets
 - [x] Review content for quality and originality
 
-## 3. Indexing & Discoverability
+## 3. Social & Branding
 
-- [ ] Submit sitemap to Google Search Console
+- [x] Add Open Graph meta tags for social sharing
+- [x] Add Twitter Card meta tags
+- [x] Add favicon
+
+## 4. Indexing & Discoverability
+
+- [x] Submit sitemap to Google Search Console
 - [x] Add canonical URLs to avoid duplicate content issues (added in Section 1)
-- [ ] Verify site is indexed in Google (search `site:yourdomain.com`)
+- [x] Verify site is indexed in Google (search `site:yourdomain.com`)
 
-## 4. Monitoring Setup
+## 5. Monitoring Setup
 
 - [ ] Set up Google Search Console
 - [ ] Set up Google Analytics or Plausible
 - [ ] Run Lighthouse audit (Chrome DevTools)
 - [ ] Review initial SEO score and identify issues
 
-## 5. Ongoing Monitoring
+## 6. Ongoing Monitoring
 
 - [ ] Fix crawl errors reported in Search Console
 - [ ] Monitor Core Web Vitals (LCP, FID, CLS)
