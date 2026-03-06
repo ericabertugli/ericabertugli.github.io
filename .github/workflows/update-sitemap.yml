@@ -1,0 +1,69 @@
+name: Update Sitemap
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "*.html"
+      - ".github/workflows/update-sitemap.yml"
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate sitemap
+        run: |
+          SITE_URL="https://ericabertugli.github.io"
+
+          cat > sitemap.xml << 'HEADER'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          HEADER
+
+          for file in *.html; do
+            [ -f "$file" ] || continue
+
+            # Skip google verification file
+            [[ "$file" == google*.html ]] && continue
+
+            # Get last modified date from git
+            lastmod=$(git log -1 --format="%cs" -- "$file" 2>/dev/null || date +%Y-%m-%d)
+
+            # Build URL (index.html -> /, others keep .html)
+            if [ "$file" = "index.html" ]; then
+              url="$SITE_URL/"
+              priority="1.0"
+            else
+              url="$SITE_URL/$file"
+              priority="0.8"
+            fi
+
+            cat >> sitemap.xml << EOF
+            <url>
+              <loc>$url</loc>
+              <lastmod>$lastmod</lastmod>
+              <priority>$priority</priority>
+            </url>
+          EOF
+          done
+
+          echo "</urlset>" >> sitemap.xml
+
+      - name: Commit sitemap if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          if ! git diff --staged --quiet; then
+            git commit -m "Update sitemap.xml"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
