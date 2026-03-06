@@ -154,6 +154,7 @@
         }
       }
     </style>
+    <link rel="stylesheet" href="cookie-consent.css" />
   </head>
   <body>
     <main class="container">
@@ -207,5 +208,15 @@
 
       loadLayers();
     </script>
+    <div id="cookie-banner">
+      <p>This site uses cookies for analytics.</p>
+      <button type="button" class="accept" onclick="acceptCookies()">
+        Accept
+      </button>
+      <button type="button" class="decline" onclick="declineCookies()">
+        Decline
+      </button>
+    </div>
+    <script src="cookie-consent.js"></script>
   </body>
 </html>

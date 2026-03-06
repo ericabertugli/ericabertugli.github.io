@@ -13,7 +13,10 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ericabertugli.github.io/" />
-    <meta property="og:title" content="Erica Bertugli - Scala Backend Developer" />
+    <meta
+      property="og:title"
+      content="Erica Bertugli - Scala Backend Developer"
+    />
     <meta
       property="og:description"
       content="Scala backend engineer based in Barcelona, passionate about functional programming, traveling, and inline skating."
@@ -24,7 +27,10 @@
     />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Erica Bertugli - Scala Backend Developer" />
+    <meta
+      name="twitter:title"
+      content="Erica Bertugli - Scala Backend Developer"
+    />
     <meta
       name="twitter:description"
       content="Scala backend engineer based in Barcelona, passionate about functional programming, traveling, and inline skating."
@@ -206,6 +212,7 @@
         }
       }
     </style>
+    <link rel="stylesheet" href="cookie-consent.css" />
   </head>
   <body>
     <main class="container">
@@ -294,5 +301,15 @@
         </a>
       </footer>
     </main>
+    <div id="cookie-banner">
+      <p>This site uses cookies for analytics.</p>
+      <button type="button" class="accept" onclick="acceptCookies()">
+        Accept
+      </button>
+      <button type="button" class="decline" onclick="declineCookies()">
+        Decline
+      </button>
+    </div>
+    <script src="cookie-consent.js"></script>
   </body>
 </html>

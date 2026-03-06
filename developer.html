@@ -19,7 +19,10 @@
       property="og:url"
       content="https://ericabertugli.github.io/developer.html"
     />
-    <meta property="og:title" content="Scala Backend Engineer - Erica Bertugli" />
+    <meta
+      property="og:title"
+      content="Scala Backend Engineer - Erica Bertugli"
+    />
     <meta
       property="og:description"
       content="Scala backend engineer with nearly 10 years of experience building data and backend systems."
@@ -30,7 +33,10 @@
     />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Scala Backend Engineer - Erica Bertugli" />
+    <meta
+      name="twitter:title"
+      content="Scala Backend Engineer - Erica Bertugli"
+    />
     <meta
       name="twitter:description"
       content="Scala backend engineer with nearly 10 years of experience building data and backend systems."
@@ -149,6 +155,7 @@
         }
       }
     </style>
+    <link rel="stylesheet" href="cookie-consent.css" />
   </head>
   <body>
     <main class="container">
@@ -183,5 +190,15 @@
         <a href="index.html" class="back-link">← Back Home</a>
       </nav>
     </main>
+    <div id="cookie-banner">
+      <p>This site uses cookies for analytics.</p>
+      <button type="button" class="accept" onclick="acceptCookies()">
+        Accept
+      </button>
+      <button type="button" class="decline" onclick="declineCookies()">
+        Decline
+      </button>
+    </div>
+    <script src="cookie-consent.js"></script>
   </body>
 </html>
