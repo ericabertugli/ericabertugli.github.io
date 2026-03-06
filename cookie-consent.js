@@ -1,8 +1,29 @@
 (function () {
   var GA_ID = "G-W96EZRN1MR";
   var CONSENT_KEY = "cookie_consent";
+  var gaLoaded = false;
+  var sessionConsent = null;
+
+  function getConsent() {
+    if (sessionConsent !== null) return sessionConsent;
+    try {
+      return localStorage.getItem(CONSENT_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function setConsent(value) {
+    sessionConsent = value;
+    try {
+      localStorage.setItem(CONSENT_KEY, value);
+    } catch (e) {}
+  }
 
   function loadGA() {
+    if (gaLoaded) return;
+    gaLoaded = true;
+
     var script = document.createElement("script");
     script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
     script.async = true;
@@ -27,18 +48,18 @@
   }
 
   function acceptCookies() {
-    localStorage.setItem(CONSENT_KEY, "accepted");
+    setConsent("accepted");
     hideBanner();
     loadGA();
   }
 
   function declineCookies() {
-    localStorage.setItem(CONSENT_KEY, "declined");
+    setConsent("declined");
     hideBanner();
   }
 
   function init() {
-    var consent = localStorage.getItem(CONSENT_KEY);
+    var consent = getConsent();
     if (consent === "accepted") {
       loadGA();
     } else if (consent !== "declined") {
