@@ -7,6 +7,10 @@ on:
       - "*.html"
       - ".github/workflows/update-sitemap.yml"
 
+concurrency:
+  group: sitemap-${{ github.head_ref }}
+  cancel-in-progress: true
+
 jobs:
   update-sitemap:
     runs-on: ubuntu-latest

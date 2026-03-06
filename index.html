@@ -13,7 +13,10 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ericabertugli.github.io/" />
-    <meta property="og:title" content="Erica Bertugli - Scala Backend Developer" />
+    <meta
+      property="og:title"
+      content="Erica Bertugli - Scala Backend Developer"
+    />
     <meta
       property="og:description"
       content="Scala backend engineer based in Barcelona, passionate about functional programming, traveling, and inline skating."
@@ -24,7 +27,10 @@
     />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Erica Bertugli - Scala Backend Developer" />
+    <meta
+      name="twitter:title"
+      content="Erica Bertugli - Scala Backend Developer"
+    />
     <meta
       name="twitter:description"
       content="Scala backend engineer based in Barcelona, passionate about functional programming, traveling, and inline skating."
@@ -205,6 +211,47 @@
           height: 150px;
         }
       }
+
+      #cookie-banner {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #1a1a1a;
+        border-top: 1px solid #333;
+        padding: 16px 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        z-index: 1000;
+        font-size: 0.9rem;
+      }
+
+      #cookie-banner p {
+        margin: 0;
+        color: #ccc;
+      }
+
+      #cookie-banner button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+
+      #cookie-banner .accept {
+        background: #fff;
+        color: #000;
+      }
+
+      #cookie-banner .decline {
+        background: transparent;
+        color: #888;
+        border: 1px solid #444;
+      }
     </style>
   </head>
   <body>
@@ -294,5 +341,11 @@
         </a>
       </footer>
     </main>
+    <div id="cookie-banner">
+      <p>This site uses cookies for analytics.</p>
+      <button class="accept" onclick="acceptCookies()">Accept</button>
+      <button class="decline" onclick="declineCookies()">Decline</button>
+    </div>
+    <script src="cookie-consent.js"></script>
   </body>
 </html>
