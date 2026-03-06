@@ -2,11 +2,6 @@ name: Lighthouse Audit
 
 on:
   workflow_dispatch:
-    inputs:
-      url:
-        description: "URL to audit"
-        required: false
-        default: "https://ericabertugli.github.io"
 
 jobs:
   lighthouse:
@@ -28,7 +23,7 @@ jobs:
 
       - name: Run Lighthouse audit
         run: |
-          lighthouse "${{ inputs.url }}" \
+          lighthouse "https://ericabertugli.github.io" \
             --output=json \
             --output=html \
             --output-path=./docs/lighthouse-report \
@@ -65,6 +60,6 @@ jobs:
             | Best Practices | ${{ steps.scores.outputs.best_practices }}% |
             | SEO | ${{ steps.scores.outputs.seo }}% |
 
-            URL audited: `${{ inputs.url }}`
+            URL audited: \`https://ericabertugli.github.io\`
 
             See the full HTML report in `docs/lighthouse-report.report.html`
