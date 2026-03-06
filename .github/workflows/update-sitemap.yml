@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "*.html"
+      - "pages/**/*.html"
       - ".github/workflows/update-sitemap.yml"
 
 concurrency:
@@ -33,6 +34,7 @@ jobs:
           <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           HEADER
 
+          # Process root HTML files
           for file in *.html; do
             [ -f "$file" ] || continue
 
@@ -56,6 +58,22 @@ jobs:
               <loc>$url</loc>
               <lastmod>$lastmod</lastmod>
               <priority>$priority</priority>
+            </url>
+          EOF
+          done
+
+          # Process pages folder
+          for file in pages/*.html; do
+            [ -f "$file" ] || continue
+
+            lastmod=$(git log -1 --format="%cs" -- "$file" 2>/dev/null || date +%Y-%m-%d)
+            url="$SITE_URL/$file"
+
+            cat >> sitemap.xml << EOF
+            <url>
+              <loc>$url</loc>
+              <lastmod>$lastmod</lastmod>
+              <priority>0.8</priority>
             </url>
           EOF
           done
