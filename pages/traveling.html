@@ -10,14 +10,14 @@
     />
     <link
       rel="canonical"
-      href="https://ericabertugli.github.io/traveling.html"
+      href="https://ericabertugli.github.io/pages/traveling.html"
     />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://ericabertugli.github.io/traveling.html"
+      content="https://ericabertugli.github.io/pages/traveling.html"
     />
     <meta property="og:title" content="Travel Map - Erica Bertugli" />
     <meta
@@ -26,7 +26,7 @@
     />
     <meta
       property="og:image"
-      content="https://ericabertugli.github.io/profile.jpeg"
+      content="https://ericabertugli.github.io/assets/images/profile.jpeg"
     />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
@@ -37,7 +37,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://ericabertugli.github.io/profile.jpeg"
+      content="https://ericabertugli.github.io/assets/images/profile.jpeg"
     />
     <script type="application/ld+json">
       {
@@ -154,7 +154,7 @@
         }
       }
     </style>
-    <link rel="stylesheet" href="cookie-consent.css" />
+    <link rel="stylesheet" href="../assets/css/cookie-consent.css" />
   </head>
   <body>
     <main class="container">
@@ -164,7 +164,7 @@
       </header>
       <section id="map" aria-label="Interactive travel map"></section>
       <nav>
-        <a href="index.html" class="back-link">← Back Home</a>
+        <a href="../index.html" class="back-link">← Back Home</a>
       </nav>
     </main>
     <script>
@@ -186,7 +186,7 @@
 
       async function loadLayers() {
         const res = await fetch(
-          "data/geojson/travel-regions-simplified.geojson",
+          "../data/geojson/travel-regions-simplified.geojson",
         );
         const regions = await res.json();
 
@@ -217,6 +217,6 @@
         Decline
       </button>
     </div>
-    <script src="cookie-consent.js"></script>
+    <script src="../assets/js/cookie-consent.js"></script>
   </body>
 </html>

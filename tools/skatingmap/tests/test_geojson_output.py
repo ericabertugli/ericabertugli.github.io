@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-GEOJSON_PATH = Path(__file__).parent.parent.parent / "data" / "routes.geojson"
+GEOJSON_PATH = Path(__file__).parent.parent.parent.parent / "data" / "routes.geojson"
 
 
 @pytest.fixture

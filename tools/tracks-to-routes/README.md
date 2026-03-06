@@ -13,8 +13,8 @@ Analyze GPS tracks from .fit files to identify frequently traveled routes using 
 ## Usage
 
 ```bash
-cd scripts/tracks-to-routes
-uv run python fit_to_h3.py /path/to/fit/files -o output.csv
+cd tools/tracks-to-routes
+uv run python src/fit_to_h3.py /path/to/fit/files -o output.csv
 ```
 
 ### Options

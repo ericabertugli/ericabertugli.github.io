@@ -8,13 +8,16 @@
       name="description"
       content="Interactive map of Barcelona inline skating routes including bike lanes, pedestrian ways, and personal frequent routes."
     />
-    <link rel="canonical" href="https://ericabertugli.github.io/skating.html" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="canonical"
+      href="https://ericabertugli.github.io/pages/skating.html"
+    />
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://ericabertugli.github.io/skating.html"
+      content="https://ericabertugli.github.io/pages/skating.html"
     />
     <meta property="og:title" content="Barcelona Inline Skating Routes" />
     <meta
@@ -23,7 +26,7 @@
     />
     <meta
       property="og:image"
-      content="https://ericabertugli.github.io/profile.jpeg"
+      content="https://ericabertugli.github.io/assets/images/profile.jpeg"
     />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
@@ -34,7 +37,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://ericabertugli.github.io/profile.jpeg"
+      content="https://ericabertugli.github.io/assets/images/profile.jpeg"
     />
     <script type="application/ld+json">
       {
@@ -278,14 +281,14 @@
         width: 100%;
       }
     </style>
-    <link rel="stylesheet" href="cookie-consent.css" />
+    <link rel="stylesheet" href="../assets/css/cookie-consent.css" />
   </head>
   <body>
     <main class="container">
       <header>
         <img
           class="icon"
-          src="icons/inline-skating-svgrepo-com.svg"
+          src="../assets/icons/inline-skating-svgrepo-com.svg"
           alt="Inline skating"
         />
         <h1>Inline Skating</h1>
@@ -332,7 +335,7 @@
       </section>
 
       <nav>
-        <a href="index.html" class="back-link">← Back Home</a>
+        <a href="../index.html" class="back-link">← Back Home</a>
       </nav>
     </main>
 
@@ -415,7 +418,7 @@
       };
       legend.addTo(map);
 
-      fetch("data/routes.geojson")
+      fetch("../data/routes.geojson")
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
@@ -487,7 +490,7 @@
             '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#616161;">Unable to load routes. Please try again later.</div>';
         });
 
-      fetch("data/frequent_routes.geojson")
+      fetch("../data/frequent_routes.geojson")
         .then((response) => response.json())
         .then((data) => {
           L.geoJSON(data, {
@@ -515,7 +518,7 @@
       const drinkingWaterLayer = L.layerGroup();
       const minZoomForWater = 15;
 
-      fetch("data/drinking_water.geojson")
+      fetch("../data/drinking_water.geojson")
         .then((response) => response.json())
         .then((data) => {
           L.geoJSON(data, {
@@ -551,6 +554,6 @@
         Decline
       </button>
     </div>
-    <script src="cookie-consent.js"></script>
+    <script src="../assets/js/cookie-consent.js"></script>
   </body>
 </html>
