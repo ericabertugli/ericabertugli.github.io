@@ -34,10 +34,24 @@
 
 ## 5. Monitoring Setup
 
-- [ ] Set up Google Search Console
-- [ ] Set up Google Analytics or Plausible
-- [ ] Run Lighthouse audit (Chrome DevTools)
-- [ ] Review initial SEO score and identify issues
+- [x] Set up Google Search Console
+- [x] Set up Google Analytics or Plausible
+- [x] Run Lighthouse audit (Chrome DevTools)
+- [x] Review initial SEO score and identify issues
+
+### Lighthouse Results (2026-03-06)
+
+| Category       | Score |
+|----------------|-------|
+| Performance    | 87%   |
+| Accessibility  | 100%  |
+| Best Practices | 100%  |
+| SEO            | 100%  |
+
+**Performance improvements identified:**
+- ~~Image delivery: Convert to WebP format (est. 137 KiB savings)~~ ✓ Done
+- Cache lifetimes: Improve caching headers (requires CDN like Cloudflare)
+- First Contentful Paint: 2.9s (could be improved)
 
 ## 6. Ongoing Monitoring
 

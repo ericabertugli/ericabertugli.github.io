@@ -1,0 +1,65 @@
+name: Lighthouse Audit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Lighthouse
+        run: npm install -g lighthouse
+
+      - name: Run Lighthouse audit
+        run: |
+          lighthouse "https://ericabertugli.github.io" \
+            --output=json \
+            --output=html \
+            --output-path=./docs/lighthouse-report \
+            --chrome-flags="--headless --no-sandbox" \
+            --only-categories=seo,performance,accessibility,best-practices
+
+      - name: Extract scores
+        id: scores
+        run: |
+          PERF=$(jq '.categories.performance.score * 100 | floor' docs/lighthouse-report.report.json)
+          A11Y=$(jq '.categories.accessibility.score * 100 | floor' docs/lighthouse-report.report.json)
+          BP=$(jq '.categories["best-practices"].score * 100 | floor' docs/lighthouse-report.report.json)
+          SEO=$(jq '.categories.seo.score * 100 | floor' docs/lighthouse-report.report.json)
+          echo "performance=$PERF" >> $GITHUB_OUTPUT
+          echo "accessibility=$A11Y" >> $GITHUB_OUTPUT
+          echo "best_practices=$BP" >> $GITHUB_OUTPUT
+          echo "seo=$SEO" >> $GITHUB_OUTPUT
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update Lighthouse report"
+          branch: lighthouse-audit-${{ github.run_number }}
+          delete-branch: true
+          title: "Lighthouse Audit Results"
+          body: |
+            ## Lighthouse Audit Results
+
+            | Category | Score |
+            |----------|-------|
+            | Performance | ${{ steps.scores.outputs.performance }}% |
+            | Accessibility | ${{ steps.scores.outputs.accessibility }}% |
+            | Best Practices | ${{ steps.scores.outputs.best_practices }}% |
+            | SEO | ${{ steps.scores.outputs.seo }}% |
+
+            URL audited: \`https://ericabertugli.github.io\`
+
+            See the full HTML report in `docs/lighthouse-report.report.html`
