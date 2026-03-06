@@ -39,24 +39,13 @@
 - [x] Run Lighthouse audit (Chrome DevTools)
 - [x] Review initial SEO score and identify issues
 
-### Lighthouse Results (2026-03-06)
-
-| Category       | Score |
-|----------------|-------|
-| Performance    | 87%   |
-| Accessibility  | 100%  |
-| Best Practices | 100%  |
-| SEO            | 100%  |
-
-**Performance improvements identified:**
-- ~~Image delivery: Convert to WebP format (est. 137 KiB savings)~~ ✓ Done
-- Cache lifetimes: Improve caching headers (requires CDN like Cloudflare)
-- First Contentful Paint: 2.9s (could be improved)
-
 ## 6. Ongoing Monitoring
 
-- [ ] Fix crawl errors reported in Search Console
-- [ ] Monitor Core Web Vitals (LCP, FID, CLS)
-- [ ] Track keyword rankings
-- [ ] Review backlink profile
-- [ ] Schedule monthly SEO review
+- [x] Fix crawl errors reported in Search Console (none found ✓)
+- [x] Track keyword rankings in Google Search Console
+    - Scala developer Barcelona
+    - Backend developer Barcelona
+    - Inline skating map Barcelona
+    - Inline skating Barcelona
+    - Erica Bertugli
+- [x] Review backlink profile in Google Search Console (websites that link to my website)

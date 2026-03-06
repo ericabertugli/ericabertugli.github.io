@@ -1,0 +1,7 @@
+# Security Contact
+# If you discover a security vulnerability, please report it via the contact below.
+
+Contact: https://github.com/ericabertugli
+Preferred-Languages: en, it, es
+
+# This file follows the security.txt standard: https://securitytxt.org/
