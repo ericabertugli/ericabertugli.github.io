@@ -4,15 +4,15 @@ Scripts to fetch skating-friendly paths and POIs from OpenStreetMap and export t
 
 ## Scripts
 
-**`overpass_to_db.py`** - Fetches way data from Overpass API and stores in SQLite
+**`src/overpass_to_db.py`** - Fetches way data from Overpass API and stores in SQLite
 - Takes an Overpass query (inline or from file) and a "way type" label
 - Stores ways with their geometry, name, and tags in `data/skating_routes.db`
 
-**`export_geojson.py`** - Exports from SQLite to GeoJSON
+**`src/export_geojson.py`** - Exports from SQLite to GeoJSON
 - Reads the database and outputs `data/routes.geojson`
 - Can filter by way type or export all
 
-**`fetch_drinking_water.py`** - Fetches drinking water locations
+**`src/fetch_drinking_water.py`** - Fetches drinking water locations
 - Queries Overpass API for `amenity=drinking_water` nodes
 - Outputs `data/drinking_water.geojson`
 
@@ -41,13 +41,13 @@ Scripts to fetch skating-friendly paths and POIs from OpenStreetMap and export t
 ## Manual Usage
 
 ```bash
-cd scripts/skatingmap
-uv run python overpass_to_db.py --query-file queries/cycleways.overpassql --type cycleways
-uv run python overpass_to_db.py --query-file queries/pedestrian_ways.overpassql --type pedestrian_ways
-uv run python overpass_to_db.py --query-file queries/30kmh_ways.overpassql --type 30kmh_ways
-uv run python overpass_to_db.py --query-file queries/no_skating.overpassql --type no_skating
-uv run python export_geojson.py
-uv run python fetch_drinking_water.py
+cd tools/skatingmap
+uv run python src/overpass_to_db.py --query-file queries/cycleways.overpassql --type cycleways
+uv run python src/overpass_to_db.py --query-file queries/pedestrian_ways.overpassql --type pedestrian_ways
+uv run python src/overpass_to_db.py --query-file queries/30kmh_ways.overpassql --type 30kmh_ways
+uv run python src/overpass_to_db.py --query-file queries/no_skating.overpassql --type no_skating
+uv run python src/export_geojson.py
+uv run python src/fetch_drinking_water.py
 ```
 
 ## Automated Updates

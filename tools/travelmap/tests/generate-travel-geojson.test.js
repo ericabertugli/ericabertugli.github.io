@@ -5,7 +5,7 @@ import {
   cacheKey,
   deduplicateRegions,
   buildPointsGeoJson,
-} from "./generate-travel-geojson.js";
+} from "../src/generate-travel-geojson.js";
 
 describe("parseKml", () => {
   it("parses simple placemark", () => {

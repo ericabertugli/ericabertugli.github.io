@@ -8,8 +8,8 @@
   },
   "urls": [
     "./index.html",
-    "./developer.html",
-    "./traveling.html",
-    "./skating.html"
+    "./pages/developer.html",
+    "./pages/traveling.html",
+    "./pages/skating.html"
   ]
 }

@@ -35,7 +35,7 @@ jobs:
         project: [skatingmap, tracks-to-routes]
     defaults:
       run:
-        working-directory: scripts/${{ matrix.project }}
+        working-directory: tools/${{ matrix.project }}
     steps:
       - uses: actions/checkout@v4
 
@@ -52,5 +52,5 @@ jobs:
       - uses: astral-sh/setup-uv@v5
 
       - name: Validate GeoJSON output
-        working-directory: scripts/skatingmap
-        run: uv run --group dev pytest test_geojson_output.py -v
+        working-directory: tools/skatingmap
+        run: uv run --group dev pytest tests/test_geojson_output.py -v
