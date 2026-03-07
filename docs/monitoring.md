@@ -14,6 +14,6 @@
 
 - Runs weekly on Fridays at 14:00 UTC
 - Checks all internal links and most external links (excluding LinkedIn, Instagram, and Wikiloc)
-- Failed runs trigger GitHub email notifications
+- Failed runs can trigger GitHub notifications (including emails) for users, depending on their notification settings
 
 **Manual trigger:** Actions tab → Link Check → Run workflow
