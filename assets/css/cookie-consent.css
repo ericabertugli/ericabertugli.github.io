@@ -38,3 +38,12 @@
   color: #888;
   border: 1px solid #444;
 }
+
+#cookie-banner a {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+#cookie-banner a:hover {
+  color: #fff;
+}
