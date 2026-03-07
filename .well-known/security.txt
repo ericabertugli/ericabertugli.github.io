@@ -2,6 +2,7 @@
 # If you discover a security vulnerability, please report it via the contact below.
 
 Contact: https://github.com/ericabertugli
+Expires: 2027-03-06T00:00:00.000Z
 Preferred-Languages: en, it, es
 
 # This file follows the security.txt standard: https://securitytxt.org/
