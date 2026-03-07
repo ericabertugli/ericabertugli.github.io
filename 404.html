@@ -100,5 +100,10 @@
         <a href="/" class="back-link">Go Home</a>
       </nav>
     </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
   </body>
 </html>
