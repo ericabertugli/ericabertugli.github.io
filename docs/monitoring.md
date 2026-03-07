@@ -13,7 +13,7 @@
 **Service:** GitHub Actions (`.github/workflows/link-check.yml`)
 
 - Runs weekly on Fridays at 14:00 UTC
-- Checks all internal and external links
+- Checks all internal links and most external links (excluding LinkedIn, Instagram, and Wikiloc)
 - Failed runs trigger GitHub email notifications
 
 **Manual trigger:** Actions tab → Link Check → Run workflow
