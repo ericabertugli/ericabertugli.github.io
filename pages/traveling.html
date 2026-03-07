@@ -13,6 +13,8 @@
       href="https://ericabertugli.github.io/pages/traveling.html"
     />
     <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="manifest" href="../manifest.json" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta
@@ -144,6 +146,21 @@
         line-height: 1.4;
       }
 
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #ffffff;
+        color: #000000;
+        padding: 8px 16px;
+        z-index: 100;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
       @media (max-width: 768px) {
         h1 {
           font-size: 1.8rem;
@@ -157,7 +174,8 @@
     <link rel="stylesheet" href="../assets/css/cookie-consent.css" />
   </head>
   <body>
-    <main class="container">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <main id="main-content" class="container">
       <header>
         <p class="subtitle">Exploring the world</p>
         <h1>Travel Map</h1>
