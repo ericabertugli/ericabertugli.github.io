@@ -1,0 +1,19 @@
+# Website Monitoring
+
+## Uptime Monitoring
+
+**Service:** [UptimeRobot](https://uptimerobot.com) (free tier)
+
+- Checks site availability every 5 minutes
+- Sends email alerts on downtime
+- Dashboard: https://uptimerobot.com/dashboard
+
+## Broken Link Detection
+
+**Service:** GitHub Actions (`.github/workflows/link-check.yml`)
+
+- Runs weekly on Fridays at 14:00 UTC
+- Checks all internal links and most external links (excluding LinkedIn, Instagram, and Wikiloc)
+- Failed runs can trigger GitHub notifications (including emails) for users, depending on their notification settings
+
+**Manual trigger:** Actions tab → Link Check → Run workflow
