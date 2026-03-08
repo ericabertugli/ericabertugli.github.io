@@ -1,4 +1,4 @@
-name: Update Map Static Data
+name: Update Osm Map Data
 
 on:
   schedule:
@@ -53,3 +53,4 @@ jobs:
             --title "Update map data from OSM" \
             --body "Automated monthly refresh of map data from OpenStreetMap." \
             --reviewer "${{ github.repository_owner }}"
+          gh pr merge --auto --squash
