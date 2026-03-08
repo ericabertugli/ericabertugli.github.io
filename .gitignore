@@ -5,3 +5,4 @@ data/geojson/travel-regions.geojson
 data/*.db
 __pycache__/
 *.pyc
+tests/e2e/results/
