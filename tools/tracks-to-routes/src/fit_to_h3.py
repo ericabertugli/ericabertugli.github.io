@@ -63,11 +63,18 @@ def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> fl
 def densify_track(
     points: list[tuple[float, float, str]], interval_m: float
 ) -> list[tuple[float, float, str]]:
-    """Interpolate points along a track at fixed meter intervals.
+    """Interpolate additional points along a track at approximately fixed intervals.
+
+    Uses planar interpolation on a lon/lat LineString, so the actual geodesic
+    spacing between points is only an approximation of *interval_m*.  The total
+    geodesic length is used to decide how many samples to generate, but
+    individual point placement relies on Shapely's normalized linear
+    referencing in degree-space, which distorts with latitude and track shape.
 
     Args:
         points: List of (lat, lon, activity_type) tuples
-        interval_m: Distance in meters between interpolated points
+        interval_m: Approximate target distance in meters between interpolated
+            points (true spacing will vary)
     """
     if len(points) < 2:
         return points
@@ -165,7 +172,7 @@ def main():
     )
     parser.add_argument(
         "-d", "--densify", type=float, dest="densify_interval", metavar="METERS",
-        help="Interpolate points every N meters to fill gaps in long segments"
+        help="Interpolate points roughly every N meters (approximate; uses planar interpolation)"
     )
     args = parser.parse_args()
 
@@ -180,7 +187,7 @@ def main():
 
     activity_filter = set(args.activity_types) if args.activity_types else None
     filter_msg = f" (filtering: {', '.join(activity_filter)})" if activity_filter else ""
-    densify_msg = f", densifying every {args.densify_interval}m" if args.densify_interval else ""
+    densify_msg = f", densifying ~every {args.densify_interval}m" if args.densify_interval else ""
     print(f"Processing .fit files in {args.folder} with H3 resolution {args.resolution}{filter_msg}{densify_msg}")
 
     counter = process_fit_folder(args.folder, args.resolution, activity_filter, args.densify_interval)

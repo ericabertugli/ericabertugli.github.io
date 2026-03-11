@@ -30,7 +30,7 @@ def main():
     )
     parser.add_argument(
         "-d", "--densify", type=float, dest="densify_interval", metavar="METERS",
-        help="Interpolate points every N meters (recommended: 5)"
+        help="Interpolate points roughly every N meters (approximate; uses planar interpolation)"
     )
     parser.add_argument(
         "-a", "--activity-type", nargs="+", dest="activity_types",
