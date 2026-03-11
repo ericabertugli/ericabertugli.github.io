@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Scripts to manage skating routes data"
 requires-python = ">=3.13"
 dependencies = [
+    "fitparse>=1.2.0",
+    "h3>=3.7.0",
     "requests>=2.28.0",
+    "shapely>=2.0.0",
 ]
 
 [dependency-groups]
@@ -12,3 +15,9 @@ dev = ["pytest>=8.0.0"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+
+[project.scripts]
+fit-to-h3 = "fit_to_h3:main"
+csv-to-geojson = "csv_to_geojson:main"
+csv-to-heatmap = "csv_to_heatmap:main"
+generate-heatmap = "generate_heatmap:main"
