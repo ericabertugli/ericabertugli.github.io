@@ -19,3 +19,5 @@ where = ["src"]
 
 [project.scripts]
 fit-to-h3 = "fit_to_h3:main"
+csv-to-geojson = "csv_to_geojson:main"
+generate-heatmap = "generate_heatmap:main"

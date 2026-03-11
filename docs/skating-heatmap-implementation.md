@@ -130,6 +130,6 @@ python fit_to_h3.py /path/to/fits -d 5 -o output.csv  # interpolate every 5 mete
 
 | Parameter | Current Value | Description |
 |-----------|---------------|-------------|
-| H3 Resolution | 11 | Cell size ~2100m² |
+| H3 Resolution | 11 | Cell size ~25m², edge ~15m |
 | Min Count | 5 | Minimum activities to include in visualization |
-| Activity Filter | `generic` | Only include skating activities |
+| Activity Filter | `generic` | Only include skating activities (Marked as generic in Coros) |
