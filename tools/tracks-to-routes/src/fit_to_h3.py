@@ -175,6 +175,9 @@ def main():
     if not 0 <= args.resolution <= 15:
         raise SystemExit(f"Error: Resolution must be between 0 and 15")
 
+    if args.densify_interval is not None and args.densify_interval <= 0:
+        raise SystemExit(f"Error: --densify METERS must be a positive number (got {args.densify_interval})")
+
     activity_filter = set(args.activity_types) if args.activity_types else None
     filter_msg = f" (filtering: {', '.join(activity_filter)})" if activity_filter else ""
     densify_msg = f", densifying every {args.densify_interval}m" if args.densify_interval else ""
