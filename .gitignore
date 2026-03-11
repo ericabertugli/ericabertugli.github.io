@@ -6,3 +6,4 @@ data/*.db
 __pycache__/
 *.pyc
 tests/e2e/results/
+raw_fit_files/

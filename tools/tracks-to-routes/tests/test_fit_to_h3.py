@@ -1,9 +1,13 @@
 import csv
+import sys
 import tempfile
 from collections import Counter
 from pathlib import Path
+from unittest.mock import patch
 
-from fit_to_h3 import points_to_h3_cells, process_fit_folder, write_csv
+import pytest
+
+from fit_to_h3 import densify_track, haversine_distance, main, points_to_h3_cells, process_fit_folder, write_csv
 
 
 def test_points_to_h3_cells_converts_coordinates():
@@ -58,3 +62,57 @@ def test_write_csv_creates_valid_file():
     assert rows[1] == ["8d39a339a4b13ff", "generic", "5"]
     assert rows[2] == ["8d39a339a4b11ff", "running", "3"]
     output_path.unlink()
+
+
+def test_haversine_distance_same_point():
+    dist = haversine_distance(41.3874, 2.1686, 41.3874, 2.1686)
+    assert dist == 0.0
+
+
+def test_haversine_distance_known_points():
+    dist = haversine_distance(41.3874, 2.1686, 41.3884, 2.1696)
+    assert 100 < dist < 200
+
+
+def test_densify_track_single_point():
+    points = [(41.3874, 2.1686, "generic")]
+    result = densify_track(points, interval_m=5.0)
+    assert result == points
+
+
+def test_densify_track_two_points():
+    points = [(41.3874, 2.1686, "generic"), (41.3884, 2.1696, "generic")]
+    result = densify_track(points, interval_m=5.0)
+    assert len(result) > len(points)
+    assert result[0][2] == "generic"
+    assert result[-1][2] == "generic"
+
+
+def test_densify_track_preserves_endpoints():
+    points = [(41.3874, 2.1686, "generic"), (41.3884, 2.1696, "generic")]
+    result = densify_track(points, interval_m=5.0)
+    assert abs(result[0][0] - points[0][0]) < 0.0001
+    assert abs(result[0][1] - points[0][1]) < 0.0001
+    assert abs(result[-1][0] - points[-1][0]) < 0.0001
+    assert abs(result[-1][1] - points[-1][1]) < 0.0001
+
+
+def test_densify_track_more_points_with_smaller_interval():
+    points = [(41.3874, 2.1686, "generic"), (41.3884, 2.1696, "generic")]
+    result_5m = densify_track(points, interval_m=5.0)
+    result_10m = densify_track(points, interval_m=10.0)
+    assert len(result_5m) > len(result_10m)
+
+
+def test_main_rejects_negative_densify_interval(tmp_path):
+    with patch.object(sys, "argv", ["fit_to_h3.py", str(tmp_path), "--densify", "-10"]):
+        with pytest.raises(SystemExit) as exc_info:
+            main()
+        assert "must be a positive number" in str(exc_info.value)
+
+
+def test_main_rejects_zero_densify_interval(tmp_path):
+    with patch.object(sys, "argv", ["fit_to_h3.py", str(tmp_path), "--densify", "0"]):
+        with pytest.raises(SystemExit) as exc_info:
+            main()
+        assert "must be a positive number" in str(exc_info.value)

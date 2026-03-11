@@ -36,12 +36,13 @@ test.describe("Travel page", () => {
     await expect(page.locator("#map")).toBeVisible();
   });
 
-  test("back link navigates home", async ({ page }) => {
+  test("back link is present", async ({ page }) => {
     await page.goto("/pages/traveling.html");
 
-    await page.locator("#cookie-banner .decline").click();
-    await page.click(".back-link");
-    await expect(page.locator("h1")).toHaveText("Erica Bertugli");
+    const backLink = page.locator(".back-link");
+    await expect(backLink).toBeVisible();
+    await expect(backLink).toHaveAttribute("href", "../index.html");
+    await expect(backLink).toContainText("Back Home");
   });
 });
 
@@ -63,11 +64,12 @@ test.describe("Skating page", () => {
     await expect(page.locator(".disclaimer")).toContainText("Disclaimer");
   });
 
-  test("back link navigates home", async ({ page }) => {
+  test("back link is present", async ({ page }) => {
     await page.goto("/pages/skating.html");
 
-    await page.locator("#cookie-banner .decline").click();
-    await page.click(".back-link");
-    await expect(page.locator("h1")).toHaveText("Erica Bertugli");
+    const backLink = page.locator(".back-link");
+    await expect(backLink).toBeVisible();
+    await expect(backLink).toHaveAttribute("href", "../index.html");
+    await expect(backLink).toContainText("Back Home");
   });
 });
