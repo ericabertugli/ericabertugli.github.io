@@ -1,9 +1,13 @@
 import csv
+import sys
 import tempfile
 from collections import Counter
 from pathlib import Path
+from unittest.mock import patch
 
-from fit_to_h3 import densify_track, haversine_distance, points_to_h3_cells, process_fit_folder, write_csv
+import pytest
+
+from fit_to_h3 import densify_track, haversine_distance, main, points_to_h3_cells, process_fit_folder, write_csv
 
 
 def test_points_to_h3_cells_converts_coordinates():
@@ -98,3 +102,17 @@ def test_densify_track_more_points_with_smaller_interval():
     result_5m = densify_track(points, interval_m=5.0)
     result_10m = densify_track(points, interval_m=10.0)
     assert len(result_5m) > len(result_10m)
+
+
+def test_main_rejects_negative_densify_interval(tmp_path):
+    with patch.object(sys, "argv", ["fit_to_h3.py", str(tmp_path), "--densify", "-10"]):
+        with pytest.raises(SystemExit) as exc_info:
+            main()
+        assert "must be a positive number" in str(exc_info.value)
+
+
+def test_main_rejects_zero_densify_interval(tmp_path):
+    with patch.object(sys, "argv", ["fit_to_h3.py", str(tmp_path), "--densify", "0"]):
+        with pytest.raises(SystemExit) as exc_info:
+            main()
+        assert "must be a positive number" in str(exc_info.value)
