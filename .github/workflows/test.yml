@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        project: [skatingmap, tracks-to-routes]
+        project: [skatingmap]
     defaults:
       run:
         working-directory: tools/${{ matrix.project }}
