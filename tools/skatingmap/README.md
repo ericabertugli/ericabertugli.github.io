@@ -67,7 +67,7 @@ Analyze `.fit` GPS tracks to identify frequently traveled routes using H3 spatia
 3. Maps each point to an H3 hexagonal cell (default resolution: 13)
 4. Counts how many unique activities pass through each cell
 5. Filters cells below a minimum visit count
-6. Outputs GeoJSON polygons (hexagons) or a points JSON for visualization
+6. Outputs GeoJSON polygons (hexagons) for visualization
 
 **`src/fit_to_h3.py`** — Parses `.fit` files and outputs an H3 cell counts CSV.
 
@@ -94,21 +94,19 @@ uv run python src/csv_to_geojson.py h3_counts.csv -o frequent_routes.geojson --m
 uv run python src/csv_to_heatmap.py h3_counts.csv -o heatmap_points.json --min-count 5
 ```
 
-**`src/generate_heatmap.py`** — One-command pipeline: `.fit` files → GeoJSON or points JSON.
+**`src/generate_heatmap.py`** — One-command pipeline: `.fit` files → GeoJSON.
 
 ```bash
 uv run python src/generate_heatmap.py /path/to/fit/files -o frequent_routes.geojson
-uv run python src/generate_heatmap.py /path/to/fit/files --format heatmap -o heatmap_points.json
 ```
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `-o, --output` | Output file path | `heatmap.geojson` |
+| `-o, --output` | Output GeoJSON file path | `heatmap.geojson` |
 | `-r, --resolution` | H3 resolution (0–15) | `11` |
 | `-d, --densify METERS` | Interpolate points every ~N meters (approximate) | off |
 | `-a, --activity-type` | Filter by activity type(s) | all |
 | `--min-count` | Minimum visit count to include a cell | `3` |
-| `-f, --format` | Output format: `geojson` or `heatmap` | `geojson` |
 
 ### H3 resolution reference
 
