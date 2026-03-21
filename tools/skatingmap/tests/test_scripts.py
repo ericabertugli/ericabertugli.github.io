@@ -66,11 +66,11 @@ class TestExportGeojson:
     def test_exports_all_ways(self, temp_db):
         conn, _ = temp_db
         conn.execute(
-            "INSERT INTO ways VALUES (1, 'type_a', 'Path A', ?, ?)",
+            "INSERT INTO ways (osm_id, way_type, name, geojson, tags) VALUES (1, 'type_a', 'Path A', ?, ?)",
             (json.dumps({"type": "LineString", "coordinates": [[0, 0]]}), "{}"),
         )
         conn.execute(
-            "INSERT INTO ways VALUES (2, 'type_b', 'Path B', ?, ?)",
+            "INSERT INTO ways (osm_id, way_type, name, geojson, tags) VALUES (2, 'type_b', 'Path B', ?, ?)",
             (json.dumps({"type": "LineString", "coordinates": [[1, 1]]}), "{}"),
         )
         conn.commit()
@@ -82,11 +82,11 @@ class TestExportGeojson:
     def test_filters_by_way_type(self, temp_db):
         conn, _ = temp_db
         conn.execute(
-            "INSERT INTO ways VALUES (1, 'type_a', 'A', ?, ?)",
+            "INSERT INTO ways (osm_id, way_type, name, geojson, tags) VALUES (1, 'type_a', 'A', ?, ?)",
             (json.dumps({"type": "LineString", "coordinates": []}), "{}"),
         )
         conn.execute(
-            "INSERT INTO ways VALUES (2, 'type_b', 'B', ?, ?)",
+            "INSERT INTO ways (osm_id, way_type, name, geojson, tags) VALUES (2, 'type_b', 'B', ?, ?)",
             (json.dumps({"type": "LineString", "coordinates": []}), "{}"),
         )
         conn.commit()
@@ -100,11 +100,11 @@ class TestListTypes:
     def test_returns_distinct_types(self, temp_db):
         conn, _ = temp_db
         conn.execute(
-            "INSERT INTO ways VALUES (1, 'smooth', 'A', ?, ?)",
+            "INSERT INTO ways (osm_id, way_type, name, geojson, tags) VALUES (1, 'smooth', 'A', ?, ?)",
             (json.dumps({"type": "LineString", "coordinates": []}), "{}"),
         )
         conn.execute(
-            "INSERT INTO ways VALUES (2, 'rough', 'B', ?, ?)",
+            "INSERT INTO ways (osm_id, way_type, name, geojson, tags) VALUES (2, 'rough', 'B', ?, ?)",
             (json.dumps({"type": "LineString", "coordinates": []}), "{}"),
         )
         conn.commit()
