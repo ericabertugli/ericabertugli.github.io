@@ -11,6 +11,7 @@ import argparse
 import json
 import re
 import sqlite3
+import time
 from pathlib import Path
 
 import requests
@@ -44,7 +45,7 @@ def load_bbox() -> str:
     return ""
 
 
-def fetch_overpass(query: str, bbox_setting: str = "") -> dict:
+def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 4, initial_delay: float = 30) -> dict:
 
     query = re.sub(r"\{\{style:.*?\}\}", "", query, flags=re.DOTALL).strip()
     query = re.sub(r"\[out:\w+\]", "", query).strip()
@@ -55,18 +56,32 @@ def fetch_overpass(query: str, bbox_setting: str = "") -> dict:
     query = query.strip(";").strip()
 
     full_query = f"[out:json][timeout:300]{bbox_setting};{query};out geom;"
-    try:
-        response = requests.post(OVERPASS_URL, data={"data": full_query}, timeout=360)
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.Timeout:
-        raise SystemExit("Error: Overpass API request timed out. Try a smaller query area.")
-    except requests.exceptions.ConnectionError:
-        raise SystemExit("Error: Could not connect to Overpass API. Check your network connection.")
-    except requests.exceptions.HTTPError as e:
-        raise SystemExit(f"Error: Overpass API returned HTTP {e.response.status_code}: {e.response.text[:200]}")
-    except requests.exceptions.JSONDecodeError:
-        raise SystemExit("Error: Overpass API returned invalid JSON response.")
+
+    for attempt in range(max_retries + 1):
+        try:
+            response = requests.post(OVERPASS_URL, data={"data": full_query}, timeout=360)
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.HTTPError as e:
+            status = e.response.status_code
+            if status == 429 or status >= 500:
+                if attempt < max_retries:
+                    delay = initial_delay * (2 ** attempt)
+                    print(f"Overpass API returned HTTP {status}, retrying in {delay}s (attempt {attempt + 1}/{max_retries})...")
+                    time.sleep(delay)
+                    continue
+            raise SystemExit(f"Error: Overpass API returned HTTP {status}: {e.response.text[:200]}")
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            if attempt < max_retries:
+                delay = initial_delay * (2 ** attempt)
+                print(f"Request failed ({type(e).__name__}), retrying in {delay}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(delay)
+                continue
+            if isinstance(e, requests.exceptions.Timeout):
+                raise SystemExit("Error: Overpass API request timed out. Try a smaller query area.")
+            raise SystemExit("Error: Could not connect to Overpass API. Check your network connection.")
+        except requests.exceptions.JSONDecodeError:
+            raise SystemExit("Error: Overpass API returned invalid JSON response.")
 
 
 def way_to_geojson(element: dict) -> dict:

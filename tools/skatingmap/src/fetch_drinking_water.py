@@ -7,6 +7,7 @@ Usage:
 """
 
 import json
+import time
 from pathlib import Path
 
 import requests
@@ -22,26 +23,39 @@ def load_bbox() -> str:
     return "41.32,2.05,41.47,2.23"
 
 
-def fetch_drinking_water(bbox: str) -> list:
+def fetch_drinking_water(bbox: str, max_retries: int = 4, initial_delay: float = 30) -> list:
     query = f"[out:json][timeout:120][bbox:{bbox}];node[amenity=drinking_water];out;"
-    try:
-        response = requests.post(OVERPASS_URL, data={"data": query}, timeout=180)
-        response.raise_for_status()
+    for attempt in range(max_retries + 1):
         try:
-            data = response.json()
-        except json.JSONDecodeError as exc:
-            print(f"Error: Failed to parse Overpass API response as JSON: {exc}")
-            return []
-        return data.get("elements", [])
-    except requests.exceptions.Timeout:
-        print("Error: Request to Overpass API timed out. Please try again later.")
-    except requests.exceptions.ConnectionError:
-        print("Error: Failed to connect to Overpass API. Please check your network connection.")
-    except requests.exceptions.HTTPError as exc:
-        print(f"Error: Overpass API returned an HTTP error response: {exc}")
-    except requests.exceptions.RequestException as exc:
-        print(f"Error: An unexpected error occurred while contacting the Overpass API: {exc}")
-    return []
+            response = requests.post(OVERPASS_URL, data={"data": query}, timeout=180)
+            response.raise_for_status()
+            try:
+                data = response.json()
+            except json.JSONDecodeError as exc:
+                print(f"Error: Failed to parse Overpass API response as JSON: {exc}")
+                return []
+            return data.get("elements", [])
+        except requests.exceptions.HTTPError as exc:
+            status = exc.response.status_code
+            if (status == 429 or status >= 500) and attempt < max_retries:
+                delay = initial_delay * (2 ** attempt)
+                print(f"Overpass API returned HTTP {status}, retrying in {delay}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(delay)
+                continue
+            print(f"Error: Overpass API returned an HTTP error response: {exc}")
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
+            if attempt < max_retries:
+                delay = initial_delay * (2 ** attempt)
+                print(f"Request failed ({type(exc).__name__}), retrying in {delay}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(delay)
+                continue
+            if isinstance(exc, requests.exceptions.Timeout):
+                print("Error: Request to Overpass API timed out. Please try again later.")
+            else:
+                print("Error: Failed to connect to Overpass API. Please check your network connection.")
+        except requests.exceptions.RequestException as exc:
+            print(f"Error: An unexpected error occurred while contacting the Overpass API: {exc}")
+        return []
 
 
 def to_geojson(elements: list) -> dict:
