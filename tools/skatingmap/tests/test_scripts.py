@@ -124,6 +124,9 @@ def _mock_http_error(status_code):
     return error
 
 
+SAMPLE_QUERY = "way[surface=asphalt];"
+
+
 class TestFetchOverpassRetry:
     @patch("overpass_to_db.time.sleep")
     @patch("overpass_to_db.requests.post")
@@ -136,7 +139,7 @@ class TestFetchOverpassRetry:
         ok_resp.json.return_value = {"elements": []}
 
         mock_post.side_effect = [fail_resp, ok_resp]
-        result = fetch_overpass("way[surface=asphalt];", max_retries=2, initial_delay=0.01)
+        result = fetch_overpass(SAMPLE_QUERY, max_retries=2, initial_delay=0.01)
         assert result == {"elements": []}
         assert mock_post.call_count == 2
 
@@ -151,7 +154,7 @@ class TestFetchOverpassRetry:
         ok_resp.json.return_value = {"elements": []}
 
         mock_post.side_effect = [fail_resp, ok_resp]
-        result = fetch_overpass("way[surface=asphalt];", max_retries=2, initial_delay=0.01)
+        result = fetch_overpass(SAMPLE_QUERY, max_retries=2, initial_delay=0.01)
         assert result == {"elements": []}
 
     @patch("overpass_to_db.time.sleep")
@@ -162,7 +165,7 @@ class TestFetchOverpassRetry:
         mock_post.return_value = fail_resp
 
         with pytest.raises(SystemExit, match="HTTP 504"):
-            fetch_overpass("way[surface=asphalt];", max_retries=1, initial_delay=0.01)
+            fetch_overpass(SAMPLE_QUERY, max_retries=1, initial_delay=0.01)
         assert mock_post.call_count == 2
 
     @patch("overpass_to_db.time.sleep")
@@ -173,7 +176,7 @@ class TestFetchOverpassRetry:
         mock_post.return_value = fail_resp
 
         with pytest.raises(SystemExit, match="HTTP 400"):
-            fetch_overpass("way[surface=asphalt];", max_retries=3, initial_delay=0.01)
+            fetch_overpass(SAMPLE_QUERY, max_retries=3, initial_delay=0.01)
         assert mock_post.call_count == 1
 
 
