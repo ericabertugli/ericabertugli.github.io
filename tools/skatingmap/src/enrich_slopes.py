@@ -17,6 +17,7 @@ from pathlib import Path
 import requests
 
 from geo_utils import haversine_distance, resample_linestring
+from models import Coords
 
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "skating_routes.db"
 OPENTOPODATA_URL = "https://api.opentopodata.org/v1/eudem25m"
@@ -24,7 +25,7 @@ MAX_LOCATIONS_PER_REQUEST = 100
 REQUEST_INTERVAL_SECONDS = 1.0
 
 
-def fetch_elevations(points: list[tuple[float, float]]) -> list[float | None]:
+def fetch_elevations(points: Coords) -> list[float | None]:
     """Fetch elevations from OpenTopoData API.
 
     Args:
@@ -38,14 +39,11 @@ def fetch_elevations(points: list[tuple[float, float]]) -> list[float | None]:
     response.raise_for_status()
     data = response.json()
 
-    elevations = []
-    for result in data.get("results", []):
-        elevations.append(result.get("elevation"))
-    return elevations
+    return [result.get("elevation") for result in data.get("results", [])]
 
 
 def compute_slopes(
-    points: list[tuple[float, float]], elevations: list[float | None]
+    points: Coords, elevations: list[float | None]
 ) -> tuple[float | None, float | None, tuple | None, tuple | None]:
     """Compute max and min slopes from points and elevations.
 
@@ -90,29 +88,35 @@ def compute_slopes(
     return max_slope, min_slope, max_segment, min_segment
 
 
-def enrich_way(
-    conn: sqlite3.Connection,
+def resample_way_coords(
     osm_id: int,
     geojson: str,
     interval_m: float,
-    pending_points: list,
-    pending_ways: list,
-) -> None:
-    """Queue a way for enrichment, batching API calls.
+) -> tuple[Coords, int] | None:
+    """Resample way coordinates at fixed intervals.
 
-    Adds points to pending_points and way info to pending_ways.
-    Caller should flush when batch is full.
+    Args:
+        osm_id: OpenStreetMap way ID
+        geojson: GeoJSON string representation of the way
+        interval_m: Sampling interval in meters
+
+    Returns:
+        (points, osm_id) tuple, or None if way has fewer than 2 coordinates
     """
     geometry = json.loads(geojson)
     coords = geometry.get("coordinates", [])
 
     if len(coords) < 2:
-        return
+        return None
 
-    points = resample_linestring(coords, interval_m)
-    start_idx = len(pending_points)
-    pending_points.extend(points)
-    pending_ways.append((osm_id, start_idx, len(points)))
+    return resample_linestring(coords, interval_m), osm_id
+
+
+def _segment_coords(segment: tuple | None) -> tuple[float | None, float | None, float | None, float | None]:
+    """Extract (start_lon, start_lat, end_lon, end_lat) from segment or return Nones."""
+    if segment is None:
+        return None, None, None, None
+    return segment[0][0], segment[0][1], segment[1][0], segment[1][1]
 
 
 def flush_batch(
@@ -120,19 +124,14 @@ def flush_batch(
     pending_points: list,
     pending_ways: list,
 ) -> int:
-    """Fetch elevations and update DB for all pending ways.
-
-    Returns:
-        Number of ways processed
-    """
+    """Fetch elevations and update DB for all pending ways."""
     if not pending_points:
         return 0
 
     all_elevations = []
     for i in range(0, len(pending_points), MAX_LOCATIONS_PER_REQUEST):
         batch = pending_points[i : i + MAX_LOCATIONS_PER_REQUEST]
-        elevations = fetch_elevations(batch)
-        all_elevations.extend(elevations)
+        all_elevations.extend(fetch_elevations(batch))
 
         if i + MAX_LOCATIONS_PER_REQUEST < len(pending_points):
             time.sleep(REQUEST_INTERVAL_SECONDS)
@@ -162,14 +161,8 @@ def flush_batch(
             (
                 max_slope,
                 min_slope,
-                max_seg[0][0] if max_seg else None,
-                max_seg[0][1] if max_seg else None,
-                max_seg[1][0] if max_seg else None,
-                max_seg[1][1] if max_seg else None,
-                min_seg[0][0] if min_seg else None,
-                min_seg[0][1] if min_seg else None,
-                min_seg[1][0] if min_seg else None,
-                min_seg[1][1] if min_seg else None,
+                *_segment_coords(max_seg),
+                *_segment_coords(min_seg),
                 osm_id,
             ),
         )
@@ -184,7 +177,7 @@ def enrich(db_path: Path, interval_m: float = 50, recompute: bool = False) -> tu
     Args:
         db_path: Path to SQLite database
         interval_m: Sampling interval in meters
-        recompute: If True, recompute all ways; otherwise only NULL ones
+        recompute: If True, recompute all ways; otherwise only the ones where slope_enriched = 0
 
     Returns:
         (processed_count, skipped_count)
@@ -205,12 +198,17 @@ def enrich(db_path: Path, interval_m: float = 50, recompute: bool = False) -> tu
         total_ways = conn.execute("SELECT COUNT(*) FROM ways").fetchone()[0]
         skipped = total_ways - total
 
-    pending_points: list[tuple[float, float]] = []
+    pending_points: Coords = []
     pending_ways: list[tuple[int, int, int]] = []
     processed = 0
 
     for osm_id, geojson in rows:
-        enrich_way(conn, osm_id, geojson, interval_m, pending_points, pending_ways)
+        result = resample_way_coords(osm_id, geojson, interval_m)
+        if result:
+            points, way_id = result
+            start_idx = len(pending_points)
+            pending_points.extend(points)
+            pending_ways.append((way_id, start_idx, len(points)))
 
         if len(pending_points) >= MAX_LOCATIONS_PER_REQUEST:
             processed += flush_batch(conn, pending_points, pending_ways)
@@ -229,7 +227,7 @@ def main():
     parser = argparse.ArgumentParser(description="Enrich ways with slope data from elevation API")
     parser.add_argument("--db", type=Path, default=DB_PATH, help="SQLite database path")
     parser.add_argument("--interval", type=float, default=50, help="Sampling interval in meters")
-    parser.add_argument("--recompute", action="store_true", help="Recompute all ways, not just NULL")
+    parser.add_argument("--recompute", action="store_true", help="Recompute all ways, not just the new ones")
     args = parser.parse_args()
 
     if not args.db.exists():

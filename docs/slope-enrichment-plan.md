@@ -54,13 +54,13 @@ and store the maximum slope back against the way ID in the existing SQLite datab
   - Build `max_slope_segment` and `min_slope_segment` GeoJSON LineStrings from the
     coordinate columns at export time via `_build_segment()` helper
 
-- [ ] **6. Add tests**
+- [x] **6. Add tests**
   - Unit-test the geometry resampling logic
   - Unit-test signed slope computation (positive ascent, negative descent)
   - Mock the OpenTopoData HTTP call
   - Test the `NULL` guard (already-computed ways are skipped)
 
-- [ ] **7. Update README**
+- [x] **7. Update README**
   - Document `enrich_slopes.py` usage and CLI flags
   - Note it is also triggered automatically by `generate_heatmap.py`
   - Explain `max_slope` vs `min_slope` sign convention

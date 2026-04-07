@@ -8,6 +8,7 @@ Usage:
 """
 
 import argparse
+import json
 import tempfile
 from pathlib import Path
 
@@ -79,7 +80,6 @@ def main():
     write_csv(counter, csv_path)
     print(f"Intermediate CSV: {len(counter)} cells")
 
-    import json
     geojson = csv_to_geojson(csv_path, args.min_count, activity_filter)
 
     with open(args.output, "w") as f:

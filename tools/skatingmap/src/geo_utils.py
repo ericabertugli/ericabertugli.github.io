@@ -4,6 +4,8 @@ import math
 
 from shapely.geometry import LineString
 
+from models import Coords
+
 
 def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """Calculate distance in meters between two GPS points."""
@@ -16,7 +18,7 @@ def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> fl
     return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
-def resample_linestring(coords: list[list[float]], interval_m: float) -> list[tuple[float, float]]:
+def resample_linestring(coords: list[list[float]], interval_m: float) -> Coords:
     """Resample a LineString at approximately fixed intervals.
 
     Args:
@@ -25,7 +27,13 @@ def resample_linestring(coords: list[list[float]], interval_m: float) -> list[tu
 
     Returns:
         List of (lat, lon) tuples
+
+    Raises:
+        ValueError: If interval_m is not positive
     """
+    if interval_m <= 0:
+        raise ValueError(f"interval_m must be positive, got {interval_m}")
+
     if len(coords) < 2:
         return [(coords[0][1], coords[0][0])] if coords else []
 
@@ -40,11 +48,6 @@ def resample_linestring(coords: list[list[float]], interval_m: float) -> list[tu
         return [(coords[0][1], coords[0][0])]
 
     num_points = max(2, int(total_length / interval_m) + 1)
-    resampled = []
+    fractions = [i / (num_points - 1) for i in range(num_points)]
 
-    for i in range(num_points):
-        fraction = i / (num_points - 1)
-        point = line.interpolate(fraction, normalized=True)
-        resampled.append((point.y, point.x))
-
-    return resampled
+    return [(p.y, p.x) for p in (line.interpolate(f, normalized=True) for f in fractions)]

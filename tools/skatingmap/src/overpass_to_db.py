@@ -21,10 +21,11 @@ BBOX_FILE = Path(__file__).parent / "queries" / "bbox.overpassql"
 
 
 def _add_column_if_missing(conn: sqlite3.Connection, column: str, col_type: str) -> None:
-    try:
+    cursor = conn.execute("PRAGMA table_info(ways)")
+    existing_columns = {row[1] for row in cursor.fetchall()}
+
+    if column not in existing_columns:
         conn.execute(f"ALTER TABLE ways ADD COLUMN {column} {col_type}")
-    except sqlite3.OperationalError:
-        pass
 
 
 def init_db(db_path: Path) -> sqlite3.Connection:
@@ -49,7 +50,7 @@ def init_db(db_path: Path) -> sqlite3.Connection:
     _add_column_if_missing(conn, "min_slope_start_lat", "REAL")
     _add_column_if_missing(conn, "min_slope_end_lon", "REAL")
     _add_column_if_missing(conn, "min_slope_end_lat", "REAL")
-    _add_column_if_missing(conn, "slope_enriched", "INTEGER DEFAULT 0")
+    _add_column_if_missing(conn, "slope_enriched", "INTEGER NOT NULL DEFAULT 0")
     conn.commit()
     return conn
 
