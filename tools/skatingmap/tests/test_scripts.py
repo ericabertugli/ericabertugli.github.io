@@ -1,11 +1,14 @@
 import json
 import tempfile
 from pathlib import Path
+from unittest.mock import patch, Mock
 
 import pytest
+import requests
 
 from export_geojson import export_geojson, list_types
-from overpass_to_db import init_db, way_to_geojson, store_ways
+from fetch_drinking_water import fetch_drinking_water
+from overpass_to_db import init_db, way_to_geojson, store_ways, fetch_overpass
 
 
 @pytest.fixture
@@ -111,3 +114,91 @@ class TestListTypes:
 
         result = list_types(conn)
         assert sorted(result) == ["rough", "smooth"]
+
+
+def _mock_http_error(status_code):
+    response = Mock()
+    response.status_code = status_code
+    response.text = "error"
+    error = requests.exceptions.HTTPError(response=response)
+    return error
+
+
+class TestFetchOverpassRetry:
+    @patch("overpass_to_db.time.sleep")
+    @patch("overpass_to_db.requests.post")
+    def test_retries_on_504_then_succeeds(self, mock_post, mock_sleep):
+        fail_resp = Mock()
+        fail_resp.raise_for_status.side_effect = _mock_http_error(504)
+
+        ok_resp = Mock()
+        ok_resp.raise_for_status.return_value = None
+        ok_resp.json.return_value = {"elements": []}
+
+        mock_post.side_effect = [fail_resp, ok_resp]
+        result = fetch_overpass("way[surface=asphalt];", max_retries=2, initial_delay=0.01)
+        assert result == {"elements": []}
+        assert mock_post.call_count == 2
+
+    @patch("overpass_to_db.time.sleep")
+    @patch("overpass_to_db.requests.post")
+    def test_retries_on_429_then_succeeds(self, mock_post, mock_sleep):
+        fail_resp = Mock()
+        fail_resp.raise_for_status.side_effect = _mock_http_error(429)
+
+        ok_resp = Mock()
+        ok_resp.raise_for_status.return_value = None
+        ok_resp.json.return_value = {"elements": []}
+
+        mock_post.side_effect = [fail_resp, ok_resp]
+        result = fetch_overpass("way[surface=asphalt];", max_retries=2, initial_delay=0.01)
+        assert result == {"elements": []}
+
+    @patch("overpass_to_db.time.sleep")
+    @patch("overpass_to_db.requests.post")
+    def test_exits_after_max_retries(self, mock_post, mock_sleep):
+        fail_resp = Mock()
+        fail_resp.raise_for_status.side_effect = _mock_http_error(504)
+        mock_post.return_value = fail_resp
+
+        with pytest.raises(SystemExit, match="HTTP 504"):
+            fetch_overpass("way[surface=asphalt];", max_retries=1, initial_delay=0.01)
+        assert mock_post.call_count == 2
+
+    @patch("overpass_to_db.time.sleep")
+    @patch("overpass_to_db.requests.post")
+    def test_no_retry_on_400(self, mock_post, mock_sleep):
+        fail_resp = Mock()
+        fail_resp.raise_for_status.side_effect = _mock_http_error(400)
+        mock_post.return_value = fail_resp
+
+        with pytest.raises(SystemExit, match="HTTP 400"):
+            fetch_overpass("way[surface=asphalt];", max_retries=3, initial_delay=0.01)
+        assert mock_post.call_count == 1
+
+
+class TestFetchDrinkingWaterRetry:
+    @patch("fetch_drinking_water.time.sleep")
+    @patch("fetch_drinking_water.requests.post")
+    def test_retries_on_504_then_succeeds(self, mock_post, mock_sleep):
+        fail_resp = Mock()
+        fail_resp.raise_for_status.side_effect = _mock_http_error(504)
+
+        ok_resp = Mock()
+        ok_resp.raise_for_status.return_value = None
+        ok_resp.json.return_value = {"elements": [{"lat": 1, "lon": 2}]}
+
+        mock_post.side_effect = [fail_resp, ok_resp]
+        result = fetch_drinking_water("41.32,2.05,41.47,2.23", max_retries=2, initial_delay=0.01)
+        assert len(result) == 1
+
+    @patch("fetch_drinking_water.time.sleep")
+    @patch("fetch_drinking_water.requests.post")
+    def test_returns_empty_after_max_retries(self, mock_post, mock_sleep):
+        fail_resp = Mock()
+        fail_resp.raise_for_status.side_effect = _mock_http_error(504)
+        mock_post.return_value = fail_resp
+
+        result = fetch_drinking_water("41.32,2.05,41.47,2.23", max_retries=1, initial_delay=0.01)
+        assert result == []
+        assert mock_post.call_count == 2
