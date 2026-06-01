@@ -18,7 +18,7 @@ import requests
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "skating_routes.db"
-BBOX_FILE = Path(__file__).parent / "queries" / "bbox.overpassql"
+BBOX_FILE = Path(__file__).parent.parent / "queries" / "bbox.overpassql"
 
 
 def _add_column_if_missing(conn: sqlite3.Connection, column: str, col_type: str) -> None:
@@ -56,12 +56,23 @@ def init_db(db_path: Path) -> sqlite3.Connection:
     return conn
 
 
-def load_bbox() -> str:
-    """Load bounding box from bbox.overpassql file."""
-    if BBOX_FILE.exists():
-        bbox = BBOX_FILE.read_text().strip()
-        return f"[bbox:{bbox}]"
-    return ""
+def load_bbox_quadrants() -> list[str]:
+    """Load bounding box from file and split into 4 quadrants to avoid overload overpass API (timeouts)."""
+    if not BBOX_FILE.exists():
+        return [""]
+
+    bbox = BBOX_FILE.read_text().strip()
+    south, west, north, east = map(float, bbox.split(","))
+    mid_lat = (south + north) / 2
+    mid_lon = (west + east) / 2
+
+    quadrants = [
+        f"{south},{west},{mid_lat},{mid_lon}",  # SW
+        f"{south},{mid_lon},{mid_lat},{east}",  # SE
+        f"{mid_lat},{west},{north},{mid_lon}",  # NW
+        f"{mid_lat},{mid_lon},{north},{east}",  # NE
+    ]
+    return [f"[bbox:{q}]" for q in quadrants]
 
 
 def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 4, initial_delay: float = 30) -> dict:
@@ -141,16 +152,20 @@ def main():
     args = parser.parse_args()
 
     query = args.query or args.query_file.read_text().strip()
-    bbox_setting = load_bbox()
-
-    print(f"Fetching from Overpass API...")
-    data = fetch_overpass(query, bbox_setting)
+    bbox_quadrants = load_bbox_quadrants()
 
     conn = init_db(args.db)
-    count = store_ways(conn, data.get("elements", []), args.way_type)
-    conn.close()
+    total_count = 0
 
-    print(f"Stored {count} ways with type '{args.way_type}' in {args.db}")
+    for i, bbox_setting in enumerate(bbox_quadrants, 1):
+        print(f"Fetching quadrant {i}/{len(bbox_quadrants)} from Overpass API...")
+        data = fetch_overpass(query, bbox_setting)
+        count = store_ways(conn, data.get("elements", []), args.way_type)
+        total_count += count
+        print(f"  Stored {count} ways from quadrant {i}")
+
+    conn.close()
+    print(f"Total: {total_count} ways with type '{args.way_type}' in {args.db}")
 
 
 if __name__ == "__main__":
