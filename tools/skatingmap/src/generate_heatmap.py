@@ -8,11 +8,15 @@ Usage:
 """
 
 import argparse
+import json
 import tempfile
 from pathlib import Path
 
 from csv_to_geojson import csv_to_geojson
+from enrich_slopes import enrich
 from fit_to_h3 import process_fit_folder, write_csv
+
+DB_PATH = Path(__file__).parent.parent.parent / "data" / "skating_routes.db"
 
 
 def main():
@@ -39,6 +43,14 @@ def main():
     parser.add_argument(
         "--min-count", type=int, default=3,
         help="Minimum visit count to include cell (default: 3)"
+    )
+    parser.add_argument(
+        "--db", type=Path, default=DB_PATH,
+        help="Skating routes SQLite database for slope enrichment"
+    )
+    parser.add_argument(
+        "--skip-slopes", action="store_true",
+        help="Skip slope enrichment step"
     )
     args = parser.parse_args()
 
@@ -68,7 +80,6 @@ def main():
     write_csv(counter, csv_path)
     print(f"Intermediate CSV: {len(counter)} cells")
 
-    import json
     geojson = csv_to_geojson(csv_path, args.min_count, activity_filter)
 
     with open(args.output, "w") as f:
@@ -76,6 +87,11 @@ def main():
 
     csv_path.unlink()
     print(f"Wrote {len(geojson['features'])} features to {args.output}")
+
+    if not args.skip_slopes and args.db.exists():
+        print(f"Enriching slopes from {args.db}...")
+        processed, skipped = enrich(args.db)
+        print(f"Slopes: {processed} enriched, {skipped} skipped")
 
 
 if __name__ == "__main__":

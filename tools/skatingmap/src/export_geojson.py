@@ -22,27 +22,62 @@ def list_types(conn: sqlite3.Connection) -> list[str]:
     return [row[0] for row in cursor.fetchall()]
 
 
+def _build_segment(start_lon, start_lat, end_lon, end_lat) -> dict | None:
+    """Build GeoJSON LineString from segment coordinates."""
+    if None in (start_lon, start_lat, end_lon, end_lat):
+        return None
+    return {
+        "type": "LineString",
+        "coordinates": [[start_lon, start_lat], [end_lon, end_lat]],
+    }
+
+
 def export_geojson(conn: sqlite3.Connection, way_type: str | None) -> dict:
+    query = """
+        SELECT osm_id, way_type, name, geojson, tags,
+               max_slope, min_slope,
+               max_slope_start_lon, max_slope_start_lat,
+               max_slope_end_lon, max_slope_end_lat,
+               min_slope_start_lon, min_slope_start_lat,
+               min_slope_end_lon, min_slope_end_lat
+        FROM ways
+    """
     if way_type:
-        cursor = conn.execute(
-            "SELECT osm_id, way_type, name, geojson, tags FROM ways WHERE way_type = ?",
-            (way_type,),
-        )
+        cursor = conn.execute(query + " WHERE way_type = ?", (way_type,))
     else:
-        cursor = conn.execute(
-            "SELECT osm_id, way_type, name, geojson, tags FROM ways"
-        )
+        cursor = conn.execute(query)
 
     features = []
-    for osm_id, wtype, name, geojson, tags in cursor.fetchall():
+    for row in cursor.fetchall():
+        (
+            osm_id, wtype, name, geojson, tags,
+            max_slope, min_slope,
+            max_start_lon, max_start_lat, max_end_lon, max_end_lat,
+            min_start_lon, min_start_lat, min_end_lon, min_end_lat,
+        ) = row
+
+        properties = {
+            "osm_id": osm_id,
+            "way_type": wtype,
+            "name": name,
+            "tags": json.loads(tags) if tags else {},
+        }
+
+        if max_slope is not None:
+            properties["max_slope"] = round(max_slope, 1)
+            properties["max_slope_segment"] = _build_segment(
+                max_start_lon, max_start_lat, max_end_lon, max_end_lat
+            )
+
+        if min_slope is not None:
+            properties["min_slope"] = round(min_slope, 1)
+            properties["min_slope_segment"] = _build_segment(
+                min_start_lon, min_start_lat, min_end_lon, min_end_lat
+            )
+
         feature = {
             "type": "Feature",
-            "properties": {
-                "osm_id": osm_id,
-                "way_type": wtype,
-                "name": name,
-                "tags": json.loads(tags) if tags else {},
-            },
+            "properties": properties,
             "geometry": json.loads(geojson),
         }
         features.append(feature)
