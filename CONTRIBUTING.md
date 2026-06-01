@@ -16,7 +16,12 @@ Requires Node.js >= 18.
 
 ### Generate GeoJSON from KML
 
-The script expects `data/kml/travelmap.kml` to exist. This file should include all the coordinates of all the points visited (e.g. a file exported from Google MyMaps or similar tools).
+The script expects `data/kml/travelmap.kml` to exist. This file should include all the coordinates of all the points visited, exported from Google MyMaps:
+
+1. Go to https://mymaps.google.com and open your travel map
+2. Click the 3-dot menu (`⋮`) next to the map title → **Export to KML/KMZ**
+3. Select **KML** format, choose **All layers**, uncheck "Export to a .KMZ file"
+4. Download the file and save it to `data/kml/travelmap.kml`
 Parses `data/kml/travelmap.kml`, reverse-geocodes each point via Nominatim to identify admin regions, and fetches boundary polygons. Results are cached in `data/cache/` so re-runs are fast.
 
 ```bash
