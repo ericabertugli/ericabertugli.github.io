@@ -24,7 +24,7 @@ npm run generate-map
 ```
 
 Note: if you want to update the travelmap with new points, you can just trigger the GitHub action `update_travel_map`,
-or wait for the bi-monthly schedule to update them automatically, no need to run the script directly.
+or wait for the schedule to update them automatically, no need to run the script directly.
 
 ### Simplify GeoJSON
 
