@@ -1,0 +1,55 @@
+name: Update Travel Map
+
+on:
+  schedule:
+    - cron: "0 6 1 */2 *" # First day of every 2 months at 6:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-travel-map:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download KML from Google My Maps
+        run: |
+          curl -sL \
+            "https://www.google.com/maps/d/u/1/kml?forcekml=1&mid=1j9mxUGi8gZ3qcwksOTRYv8jUtcZIflz5" \
+            -o data/kml/travelmap.kml
+
+      - name: Generate and simplify GeoJSON
+        run: npm run build-map
+
+      - name: Create PR with changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/geojson/travel-regions.geojson \
+                  data/geojson/travel-regions-simplified.geojson \
+                  data/geojson/travel-points.geojson \
+                  data/kml/travelmap.kml \
+                  data/cache/geocode-cache.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          BRANCH="upd-travel-map-$(date +%Y%m%d)"
+          git checkout -b "$BRANCH"
+          git commit -m "Upd travel map data"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Upd travel map data" \
+            --body "Automated monthly refresh of travel map data from Google My Maps." \
+            --reviewer "${{ github.repository_owner }}"
+          gh pr merge --auto --squash

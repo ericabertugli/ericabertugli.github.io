@@ -23,6 +23,9 @@ Parses `data/kml/travelmap.kml`, reverse-geocodes each point via Nominatim to id
 npm run generate-map
 ```
 
+Note: if you want to update the travelmap with new points, you can just trigger the GitHub action `update_travel_map`,
+or wait for the schedule to update them automatically, no need to run the script directly.
+
 ### Simplify GeoJSON
 
 Reduces the full-detail regions file (~94 MB) to a browser-friendly size (~1 MB) using mapshaper.
@@ -38,6 +41,10 @@ Runs both steps in sequence:
 ```bash
 npm run build-map
 ```
+
+### Automated Updates
+
+A GitHub Actions workflow (`.github/workflows/update-travel-map.yml`) runs on the 1st of every 2 months at 6:00 UTC. It downloads the latest KML from the public Google My Maps URL, runs the full pipeline, and creates a PR with any changes. You can also trigger it manually via the Actions tab.
 
 ## Skating Map Scripts
 
