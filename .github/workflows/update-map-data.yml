@@ -1,5 +1,9 @@
 name: Update Osm Map Data
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 6 1 */2 *" # First day of every 2 months at 6:00 UTC
