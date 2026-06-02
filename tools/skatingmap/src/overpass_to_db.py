@@ -45,7 +45,7 @@ def load_bbox() -> str:
     return ""
 
 
-def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 4, initial_delay: float = 30) -> dict:
+def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 6, initial_delay: float = 30) -> dict:
 
     query = re.sub(r"\{\{style:.*?\}\}", "", query, flags=re.DOTALL).strip()
     query = re.sub(r"\[out:\w+\]", "", query).strip()
