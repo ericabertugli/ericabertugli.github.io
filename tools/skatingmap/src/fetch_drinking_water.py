@@ -27,7 +27,7 @@ def fetch_drinking_water(bbox: str, max_retries: int = 4, initial_delay: float =
     query = f"[out:json][timeout:120][bbox:{bbox}];node[amenity=drinking_water];out;"
     for attempt in range(max_retries + 1):
         try:
-            response = requests.post(OVERPASS_URL, data={"data": query}, timeout=180)
+            response = requests.post(OVERPASS_URL, data={"data": query}, headers={"Accept": "application/json"}, timeout=180)
             response.raise_for_status()
             try:
                 data = response.json()

@@ -59,7 +59,7 @@ def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 4, ini
 
     for attempt in range(max_retries + 1):
         try:
-            response = requests.post(OVERPASS_URL, data={"data": full_query}, timeout=360)
+            response = requests.post(OVERPASS_URL, data={"data": full_query}, headers={"Accept": "application/json"}, timeout=360)
             response.raise_for_status()
             return response.json()
         except requests.exceptions.HTTPError as e:
