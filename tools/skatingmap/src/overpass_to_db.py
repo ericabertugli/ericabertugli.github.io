@@ -16,7 +16,7 @@ from pathlib import Path
 
 import requests
 
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+OVERPASS_URL = "https://overpass.private.coffee/api/interpreter"
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "skating_routes.db"
 BBOX_FILE = Path(__file__).parent / "queries" / "bbox.overpassql"
 
@@ -45,7 +45,7 @@ def load_bbox() -> str:
     return ""
 
 
-def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 4, initial_delay: float = 30) -> dict:
+def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 6, initial_delay: float = 30) -> dict:
 
     query = re.sub(r"\{\{style:.*?\}\}", "", query, flags=re.DOTALL).strip()
     query = re.sub(r"\[out:\w+\]", "", query).strip()
@@ -59,7 +59,7 @@ def fetch_overpass(query: str, bbox_setting: str = "", max_retries: int = 4, ini
 
     for attempt in range(max_retries + 1):
         try:
-            response = requests.post(OVERPASS_URL, data={"data": full_query}, timeout=360)
+            response = requests.post(OVERPASS_URL, data={"data": full_query}, headers={"Accept": "application/json"}, timeout=360)
             response.raise_for_status()
             return response.json()
         except requests.exceptions.HTTPError as e:
