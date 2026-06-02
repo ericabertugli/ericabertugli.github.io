@@ -2,7 +2,7 @@ name: Update Osm Map Data
 
 on:
   schedule:
-    - cron: "0 6 1 * *" # First day of each month at 6:00 UTC
+    - cron: "0 6 1 */2 *" # First day of every 2 months at 6:00 UTC
   workflow_dispatch:
 
 jobs:
