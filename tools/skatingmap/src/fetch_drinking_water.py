@@ -12,7 +12,7 @@ from pathlib import Path
 
 import requests
 
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+OVERPASS_URL = "https://overpass.kumi.systems/api/interpreter"
 BBOX_FILE = Path(__file__).parent / "queries" / "bbox.overpassql"
 OUTPUT_PATH = Path(__file__).parent.parent.parent / "data" / "drinking_water.geojson"
 

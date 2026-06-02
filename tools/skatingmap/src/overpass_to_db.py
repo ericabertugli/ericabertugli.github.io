@@ -16,7 +16,7 @@ from pathlib import Path
 
 import requests
 
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+OVERPASS_URL = "https://overpass.kumi.systems/api/interpreter"
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "skating_routes.db"
 BBOX_FILE = Path(__file__).parent / "queries" / "bbox.overpassql"
 
