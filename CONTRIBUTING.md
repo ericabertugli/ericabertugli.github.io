@@ -16,13 +16,17 @@ Requires Node.js >= 18.
 
 ### Generate GeoJSON from KML
 
-The script expects `data/kml/travelmap.kml` to exist. This file should include all the coordinates of all the points visited, exported from Google MyMaps:
+The script expects `data/kml/travelmap_link.kml` to exist. This file should include a link to a public Google MyMaps:
 
+How to get the link:
 1. Go to https://mymaps.google.com and open your travel map
-2. Click the 3-dot menu (`⋮`) next to the map title → **Export to KML/KMZ**
+2. Set sharing permissions to `Anyone with the link can see it`
+3. Click the 3-dot menu (`⋮`) next to the map title → **Export to KML/KMZ**
 3. Select **KML** format, choose **All layers**, uncheck "Export to a .KMZ file"
-4. Download the file and save it to `data/kml/travelmap.kml`
-Parses `data/kml/travelmap.kml`, reverse-geocodes each point via Nominatim to identify admin regions, and fetches boundary polygons. Results are cached in `data/cache/` so re-runs are fast.
+4. Download the file and save it to `data/kml/travelmap_link.kml`
+5. Push your changes to GitHub
+6. Run the GHA `update-travel-map`
+
 
 ```bash
 npm run generate-map
@@ -43,6 +47,10 @@ Runs both steps in sequence:
 ```bash
 npm run build-map
 ```
+
+### Automated Updates
+
+A GitHub Actions workflow (`.github/workflows/update-travel-map.yml`) runs on the 1st of every 2 months at 6:00 UTC. It downloads the latest KML from the public Google My Maps URL, runs the full pipeline, and creates a PR with any changes. You can also trigger it manually via the Actions tab.
 
 ## Skating Map Scripts
 
