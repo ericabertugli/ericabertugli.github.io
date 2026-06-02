@@ -1,6 +1,7 @@
 .idea
 node_modules/
-data/cache/
+data/cache/*
+!data/cache/geocode-cache.json
 data/geojson/travel-regions.geojson
 data/*.db
 __pycache__/
