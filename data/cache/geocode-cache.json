@@ -1,0 +1,4664 @@
+{
+  "-15.770614,-69.683710": {
+    "osm_type": "relation",
+    "osm_id": 1907899,
+    "region_name": "Puno",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "36.012760,14.337137": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "36.047990,14.251328": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "36.050000,14.268888": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "42.698710,2.895570": {
+    "osm_type": "relation",
+    "osm_id": 3792883,
+    "region_name": "Occitanie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "-15.664670,-69.710110": {
+    "osm_type": "relation",
+    "osm_id": 1907899,
+    "region_name": "Puno",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "41.838560,2.801800": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.606926,3.880531": {
+    "osm_type": "relation",
+    "osm_id": 3792883,
+    "region_name": "Occitanie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "42.523840,3.085600": {
+    "osm_type": "relation",
+    "osm_id": 3792883,
+    "region_name": "Occitanie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.275085,1.976809": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "3.156802,101.697170": {
+    "osm_type": "relation",
+    "osm_id": 2939672,
+    "region_name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "41.918340,3.206550": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "53.345966,-6.253410": {
+    "osm_type": "relation",
+    "osm_id": 62273,
+    "region_name": "Éire / Ireland",
+    "country": "Éire / Ireland",
+    "country_code": "ie"
+  },
+  "20.411420,-87.303960": {
+    "osm_type": "relation",
+    "osm_id": 2614434,
+    "region_name": "Quintana Roo",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "52.370000,4.890000": {
+    "osm_type": "relation",
+    "osm_id": 47654,
+    "region_name": "Noord-Holland",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "48.149662,17.108503": {
+    "osm_type": "relation",
+    "osm_id": 388265,
+    "region_name": "Bratislavský kraj",
+    "country": "Slovensko",
+    "country_code": "sk"
+  },
+  "42.411590,1.131061": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.817513,3.067231": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "52.968940,5.606330": {
+    "osm_type": "relation",
+    "osm_id": 47381,
+    "region_name": "Fryslân",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "51.108250,17.026910": {
+    "osm_type": "relation",
+    "osm_id": 224457,
+    "region_name": "województwo dolnośląskie",
+    "country": "Polska",
+    "country_code": "pl"
+  },
+  "40.359220,0.399940": {
+    "osm_type": "relation",
+    "osm_id": 349043,
+    "region_name": "Comunitat Valenciana",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.770320,9.671213": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.404810,8.938325": {
+    "osm_type": "relation",
+    "osm_id": 301482,
+    "region_name": "Liguria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "5.581080,-0.198970": {
+    "osm_type": "relation",
+    "osm_id": 1991849,
+    "region_name": "Greater Accra Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "-15.842083,-70.020424": {
+    "osm_type": "relation",
+    "osm_id": 1907899,
+    "region_name": "Puno",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "28.047030,-16.538620": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "48.857037,2.349401": {
+    "osm_type": "relation",
+    "osm_id": 8649,
+    "region_name": "Île-de-France",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "33.987850,51.437680": {
+    "osm_type": "relation",
+    "osm_id": 241475,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "52.493760,5.073597": {
+    "osm_type": "relation",
+    "osm_id": 47654,
+    "region_name": "Noord-Holland",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "20.688510,-88.200100": {
+    "osm_type": "relation",
+    "osm_id": 2614435,
+    "region_name": "Yucatán",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "20.376654,-89.769660": {
+    "osm_type": "relation",
+    "osm_id": 2614435,
+    "region_name": "Yucatán",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "44.802660,10.328900": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.055927,12.570873": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.417316,12.196475": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "39.599033,16.516413": {
+    "osm_type": "relation",
+    "osm_id": 1783980,
+    "region_name": "Calabria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "6.266584,0.044446": {
+    "osm_type": "relation",
+    "osm_id": 3498733,
+    "region_name": "Eastern Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "40.378716,9.694828": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "39.070670,-0.266270": {
+    "osm_type": "relation",
+    "osm_id": 349043,
+    "region_name": "Comunitat Valenciana",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.288906,3.275896": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.062210,3.047890": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "48.633080,-1.509604": {
+    "osm_type": "relation",
+    "osm_id": 1403916,
+    "region_name": "France métropolitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.654200,-4.732140": {
+    "osm_type": "relation",
+    "osm_id": 349041,
+    "region_name": "Castilla y León",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.296400,5.370000": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.385597,2.169576": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "36.234417,-6.066184": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.964270,-5.663850": {
+    "osm_type": "relation",
+    "osm_id": 349041,
+    "region_name": "Castilla y León",
+    "country": "España",
+    "country_code": "es"
+  },
+  "47.390350,0.689560": {
+    "osm_type": "relation",
+    "osm_id": 8640,
+    "region_name": "Centre-Val de Loire",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "-12.072676,-77.039250": {
+    "osm_type": "relation",
+    "osm_id": 1944659,
+    "region_name": "Lima",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "33.534140,-5.102120": {
+    "osm_type": "relation",
+    "osm_id": 4730909,
+    "region_name": "Fès-Meknès ⴼⴰⵙ-ⵎⴽⵏⴰⵙ فاس-مكناس",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "-13.521886,-71.968560": {
+    "osm_type": "relation",
+    "osm_id": 1923695,
+    "region_name": "Cusco",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "-16.398200,-71.534070": {
+    "osm_type": "relation",
+    "osm_id": 1879287,
+    "region_name": "Arequipa",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "41.980810,2.818740": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "46.769370,23.588140": {
+    "osm_type": "relation",
+    "osm_id": 91733,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "42.345820,1.955150": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "27.764540,-15.585423": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "50.076847,14.427817": {
+    "osm_type": "relation",
+    "osm_id": 435514,
+    "region_name": "Praha",
+    "country": "Česko",
+    "country_code": "cz"
+  },
+  "40.805880,14.352860": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "50.849840,5.688290": {
+    "osm_type": "relation",
+    "osm_id": 47793,
+    "region_name": "Limburg",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "42.435440,19.263910": {
+    "osm_type": "relation",
+    "osm_id": 53296,
+    "region_name": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "country_code": "me"
+  },
+  "48.889960,0.608520": {
+    "osm_type": "relation",
+    "osm_id": 3793170,
+    "region_name": "Normandie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "31.501253,-9.760016": {
+    "osm_type": "relation",
+    "osm_id": 2424086,
+    "region_name": "Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "37.434830,-6.038600": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.200360,2.698110": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "55.675020,12.580593": {
+    "osm_type": "relation",
+    "osm_id": 1320608,
+    "region_name": "Region Hovedstaden",
+    "country": "Danmark",
+    "country_code": "dk"
+  },
+  "47.332150,1.065340": {
+    "osm_type": "relation",
+    "osm_id": 8640,
+    "region_name": "Centre-Val de Loire",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "28.489073,-16.313917": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "53.217880,6.564767": {
+    "osm_type": "relation",
+    "osm_id": 47826,
+    "region_name": "Groningen",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "28.466293,-16.258417": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "10.057384,-2.496871": {
+    "osm_type": "relation",
+    "osm_id": 3328013,
+    "region_name": "Upper West Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "41.953053,3.206026": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.494133,11.343634": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.646610,10.926249": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "32.295130,48.225310": {
+    "osm_type": "relation",
+    "osm_id": 3661581,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "33.231850,35.756380": {
+    "osm_type": "relation",
+    "osm_id": 1375620,
+    "region_name": "מחוז הצפון",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "42.112663,2.769691": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "28.372460,-16.765800": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "35.715397,51.393932": {
+    "osm_type": "relation",
+    "osm_id": 537701,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "43.700638,7.276729": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.492775,13.625184": {
+    "osm_type": "relation",
+    "osm_id": 53060,
+    "region_name": "Marche",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "46.569090,26.910950": {
+    "osm_type": "relation",
+    "osm_id": 2248681,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "3.242071,101.667020": {
+    "osm_type": "relation",
+    "osm_id": 2939672,
+    "region_name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "42.424960,18.769894": {
+    "osm_type": "relation",
+    "osm_id": 53296,
+    "region_name": "Crna Gora / Црна Гора",
+    "country": "Crna Gora / Црна Гора",
+    "country_code": "me"
+  },
+  "28.130705,-15.438004": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "47.586872,1.331733": {
+    "osm_type": "relation",
+    "osm_id": 8640,
+    "region_name": "Centre-Val de Loire",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "40.702084,19.957666": {
+    "osm_type": "relation",
+    "osm_id": 7739252,
+    "region_name": "Shqipëria Jugore",
+    "country": "Shqipëria",
+    "country_code": "al"
+  },
+  "4.381950,102.401770": {
+    "osm_type": "relation",
+    "osm_id": 4444595,
+    "region_name": "Pahang",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "47.262030,0.465140": {
+    "osm_type": "relation",
+    "osm_id": 8640,
+    "region_name": "Centre-Val de Loire",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "47.410404,0.983550": {
+    "osm_type": "relation",
+    "osm_id": 8640,
+    "region_name": "Centre-Val de Loire",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.796383,3.051092": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.541520,2.443910": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "35.503270,12.610155": {
+    "osm_type": "relation",
+    "osm_id": 39152,
+    "region_name": "Sicilia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "28.078266,-16.558207": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.607784,9.747254": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "39.570015,2.646613": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.553250,7.013250": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "42.653934,18.079966": {
+    "osm_type": "relation",
+    "osm_id": 226750,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "42.359580,1.080250": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "51.208470,3.224500": {
+    "osm_type": "relation",
+    "osm_id": 416271,
+    "region_name": "West-Vlaanderen",
+    "country": "België / Belgique / Belgien",
+    "country_code": "be"
+  },
+  "28.060900,-16.587390": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.319355,11.326818": {
+    "osm_type": "relation",
+    "osm_id": 41977,
+    "region_name": "Toscana",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "43.468628,11.044151": {
+    "osm_type": "relation",
+    "osm_id": 41977,
+    "region_name": "Toscana",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "48.650500,-2.023280": {
+    "osm_type": "relation",
+    "osm_id": 102740,
+    "region_name": "Bretagne",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "48.106976,-1.680430": {
+    "osm_type": "relation",
+    "osm_id": 102740,
+    "region_name": "Bretagne",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.654533,6.919078": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "36.685650,-6.135243": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "29.937532,52.891945": {
+    "osm_type": "relation",
+    "osm_id": 255446,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "40.371040,16.809780": {
+    "osm_type": "relation",
+    "osm_id": 40137,
+    "region_name": "Basilicata",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "36.280460,-118.005270": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "9.514703,-1.826320": {
+    "osm_type": "relation",
+    "osm_id": 10212838,
+    "region_name": "Savannah Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "44.357600,11.711680": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "29.591010,52.530560": {
+    "osm_type": "relation",
+    "osm_id": 255446,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "10.785510,-0.854870": {
+    "osm_type": "relation",
+    "osm_id": 3327998,
+    "region_name": "Upper East Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "41.128760,20.820751": {
+    "osm_type": "relation",
+    "osm_id": 53293,
+    "region_name": "Северна Македонија",
+    "country": "Северна Македонија",
+    "country_code": "mk"
+  },
+  "52.104270,4.277486": {
+    "osm_type": "relation",
+    "osm_id": 47772,
+    "region_name": "Zuid-Holland",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "5.118960,-1.260940": {
+    "osm_type": "relation",
+    "osm_id": 3330281,
+    "region_name": "Central Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "-13.156311,-72.522980": {
+    "osm_type": "relation",
+    "osm_id": 1923695,
+    "region_name": "Cusco",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "42.705210,3.007409": {
+    "osm_type": "relation",
+    "osm_id": 3792883,
+    "region_name": "Occitanie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "-14.082891,-75.750220": {
+    "osm_type": "relation",
+    "osm_id": 1899013,
+    "region_name": "Ica",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "53.555560,10.013171": {
+    "osm_type": "relation",
+    "osm_id": 62782,
+    "region_name": "Deutschland",
+    "country": "Deutschland",
+    "country_code": "de"
+  },
+  "40.476670,19.487870": {
+    "osm_type": "relation",
+    "osm_id": 7739252,
+    "region_name": "Shqipëria Jugore",
+    "country": "Shqipëria",
+    "country_code": "al"
+  },
+  "43.262074,-2.931721": {
+    "osm_type": "relation",
+    "osm_id": 349042,
+    "region_name": "Euskadi",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.690647,4.634936": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.264700,0.904790": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "46.161770,24.354600": {
+    "osm_type": "relation",
+    "osm_id": 2248586,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "50.107586,8.675079": {
+    "osm_type": "relation",
+    "osm_id": 62650,
+    "region_name": "Hessen",
+    "country": "Deutschland",
+    "country_code": "de"
+  },
+  "28.306410,-16.839554": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.317516,-1.975921": {
+    "osm_type": "relation",
+    "osm_id": 349042,
+    "region_name": "Euskadi",
+    "country": "España",
+    "country_code": "es"
+  },
+  "51.055630,3.728560": {
+    "osm_type": "relation",
+    "osm_id": 53135,
+    "region_name": "Oost-Vlaanderen",
+    "country": "België / Belgique / Belgien",
+    "country_code": "be"
+  },
+  "38.344032,-0.484558": {
+    "osm_type": "relation",
+    "osm_id": 349043,
+    "region_name": "Comunitat Valenciana",
+    "country": "España",
+    "country_code": "es"
+  },
+  "37.009644,-6.561478": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.146640,2.570340": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "46.005573,8.954944": {
+    "osm_type": "relation",
+    "osm_id": 1687730,
+    "region_name": "Ticino",
+    "country": "Schweiz/Suisse/Svizzera/Svizra",
+    "country_code": "ch"
+  },
+  "44.573208,10.847435": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "42.180958,2.488782": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.149460,-8.610310": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.861076,-119.541270": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "-14.825490,-74.939970": {
+    "osm_type": "relation",
+    "osm_id": 1899013,
+    "region_name": "Ica",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "37.176136,-3.605812": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "5.411938,100.326640": {
+    "osm_type": "relation",
+    "osm_id": 4445131,
+    "region_name": "Pulau Pinang",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "37.389110,-5.984327": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "2.936500,101.691560": {
+    "osm_type": "relation",
+    "osm_id": 4443881,
+    "region_name": "Putrajaya",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "37.254550,-6.945250": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "-14.063920,-75.730300": {
+    "osm_type": "relation",
+    "osm_id": 1899013,
+    "region_name": "Ica",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "45.791740,24.147590": {
+    "osm_type": "relation",
+    "osm_id": 2248586,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "41.375340,1.164330": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.654484,-0.876858": {
+    "osm_type": "relation",
+    "osm_id": 349045,
+    "region_name": "Aragón",
+    "country": "España",
+    "country_code": "es"
+  },
+  "37.778934,-122.415790": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "43.528300,5.449730": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "52.519590,13.397209": {
+    "osm_type": "relation",
+    "osm_id": 62422,
+    "region_name": "Deutschland",
+    "country": "Deutschland",
+    "country_code": "de"
+  },
+  "50.643017,5.587366": {
+    "osm_type": "relation",
+    "osm_id": 1407192,
+    "region_name": "Liège",
+    "country": "België / Belgique / Belgien",
+    "country_code": "be"
+  },
+  "32.460220,48.355790": {
+    "osm_type": "relation",
+    "osm_id": 3661581,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "4.219250,100.562760": {
+    "osm_type": "relation",
+    "osm_id": 4445076,
+    "region_name": "Perak",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "11.193620,-0.991080": {
+    "osm_type": "relation",
+    "osm_id": 2746024,
+    "region_name": "Centre-Sud",
+    "country": "Burkina Faso",
+    "country_code": "bf"
+  },
+  "30.609400,34.801100": {
+    "osm_type": "relation",
+    "osm_id": 1473952,
+    "region_name": "מחוז הדרום",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "48.136410,11.577530": {
+    "osm_type": "relation",
+    "osm_id": 2145268,
+    "region_name": "Bayern",
+    "country": "Deutschland",
+    "country_code": "de"
+  },
+  "30.919380,-6.908480": {
+    "osm_type": "relation",
+    "osm_id": 2424034,
+    "region_name": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "44.838757,11.618743": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "37.547190,-119.921080": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "31.100643,-4.011312": {
+    "osm_type": "relation",
+    "osm_id": 2424034,
+    "region_name": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "31.905440,54.351150": {
+    "osm_type": "relation",
+    "osm_id": 3300249,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "37.880690,-4.779073": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.902363,12.454423": {
+    "osm_type": "relation",
+    "osm_id": 36989,
+    "region_name": "Civitas Vaticana - Città del Vaticano",
+    "country": "Civitas Vaticana - Città del Vaticano",
+    "country_code": "va"
+  },
+  "59.330135,18.061510": {
+    "osm_type": "relation",
+    "osm_id": 52822,
+    "region_name": "Sverige",
+    "country": "Sverige",
+    "country_code": "se"
+  },
+  "36.530533,-6.295243": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.071724,19.519958": {
+    "osm_type": "relation",
+    "osm_id": 7739254,
+    "region_name": "Shqipëria Veriore",
+    "country": "Shqipëria",
+    "country_code": "al"
+  },
+  "41.893623,12.495978": {
+    "osm_type": "relation",
+    "osm_id": 40784,
+    "region_name": "Lazio",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "47.493460,19.050700": {
+    "osm_type": "relation",
+    "osm_id": 22786,
+    "region_name": "Közép-Magyarország",
+    "country": "Magyarország",
+    "country_code": "hu"
+  },
+  "20.967632,-89.592430": {
+    "osm_type": "relation",
+    "osm_id": 2614435,
+    "region_name": "Yucatán",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "36.718468,-4.422782": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "4.260030,102.589220": {
+    "osm_type": "relation",
+    "osm_id": 4444595,
+    "region_name": "Pahang",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "20.212420,-87.463550": {
+    "osm_type": "relation",
+    "osm_id": 2614434,
+    "region_name": "Quintana Roo",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "36.422077,-6.149142": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "50.849632,4.351959": {
+    "osm_type": "relation",
+    "osm_id": 54094,
+    "region_name": "Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest",
+    "country": "België / Belgique / Belgien",
+    "country_code": "be"
+  },
+  "42.054523,3.200187": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "35.956390,14.362220": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "42.506890,1.525626": {
+    "osm_type": "relation",
+    "osm_id": 9407,
+    "region_name": "Andorra",
+    "country": "Andorra",
+    "country_code": "ad"
+  },
+  "41.004665,9.612899": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.696968,10.632591": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.320190,23.798970": {
+    "osm_type": "relation",
+    "osm_id": 2366970,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "42.208176,2.995119": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.938324,9.708478": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "41.809380,19.599888": {
+    "osm_type": "relation",
+    "osm_id": 7739254,
+    "region_name": "Shqipëria Veriore",
+    "country": "Shqipëria",
+    "country_code": "al"
+  },
+  "20.680490,-88.568480": {
+    "osm_type": "relation",
+    "osm_id": 2614435,
+    "region_name": "Yucatán",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "28.097700,-15.480269": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.841064,14.306837": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "31.196600,35.362660": {
+    "osm_type": "relation",
+    "osm_id": 1473952,
+    "region_name": "מחוז הדרום",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "38.800800,-9.381900": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "19.432684,-99.133250": {
+    "osm_type": "relation",
+    "osm_id": 1376330,
+    "region_name": "Ciudad de México",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "51.519240,-0.096654": {
+    "osm_type": "relation",
+    "osm_id": 58447,
+    "region_name": "England",
+    "country": "United Kingdom",
+    "country_code": "gb"
+  },
+  "6.351074,99.758240": {
+    "osm_type": "relation",
+    "osm_id": 4444908,
+    "region_name": "Kedah",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "51.219032,4.409642": {
+    "osm_type": "relation",
+    "osm_id": 53114,
+    "region_name": "Antwerpen",
+    "country": "België / Belgique / Belgien",
+    "country_code": "be"
+  },
+  "6.135440,102.236710": {
+    "osm_type": "relation",
+    "osm_id": 4443571,
+    "region_name": "Kelantan",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "40.839990,14.251760": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "50.060460,19.932400": {
+    "osm_type": "relation",
+    "osm_id": 224459,
+    "region_name": "województwo małopolskie",
+    "country": "Polska",
+    "country_code": "pl"
+  },
+  "40.840416,14.252355": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "21.523836,-87.367460": {
+    "osm_type": "relation",
+    "osm_id": 2614434,
+    "region_name": "Quintana Roo",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "51.920525,4.480866": {
+    "osm_type": "relation",
+    "osm_id": 47772,
+    "region_name": "Zuid-Holland",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "31.854815,35.462150": {
+    "osm_type": "relation",
+    "osm_id": 1613659,
+    "region_name": "الضفة الغربية",
+    "country": "الأراضي الفلسطينية",
+    "country_code": "ps"
+  },
+  "21.149670,-86.802870": {
+    "osm_type": "relation",
+    "osm_id": 2614434,
+    "region_name": "Quintana Roo",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "52.076355,4.310603": {
+    "osm_type": "relation",
+    "osm_id": 47772,
+    "region_name": "Zuid-Holland",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "34.016308,-6.836138": {
+    "osm_type": "relation",
+    "osm_id": 4730737,
+    "region_name": "Rabat-Salé-Kénitra ⵔⴱⴰⵟ-ⵙⵍⴰ-ⵇⵏⵉⵟⵔⴰ الرباط-سلا-القنيطرة",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "39.473854,-0.377154": {
+    "osm_type": "relation",
+    "osm_id": 349043,
+    "region_name": "Comunitat Valenciana",
+    "country": "España",
+    "country_code": "es"
+  },
+  "31.704870,35.203760": {
+    "osm_type": "relation",
+    "osm_id": 1613659,
+    "region_name": "الضفة الغربية",
+    "country": "الأراضي الفلسطينية",
+    "country_code": "ps"
+  },
+  "31.632172,-8.002955": {
+    "osm_type": "relation",
+    "osm_id": 2424086,
+    "region_name": "Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "33.882680,-5.535510": {
+    "osm_type": "relation",
+    "osm_id": 4730909,
+    "region_name": "Fès-Meknès ⴼⴰⵙ-ⵎⴽⵏⴰⵙ فاس-مكناس",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "35.987747,14.328918": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "38.712110,-9.138085": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "28.569360,-16.323350": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.938470,3.209644": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.128735,9.537477": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "38.697900,-9.421460": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "5.828080,102.554010": {
+    "osm_type": "relation",
+    "osm_id": 4444411,
+    "region_name": "Terengganu",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "41.247640,0.810990": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.716510,10.400349": {
+    "osm_type": "relation",
+    "osm_id": 41977,
+    "region_name": "Toscana",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "28.504808,-16.192070": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "32.071957,34.772240": {
+    "osm_type": "relation",
+    "osm_id": 1400916,
+    "region_name": "מחוז תל אביב",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "31.780130,35.215874": {
+    "osm_type": "relation",
+    "osm_id": 1384720,
+    "region_name": "מחוז ירושלים",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "32.801240,35.003270": {
+    "osm_type": "relation",
+    "osm_id": 1400966,
+    "region_name": "מחוז חיפה",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "43.767918,11.252379": {
+    "osm_type": "relation",
+    "osm_id": 41977,
+    "region_name": "Toscana",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "43.842020,10.515350": {
+    "osm_type": "relation",
+    "osm_id": 41977,
+    "region_name": "Toscana",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "29.553314,34.945816": {
+    "osm_type": "relation",
+    "osm_id": 1473952,
+    "region_name": "מחוז הדרום",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "48.686380,-1.361920": {
+    "osm_type": "relation",
+    "osm_id": 3793170,
+    "region_name": "Normandie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "40.902510,20.653790": {
+    "osm_type": "relation",
+    "osm_id": 7739252,
+    "region_name": "Shqipëria Jugore",
+    "country": "Shqipëria",
+    "country_code": "al"
+  },
+  "45.076890,14.162790": {
+    "osm_type": "relation",
+    "osm_id": 226351,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "42.264900,3.175174": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.199800,12.399100": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "32.498520,35.498770": {
+    "osm_type": "relation",
+    "osm_id": 1375620,
+    "region_name": "מחוז הצפון",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "5.907102,102.722130": {
+    "osm_type": "relation",
+    "osm_id": 4444411,
+    "region_name": "Terengganu",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "41.995710,21.431784": {
+    "osm_type": "relation",
+    "osm_id": 53293,
+    "region_name": "Северна Македонија",
+    "country": "Северна Македонија",
+    "country_code": "mk"
+  },
+  "40.922207,9.500300": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "46.202220,6.145690": {
+    "osm_type": "relation",
+    "osm_id": 1702419,
+    "region_name": "Genève",
+    "country": "Schweiz/Suisse/Svizzera/Svizra",
+    "country_code": "ch"
+  },
+  "40.321060,9.328958": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.199856,-8.447914": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "41.556370,2.403710": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.251553,12.362802": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "41.933920,2.253240": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "33.596600,-7.618880": {
+    "osm_type": "relation",
+    "osm_id": 2424085,
+    "region_name": "Casablanca-Settat ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "52.091090,5.125550": {
+    "osm_type": "relation",
+    "osm_id": 47667,
+    "region_name": "Utrecht",
+    "country": "Nederland",
+    "country_code": "nl"
+  },
+  "37.222996,49.310650": {
+    "osm_type": "relation",
+    "osm_id": 241472,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "34.026806,-5.004349": {
+    "osm_type": "relation",
+    "osm_id": 4730909,
+    "region_name": "Fès-Meknès ⴼⴰⵙ-ⵎⴽⵏⴰⵙ فاس-مكناس",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "41.009860,28.957070": {
+    "osm_type": "relation",
+    "osm_id": 223474,
+    "region_name": "Marmara Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "39.906815,8.592455": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "1.285801,103.851110": {
+    "osm_type": "relation",
+    "osm_id": 536780,
+    "region_name": "Singapore",
+    "country": "Singapore",
+    "country_code": "sg"
+  },
+  "31.897673,35.207060": {
+    "osm_type": "relation",
+    "osm_id": 1613659,
+    "region_name": "الضفة الغربية",
+    "country": "الأراضي الفلسطينية",
+    "country_code": "ps"
+  },
+  "53.224220,7.446770": {
+    "osm_type": "relation",
+    "osm_id": 62771,
+    "region_name": "Niedersachsen",
+    "country": "Deutschland",
+    "country_code": "de"
+  },
+  "40.785720,17.235490": {
+    "osm_type": "relation",
+    "osm_id": 40095,
+    "region_name": "Puglia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "2.206847,102.253270": {
+    "osm_type": "relation",
+    "osm_id": 2939673,
+    "region_name": "Melaka",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "36.167194,-5.343071": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "36.752390,-3.875800": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "45.439087,12.323647": {
+    "osm_type": "relation",
+    "osm_id": 43648,
+    "region_name": "Veneto",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "34.011570,-118.492290": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "27.896894,-15.444705": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "36.014534,-5.604243": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "47.218120,-1.553060": {
+    "osm_type": "relation",
+    "osm_id": 8650,
+    "region_name": "Pays de la Loire",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "31.922910,-4.435431": {
+    "osm_type": "relation",
+    "osm_id": 2424034,
+    "region_name": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "44.841103,-0.580674": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "45.434190,10.997700": {
+    "osm_type": "relation",
+    "osm_id": 43648,
+    "region_name": "Veneto",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "37.470880,-5.643380": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.002690,15.371590": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.414710,-3.700708": {
+    "osm_type": "relation",
+    "osm_id": 349055,
+    "region_name": "Comunidad de Madrid",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.426770,26.103397": {
+    "osm_type": "relation",
+    "osm_id": 377733,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "32.650860,51.683870": {
+    "osm_type": "relation",
+    "osm_id": 241475,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "36.144780,-5.352910": {
+    "osm_type": "relation",
+    "osm_id": 6358272,
+    "region_name": "Gibraltar",
+    "country": "Gibraltar",
+    "country_code": "gi"
+  },
+  "42.695305,23.321167": {
+    "osm_type": "relation",
+    "osm_id": 1739543,
+    "region_name": "София-град",
+    "country": "България",
+    "country_code": "bg"
+  },
+  "-13.214260,-72.369630": {
+    "osm_type": "relation",
+    "osm_id": 1923695,
+    "region_name": "Cusco",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "-13.181424,-72.533690": {
+    "osm_type": "relation",
+    "osm_id": 1923695,
+    "region_name": "Cusco",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "20.886400,-88.137160": {
+    "osm_type": "relation",
+    "osm_id": 2614435,
+    "region_name": "Yucatán",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "-13.833746,-76.248030": {
+    "osm_type": "relation",
+    "osm_id": 1899013,
+    "region_name": "Ica",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "41.212510,9.407190": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "35.913270,14.488360": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "49.184380,-0.361090": {
+    "osm_type": "relation",
+    "osm_id": 3793170,
+    "region_name": "Normandie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.895560,3.192700": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.969685,3.148528": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "4.597892,102.432030": {
+    "osm_type": "relation",
+    "osm_id": 4444595,
+    "region_name": "Pahang",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "36.128807,-5.453305": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.275910,12.350301": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "52.228750,21.006250": {
+    "osm_type": "relation",
+    "osm_id": 130935,
+    "region_name": "województwo mazowieckie",
+    "country": "Polska",
+    "country_code": "pl"
+  },
+  "37.137634,-8.534399": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "42.122990,3.131140": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.882450,16.174960": {
+    "osm_type": "relation",
+    "osm_id": 40095,
+    "region_name": "Puglia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "46.221240,24.794560": {
+    "osm_type": "relation",
+    "osm_id": 2248573,
+    "region_name": "România",
+    "country": "România",
+    "country_code": "ro"
+  },
+  "41.116333,1.248222": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "46.477170,11.768885": {
+    "osm_type": "relation",
+    "osm_id": 45757,
+    "region_name": "Trentino-Alto Adige/Südtirol",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "41.322330,19.825160": {
+    "osm_type": "relation",
+    "osm_id": 7739253,
+    "region_name": "Shqipëria Qendrore",
+    "country": "Shqipëria",
+    "country_code": "al"
+  },
+  "41.804400,2.219140": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "55.859673,-4.257223": {
+    "osm_type": "relation",
+    "osm_id": 58446,
+    "region_name": "Alba / Scotland",
+    "country": "United Kingdom",
+    "country_code": "gb"
+  },
+  "41.234240,1.805450": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "-13.393442,-71.754780": {
+    "osm_type": "relation",
+    "osm_id": 1923695,
+    "region_name": "Cusco",
+    "country": "Perú",
+    "country_code": "pe"
+  },
+  "41.593230,1.838058": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.179825,9.381692": {
+    "osm_type": "relation",
+    "osm_id": 7361997,
+    "region_name": "Sardigna/Sardegna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "37.181690,-6.969990": {
+    "osm_type": "relation",
+    "osm_id": 349044,
+    "region_name": "Andalucía",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.073540,1.142110": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "45.464787,9.189092": {
+    "osm_type": "relation",
+    "osm_id": 44879,
+    "region_name": "Lombardia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "45.165420,10.792430": {
+    "osm_type": "relation",
+    "osm_id": 44879,
+    "region_name": "Lombardia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "31.431180,-4.235460": {
+    "osm_type": "relation",
+    "osm_id": 2424034,
+    "region_name": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "34.051060,-118.232840": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "44.208725,10.794667": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "41.469990,2.084068": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "32.478233,34.915490": {
+    "osm_type": "relation",
+    "osm_id": 1400966,
+    "region_name": "מחוז חיפה",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "41.889618,3.184763": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "28.245390,-16.841650": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "31.457249,35.391310": {
+    "osm_type": "relation",
+    "osm_id": 1473952,
+    "region_name": "מחוז הדרום",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "28.367800,-16.720480": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "36.114304,-115.172080": {
+    "osm_type": "relation",
+    "osm_id": 165473,
+    "region_name": "Nevada",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "43.603947,1.443030": {
+    "osm_type": "relation",
+    "osm_id": 3792883,
+    "region_name": "Occitanie",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "41.782715,3.033488": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "55.955498,-3.191557": {
+    "osm_type": "relation",
+    "osm_id": 58446,
+    "region_name": "Alba / Scotland",
+    "country": "United Kingdom",
+    "country_code": "gb"
+  },
+  "45.059376,7.689138": {
+    "osm_type": "relation",
+    "osm_id": 44874,
+    "region_name": "Piemonte",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.541180,10.782333": {
+    "osm_type": "relation",
+    "osm_id": 42611,
+    "region_name": "Emilia-Romagna",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "46.495235,11.354021": {
+    "osm_type": "relation",
+    "osm_id": 45757,
+    "region_name": "Trentino-Alto Adige/Südtirol",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "37.016483,-7.932307": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "2.419560,103.836920": {
+    "osm_type": "relation",
+    "osm_id": 2939653,
+    "region_name": "Johor",
+    "country": "Malaysia",
+    "country_code": "my"
+  },
+  "37.105007,-8.675130": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "19.686080,-98.889360": {
+    "osm_type": "relation",
+    "osm_id": 1376489,
+    "region_name": "Estado de México",
+    "country": "México",
+    "country_code": "mx"
+  },
+  "37.272530,49.593090": {
+    "osm_type": "relation",
+    "osm_id": 241472,
+    "region_name": "ایران",
+    "country": "ایران",
+    "country_code": "ir"
+  },
+  "6.697460,-1.629850": {
+    "osm_type": "relation",
+    "osm_id": 3330249,
+    "region_name": "Ashanti Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "41.478900,2.318810": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "28.341510,-16.877430": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "48.208862,16.372383": {
+    "osm_type": "relation",
+    "osm_id": 109166,
+    "region_name": "Österreich",
+    "country": "Österreich",
+    "country_code": "at"
+  },
+  "35.840054,14.543023": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "36.097248,-112.114310": {
+    "osm_type": "relation",
+    "osm_id": 162018,
+    "region_name": "Arizona",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "35.886160,14.401739": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "31.367650,-5.983200": {
+    "osm_type": "relation",
+    "osm_id": 2424034,
+    "region_name": "Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت",
+    "country": "Maroc ⵍⵎⵖⵔⵉⴱ المغرب",
+    "country_code": "ma"
+  },
+  "35.909527,14.425695": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "35.912502,14.503581": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "35.898907,14.514553": {
+    "osm_type": "relation",
+    "osm_id": 365307,
+    "region_name": "Malta",
+    "country": "Malta",
+    "country_code": "mt"
+  },
+  "32.938100,35.082720": {
+    "osm_type": "relation",
+    "osm_id": 1375620,
+    "region_name": "מחוז הצפון",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "31.254580,35.207657": {
+    "osm_type": "relation",
+    "osm_id": 1473952,
+    "region_name": "מחוז הדרום",
+    "country": "ישראל",
+    "country_code": "il"
+  },
+  "36.525880,-117.023940": {
+    "osm_type": "relation",
+    "osm_id": 165475,
+    "region_name": "California",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "27.764042,-15.585548": {
+    "osm_type": "relation",
+    "osm_id": 349048,
+    "region_name": "Canarias",
+    "country": "España",
+    "country_code": "es"
+  },
+  "7.590670,-1.942330": {
+    "osm_type": "relation",
+    "osm_id": 10212839,
+    "region_name": "Bono East Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "41.847954,3.128710": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.096244,0.693345": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.198258,-8.791852": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.199840,-8.786391": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.240599,-8.720727": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.221145,-8.905449": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.429885,-8.644620": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.430581,-8.706738": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.878213,-8.544844": {
+    "osm_type": "relation",
+    "osm_id": 349036,
+    "region_name": "Galicia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.408046,0.740806": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.703013,0.793246": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.707026,0.901022": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.701827,0.915503": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.718932,0.915503": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.628052,0.926373": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.655794,0.928071": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.622575,0.933212": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.621391,0.929271": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.624409,0.922513": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.581659,1.014228": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.596658,0.984669": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.589634,0.991733": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.357578,1.455553": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "37.983810,23.727539": {
+    "osm_type": "relation",
+    "osm_id": 4477553,
+    "region_name": "Αποκεντρωμένη Διοίκηση Αττικής",
+    "country": "Ελλάς",
+    "country_code": "gr"
+  },
+  "25.032969,121.565418": {
+    "osm_type": "relation",
+    "osm_id": 1293250,
+    "region_name": "臺灣",
+    "country": "臺灣",
+    "country_code": "tw"
+  },
+  "-36.848460,174.763331": {
+    "osm_type": "relation",
+    "osm_id": 2094141,
+    "region_name": "Auckland",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-36.827535,175.790346": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-37.422528,175.720892": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-37.872344,175.683361": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-38.136848,176.249746": {
+    "osm_type": "relation",
+    "osm_id": 1790755,
+    "region_name": "Bay of Plenty",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-38.358256,176.368984": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-39.201352,175.606717": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-39.185095,175.621685": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-41.445538,175.247957": {
+    "osm_type": "relation",
+    "osm_id": 1638991,
+    "region_name": "Wellington",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-39.335551,175.396545": {
+    "osm_type": "relation",
+    "osm_id": 1638992,
+    "region_name": "Manawatū-Whanganui",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-41.286460,174.776236": {
+    "osm_type": "relation",
+    "osm_id": 1638991,
+    "region_name": "Wellington",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-41.057327,175.193409": {
+    "osm_type": "relation",
+    "osm_id": 1638991,
+    "region_name": "Wellington",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-41.007793,173.008896": {
+    "osm_type": "relation",
+    "osm_id": 4266979,
+    "region_name": "Tasman",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-40.822381,173.001392": {
+    "osm_type": "relation",
+    "osm_id": 4266979,
+    "region_name": "Tasman",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-40.502966,172.679071": {
+    "osm_type": "relation",
+    "osm_id": 4266979,
+    "region_name": "Tasman",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-40.524763,172.733784": {
+    "osm_type": "relation",
+    "osm_id": 4266979,
+    "region_name": "Tasman",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-42.955582,171.016703": {
+    "osm_type": "relation",
+    "osm_id": 1640136,
+    "region_name": "West Coast",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-43.464480,170.017588": {
+    "osm_type": "relation",
+    "osm_id": 1640136,
+    "region_name": "West Coast",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-38.648651,176.090069": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-38.791557,175.915039": {
+    "osm_type": "relation",
+    "osm_id": 2094142,
+    "region_name": "Waikato",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-41.289974,173.886460": {
+    "osm_type": "relation",
+    "osm_id": 4266977,
+    "region_name": "Marlborough",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-42.400817,173.681386": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-43.532054,172.636225": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.527637,169.126293": {
+    "osm_type": "relation",
+    "osm_id": 1640138,
+    "region_name": "Otago",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.466667,169.200000": {
+    "osm_type": "relation",
+    "osm_id": 1640138,
+    "region_name": "Otago",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.164172,169.276783": {
+    "osm_type": "relation",
+    "osm_id": 1640138,
+    "region_name": "Otago",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.641402,167.897380": {
+    "osm_type": "relation",
+    "osm_id": 1640159,
+    "region_name": "Southland",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.815957,168.128049": {
+    "osm_type": "relation",
+    "osm_id": 1640159,
+    "region_name": "Southland",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-45.414451,167.718053": {
+    "osm_type": "relation",
+    "osm_id": 1640159,
+    "region_name": "Southland",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.786017,168.075403": {
+    "osm_type": "relation",
+    "osm_id": 1640159,
+    "region_name": "Southland",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-45.739785,168.441721": {
+    "osm_type": "relation",
+    "osm_id": 1640159,
+    "region_name": "Southland",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-45.031162,168.662644": {
+    "osm_type": "relation",
+    "osm_id": 1640138,
+    "region_name": "Otago",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.850550,168.388197": {
+    "osm_type": "relation",
+    "osm_id": 1640138,
+    "region_name": "Otago",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.941688,168.835862": {
+    "osm_type": "relation",
+    "osm_id": 1640138,
+    "region_name": "Otago",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.259901,170.104294": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.190865,170.142577": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.069673,170.165185": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-44.004674,170.477121": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-43.547972,170.892945": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-43.718126,170.093968": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "-43.676296,170.184717": {
+    "osm_type": "relation",
+    "osm_id": 1640137,
+    "region_name": "Canterbury",
+    "country": "New Zealand / Aotearoa",
+    "country_code": "nz"
+  },
+  "1.412566,103.957733": {
+    "osm_type": "relation",
+    "osm_id": 536780,
+    "region_name": "Singapore",
+    "country": "Singapore",
+    "country_code": "sg"
+  },
+  "41.140859,1.377689": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.260305,1.978487": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.252620,1.861711": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.265761,2.085884": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.266342,2.085727": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.024504,2.465523": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.762263,14.030954": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.821240,14.077725": {
+    "osm_type": "relation",
+    "osm_id": 365331,
+    "region_name": "Italia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.748244,14.482075": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.628053,14.484981": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.626292,14.375799": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "40.634003,14.602680": {
+    "osm_type": "relation",
+    "osm_id": 40218,
+    "region_name": "Campania",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "39.999116,3.838905": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.887330,4.259620": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.971785,3.833482": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.056310,4.042330": {
+    "osm_type": "relation",
+    "osm_id": 1311341,
+    "region_name": "España",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.088928,4.092408": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.059737,4.076835": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.933760,3.971395": {
+    "osm_type": "relation",
+    "osm_id": 1311341,
+    "region_name": "España",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.928167,3.984893": {
+    "osm_type": "relation",
+    "osm_id": 1311341,
+    "region_name": "España",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.931059,3.914866": {
+    "osm_type": "relation",
+    "osm_id": 1311341,
+    "region_name": "España",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.820425,4.242307": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.836173,4.193584": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.850682,4.257692": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.828900,4.292583": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.938234,3.959826": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.675995,2.790229": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.131845,-0.407806": {
+    "osm_type": "relation",
+    "osm_id": 349045,
+    "region_name": "Aragón",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.508307,-0.666341": {
+    "osm_type": "relation",
+    "osm_id": 349045,
+    "region_name": "Aragón",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.447119,-2.785310": {
+    "osm_type": "relation",
+    "osm_id": 349042,
+    "region_name": "Euskadi",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.522933,-0.674043": {
+    "osm_type": "relation",
+    "osm_id": 349045,
+    "region_name": "Aragón",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.812526,-1.645774": {
+    "osm_type": "relation",
+    "osm_id": 349027,
+    "region_name": "Navarra / Nafarroa",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.377452,-4.122347": {
+    "osm_type": "relation",
+    "osm_id": 349013,
+    "region_name": "Cantabria",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.421148,-4.756216": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.428958,-4.784253": {
+    "osm_type": "relation",
+    "osm_id": 1311341,
+    "region_name": "España",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.424799,-4.782535": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.532201,-5.661119": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.271856,-4.991991": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.350625,-5.131013": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.312331,-5.059381": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.361914,-5.849389": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.655614,-5.848528": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.560002,-6.148421": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.565781,-6.296859": {
+    "osm_type": "relation",
+    "osm_id": 1311341,
+    "region_name": "España",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.557952,-5.924665": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.524333,-5.614514": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.463083,-5.056138": {
+    "osm_type": "relation",
+    "osm_id": 349033,
+    "region_name": "Asturias / Asturies",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.368822,-3.215635": {
+    "osm_type": "relation",
+    "osm_id": 349013,
+    "region_name": "Cantabria",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.481425,-1.650977": {
+    "osm_type": "relation",
+    "osm_id": 349027,
+    "region_name": "Navarra / Nafarroa",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.043311,-0.581353": {
+    "osm_type": "relation",
+    "osm_id": 349045,
+    "region_name": "Aragón",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.683842,1.279474": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "36.434963,28.217483": {
+    "osm_type": "relation",
+    "osm_id": 4496067,
+    "region_name": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+    "country": "Ελλάς",
+    "country_code": "gr"
+  },
+  "36.324992,28.197999": {
+    "osm_type": "relation",
+    "osm_id": 4496067,
+    "region_name": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+    "country": "Ελλάς",
+    "country_code": "gr"
+  },
+  "45.472516,10.749035": {
+    "osm_type": "relation",
+    "osm_id": 43648,
+    "region_name": "Veneto",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "45.439639,10.686545": {
+    "osm_type": "relation",
+    "osm_id": 43648,
+    "region_name": "Veneto",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "45.496972,10.605375": {
+    "osm_type": "relation",
+    "osm_id": 44879,
+    "region_name": "Lombardia",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "36.091849,28.085665": {
+    "osm_type": "relation",
+    "osm_id": 4496067,
+    "region_name": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+    "country": "Ελλάς",
+    "country_code": "gr"
+  },
+  "36.615654,27.835962": {
+    "osm_type": "relation",
+    "osm_id": 4496067,
+    "region_name": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+    "country": "Ελλάς",
+    "country_code": "gr"
+  },
+  "36.548245,27.846310": {
+    "osm_type": "relation",
+    "osm_id": 4496067,
+    "region_name": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+    "country": "Ελλάς",
+    "country_code": "gr"
+  },
+  "31.953949,35.910635": {
+    "osm_type": "relation",
+    "osm_id": 2926344,
+    "region_name": "عمان",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "32.274651,35.896076": {
+    "osm_type": "relation",
+    "osm_id": 2925599,
+    "region_name": "جرش",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "30.321635,35.480125": {
+    "osm_type": "relation",
+    "osm_id": 2926347,
+    "region_name": "معان",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "30.327695,35.468978": {
+    "osm_type": "relation",
+    "osm_id": 2926347,
+    "region_name": "معان",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "29.574299,35.421037": {
+    "osm_type": "relation",
+    "osm_id": 2926345,
+    "region_name": "العقبة",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "29.532052,35.006321": {
+    "osm_type": "relation",
+    "osm_id": 2926345,
+    "region_name": "العقبة",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "31.180956,35.701662": {
+    "osm_type": "relation",
+    "osm_id": 2926346,
+    "region_name": "الكرك",
+    "country": "الأردن",
+    "country_code": "jo"
+  },
+  "42.121905,1.878380": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.223470,1.891914": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "38.733916,-27.064698": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.663537,-27.229397": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.728088,-27.215890": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.737410,-27.268447": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.729073,-27.230953": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.737219,-27.269340": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.651422,-27.224484": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.602050,-28.019341": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.683984,-28.213188": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.709463,-27.112175": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.642308,-27.965884": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.627803,-27.930291": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.597293,-27.926686": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.719123,-28.251931": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.735517,-28.262358": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.534845,-28.629981": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.583393,-28.716885": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.520404,-28.627766": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.682488,-28.217831": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.601444,-28.831651": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.739421,-25.668672": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.858949,-25.794499": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.839233,-25.794891": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.838922,-25.794117": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.842960,-25.763340": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.773857,-25.306233": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.769141,-25.319152": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.823817,-25.462351": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "38.796307,-9.396024": {
+    "osm_type": "relation",
+    "osm_id": 295480,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.821037,-25.514814": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.750000,-25.466667": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.818365,-25.402470": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.748233,-25.654881": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.789117,-25.146470": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "37.799239,-25.145882": {
+    "osm_type": "relation",
+    "osm_id": 1629146,
+    "region_name": "Portugal",
+    "country": "Portugal",
+    "country_code": "pt"
+  },
+  "41.720052,2.933577": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.862832,-4.027323": {
+    "osm_type": "relation",
+    "osm_id": 349052,
+    "region_name": "Castilla-La Mancha",
+    "country": "España",
+    "country_code": "es"
+  },
+  "-33.924869,18.424055": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-33.932105,18.860152": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-33.897483,19.152329": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-33.734230,18.962109": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.195684,18.449430": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.193765,18.435665": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.356842,18.473988": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.356687,18.496767": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.409200,19.250444": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.347470,18.920510": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.045696,18.351206": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-34.095964,18.357033": {
+    "osm_type": "relation",
+    "osm_id": 80501,
+    "region_name": "Western Cape",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-26.248538,27.854032": {
+    "osm_type": "relation",
+    "osm_id": 349344,
+    "region_name": "Gauteng",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-25.095218,30.786713": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-24.932766,30.844152": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-25.051912,31.136671": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-25.486059,31.548418": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-25.119860,31.915379": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-24.591198,30.812886": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-24.541197,30.798611": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "-24.674308,30.810818": {
+    "osm_type": "relation",
+    "osm_id": 349556,
+    "region_name": "Mpumalanga",
+    "country": "South Africa",
+    "country_code": "za"
+  },
+  "41.149826,1.105532": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.134921,9.684993": {
+    "osm_type": "relation",
+    "osm_id": 301482,
+    "region_name": "Liguria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.119862,9.710031": {
+    "osm_type": "relation",
+    "osm_id": 301482,
+    "region_name": "Liguria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.106843,9.728488": {
+    "osm_type": "relation",
+    "osm_id": 301482,
+    "region_name": "Liguria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.099049,9.737485": {
+    "osm_type": "relation",
+    "osm_id": 301482,
+    "region_name": "Liguria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "44.054126,9.836628": {
+    "osm_type": "relation",
+    "osm_id": 301482,
+    "region_name": "Liguria",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "21.027764,105.834160": {
+    "osm_type": "relation",
+    "osm_id": 1903516,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "22.336361,103.843785": {
+    "osm_type": "relation",
+    "osm_id": 1903400,
+    "region_name": "Tỉnh Lào Cai",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "22.287452,103.862206": {
+    "osm_type": "relation",
+    "osm_id": 1903400,
+    "region_name": "Tỉnh Lào Cai",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "20.758293,107.089380": {
+    "osm_type": "relation",
+    "osm_id": 1902682,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "20.800000,106.999722": {
+    "osm_type": "relation",
+    "osm_id": 1902682,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "20.910051,107.183902": {
+    "osm_type": "relation",
+    "osm_id": 1902947,
+    "region_name": "Tỉnh Quảng Ninh",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "20.266077,105.969946": {
+    "osm_type": "relation",
+    "osm_id": 1900963,
+    "region_name": "Tỉnh Ninh Bình",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "20.230960,105.937634": {
+    "osm_type": "relation",
+    "osm_id": 1900963,
+    "region_name": "Tỉnh Ninh Bình",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "20.250615,105.974454": {
+    "osm_type": "relation",
+    "osm_id": 1900963,
+    "region_name": "Tỉnh Ninh Bình",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "16.054456,108.071722": {
+    "osm_type": "relation",
+    "osm_id": 1891418,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "16.463712,107.590863": {
+    "osm_type": "relation",
+    "osm_id": 1891483,
+    "region_name": "Thành phố Huế",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "15.880058,108.338047": {
+    "osm_type": "relation",
+    "osm_id": 1891418,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "15.773694,108.109193": {
+    "osm_type": "relation",
+    "osm_id": 1891418,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "16.003476,108.264580": {
+    "osm_type": "relation",
+    "osm_id": 1891418,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "16.200000,108.133333": {
+    "osm_type": "relation",
+    "osm_id": 1891483,
+    "region_name": "Thành phố Huế",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "16.237935,108.077301": {
+    "osm_type": "relation",
+    "osm_id": 1891483,
+    "region_name": "Thành phố Huế",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "8.700928,106.611447": {
+    "osm_type": "relation",
+    "osm_id": 1973756,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "10.823099,106.629664": {
+    "osm_type": "relation",
+    "osm_id": 1973756,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "10.376528,106.343889": {
+    "osm_type": "relation",
+    "osm_id": 1875866,
+    "region_name": "Tỉnh Đồng Tháp",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "11.062235,106.529584": {
+    "osm_type": "relation",
+    "osm_id": 1973756,
+    "region_name": "Việt Nam",
+    "country": "Việt Nam",
+    "country_code": "vn"
+  },
+  "42.308352,3.009440": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.321546,3.165306": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "45.764043,4.835659": {
+    "osm_type": "relation",
+    "osm_id": 3792877,
+    "region_name": "Auvergne-Rhône-Alpes",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "42.400149,2.149970": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.009200,0.384974": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.040766,0.599851": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.953841,0.315441": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.000806,0.426319": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.001131,0.428676": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.808920,3.118226": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.853267,3.124024": {
+    "osm_type": "relation",
+    "osm_id": 348981,
+    "region_name": "Illes Balears",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.856259,18.413076": {
+    "osm_type": "relation",
+    "osm_id": 2528144,
+    "region_name": "Federacija Bosne i Hercegovine",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "country_code": "ba"
+  },
+  "44.339806,17.271293": {
+    "osm_type": "relation",
+    "osm_id": 2528144,
+    "region_name": "Federacija Bosne i Hercegovine",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "country_code": "ba"
+  },
+  "43.343775,17.807758": {
+    "osm_type": "relation",
+    "osm_id": 2528144,
+    "region_name": "Federacija Bosne i Hercegovine",
+    "country": "Bosna i Hercegovina / Босна и Херцеговина",
+    "country_code": "ba"
+  },
+  "42.787946,17.345056": {
+    "osm_type": "relation",
+    "osm_id": 226750,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "42.773947,17.408538": {
+    "osm_type": "relation",
+    "osm_id": 226750,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "43.514712,16.443515": {
+    "osm_type": "relation",
+    "osm_id": 226749,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "43.441285,16.175396": {
+    "osm_type": "relation",
+    "osm_id": 226749,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "44.119371,15.231365": {
+    "osm_type": "relation",
+    "osm_id": 226726,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "44.865397,15.582012": {
+    "osm_type": "relation",
+    "osm_id": 226465,
+    "region_name": "Hrvatska",
+    "country": "Hrvatska",
+    "country_code": "hr"
+  },
+  "42.202648,2.193623": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "40.712775,-74.005973": {
+    "osm_type": "relation",
+    "osm_id": 61320,
+    "region_name": "New York",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "41.008054,-73.571147": {
+    "osm_type": "relation",
+    "osm_id": 165794,
+    "region_name": "Connecticut",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "43.096214,-79.037739": {
+    "osm_type": "relation",
+    "osm_id": 61320,
+    "region_name": "New York",
+    "country": "United States",
+    "country_code": "us"
+  },
+  "43.089558,-79.084944": {
+    "osm_type": "relation",
+    "osm_id": 68841,
+    "region_name": "Canada",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "43.215134,5.537120": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.204120,5.493893": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.948699,4.805940": {
+    "osm_type": "relation",
+    "osm_id": 8654,
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "37.550263,126.997083": {
+    "osm_type": "relation",
+    "osm_id": 2297418,
+    "region_name": "대한민국",
+    "country": "대한민국",
+    "country_code": "kr"
+  },
+  "37.266760,127.001461": {
+    "osm_type": "relation",
+    "osm_id": 2306392,
+    "region_name": "대한민국",
+    "country": "대한민국",
+    "country_code": "kr"
+  },
+  "35.173112,129.071412": {
+    "osm_type": "relation",
+    "osm_id": 2396450,
+    "region_name": "대한민국",
+    "country": "대한민국",
+    "country_code": "kr"
+  },
+  "35.844743,129.206998": {
+    "osm_type": "relation",
+    "osm_id": 2304454,
+    "region_name": "대한민국",
+    "country": "대한민국",
+    "country_code": "kr"
+  },
+  "34.693725,135.502253": {
+    "osm_type": "relation",
+    "osm_id": 341906,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "34.685109,135.804802": {
+    "osm_type": "relation",
+    "osm_id": 358631,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "34.213200,135.586266": {
+    "osm_type": "relation",
+    "osm_id": 908959,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "35.011564,135.768149": {
+    "osm_type": "relation",
+    "osm_id": 2137477,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "36.238043,137.971990": {
+    "osm_type": "relation",
+    "osm_id": 3560284,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "35.487473,137.500629": {
+    "osm_type": "relation",
+    "osm_id": 760746,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "35.531517,137.571752": {
+    "osm_type": "relation",
+    "osm_id": 760746,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "35.603807,137.608961": {
+    "osm_type": "relation",
+    "osm_id": 3560284,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "36.146132,137.252159": {
+    "osm_type": "relation",
+    "osm_id": 760746,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "36.257797,136.906197": {
+    "osm_type": "relation",
+    "osm_id": 760746,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "36.559734,136.652038": {
+    "osm_type": "relation",
+    "osm_id": 3794726,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "35.676423,139.650027": {
+    "osm_type": "relation",
+    "osm_id": 1543125,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "35.497314,138.755199": {
+    "osm_type": "relation",
+    "osm_id": 3578391,
+    "region_name": "日本",
+    "country": "日本",
+    "country_code": "jp"
+  },
+  "-31.951399,115.861678": {
+    "osm_type": "relation",
+    "osm_id": 2316598,
+    "region_name": "Western Australia",
+    "country": "Australia",
+    "country_code": "au"
+  },
+  "-31.996503,115.539900": {
+    "osm_type": "relation",
+    "osm_id": 2316598,
+    "region_name": "Western Australia",
+    "country": "Australia",
+    "country_code": "au"
+  },
+  "37.989304,-1.132007": {
+    "osm_type": "relation",
+    "osm_id": 349047,
+    "region_name": "Región de Murcia",
+    "country": "España",
+    "country_code": "es"
+  },
+  "31.230416,121.473701": {
+    "osm_type": "relation",
+    "osm_id": 913067,
+    "region_name": "上海市",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "31.298340,120.583190": {
+    "osm_type": "relation",
+    "osm_id": 913012,
+    "region_name": "江苏省",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "34.265814,108.954094": {
+    "osm_type": "relation",
+    "osm_id": 913100,
+    "region_name": "陕西省",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "34.559499,112.467878": {
+    "osm_type": "relation",
+    "osm_id": 407492,
+    "region_name": "河南省",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "37.189340,112.175570": {
+    "osm_type": "relation",
+    "osm_id": 913105,
+    "region_name": "山西省",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "40.111510,113.132474": {
+    "osm_type": "relation",
+    "osm_id": 913105,
+    "region_name": "山西省",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "40.076370,113.300010": {
+    "osm_type": "relation",
+    "osm_id": 913105,
+    "region_name": "山西省",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "40.419787,116.563935": {
+    "osm_type": "relation",
+    "osm_id": 912940,
+    "region_name": "北京市",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "39.904211,116.407395": {
+    "osm_type": "relation",
+    "osm_id": 912940,
+    "region_name": "北京市",
+    "country": "中国",
+    "country_code": "cn"
+  },
+  "13.363253,103.856403": {
+    "osm_type": "relation",
+    "osm_id": 2200393,
+    "region_name": "ខេត្តសៀមរាប",
+    "country": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country_code": "kh"
+  },
+  "13.790305,104.535558": {
+    "osm_type": "relation",
+    "osm_id": 2198922,
+    "region_name": "ខេត្តព្រះវិហារ",
+    "country": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country_code": "kh"
+  },
+  "11.556374,104.928210": {
+    "osm_type": "relation",
+    "osm_id": 2199033,
+    "region_name": "រាជធានីភ្នំពេញ",
+    "country": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country_code": "kh"
+  },
+  "14.390350,104.680271": {
+    "osm_type": "relation",
+    "osm_id": 2198922,
+    "region_name": "ខេត្តព្រះវិហារ",
+    "country": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country_code": "kh"
+  },
+  "13.105299,104.125481": {
+    "osm_type": "relation",
+    "osm_id": 2200393,
+    "region_name": "ខេត្តសៀមរាប",
+    "country": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country_code": "kh"
+  },
+  "10.588622,103.295210": {
+    "osm_type": "relation",
+    "osm_id": 3279394,
+    "region_name": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country": "ព្រះរាជាណាចក្រ​កម្ពុជា",
+    "country_code": "kh"
+  },
+  "41.729784,1.822588": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.784548,1.837929": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "43.911136,12.911404": {
+    "osm_type": "relation",
+    "osm_id": 53060,
+    "region_name": "Marche",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "39.767556,-0.155655": {
+    "osm_type": "relation",
+    "osm_id": 349043,
+    "region_name": "Comunitat Valenciana",
+    "country": "España",
+    "country_code": "es"
+  },
+  "39.985591,-0.049639": {
+    "osm_type": "relation",
+    "osm_id": 349043,
+    "region_name": "Comunitat Valenciana",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.001185,0.762645": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "7.686899,-1.659066": {
+    "osm_type": "relation",
+    "osm_id": 10212839,
+    "region_name": "Bono East Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "7.559312,-1.710095": {
+    "osm_type": "relation",
+    "osm_id": 10212839,
+    "region_name": "Bono East Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "7.708552,-1.694903": {
+    "osm_type": "relation",
+    "osm_id": 10212839,
+    "region_name": "Bono East Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "9.215601,-1.858661": {
+    "osm_type": "relation",
+    "osm_id": 10212838,
+    "region_name": "Savannah Region",
+    "country": "Ghana",
+    "country_code": "gh"
+  },
+  "42.135408,24.745290": {
+    "osm_type": "relation",
+    "osm_id": 1739536,
+    "region_name": "Пловдив",
+    "country": "България",
+    "country_code": "bg"
+  },
+  "42.202778,23.320000": {
+    "osm_type": "relation",
+    "osm_id": 1739530,
+    "region_name": "Кюстендил",
+    "country": "България",
+    "country_code": "bg"
+  },
+  "42.133483,23.340192": {
+    "osm_type": "relation",
+    "osm_id": 1739530,
+    "region_name": "Кюстендил",
+    "country": "България",
+    "country_code": "bg"
+  },
+  "41.971772,3.210032": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.960563,3.228714": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "-1.292066,36.821946": {
+    "osm_type": "relation",
+    "osm_id": 3492709,
+    "region_name": "Nairobi",
+    "country": "Kenya",
+    "country_code": "ke"
+  },
+  "-0.775384,36.371476": {
+    "osm_type": "relation",
+    "osm_id": 14649082,
+    "region_name": "Nakuru",
+    "country": "Kenya",
+    "country_code": "ke"
+  },
+  "-0.875790,36.317382": {
+    "osm_type": "relation",
+    "osm_id": 14649082,
+    "region_name": "Nakuru",
+    "country": "Kenya",
+    "country_code": "ke"
+  },
+  "-2.638241,37.228484": {
+    "osm_type": "relation",
+    "osm_id": 3486020,
+    "region_name": "Kajiado",
+    "country": "Kenya",
+    "country_code": "ke"
+  },
+  "-1.382492,36.861020": {
+    "osm_type": "relation",
+    "osm_id": 3492709,
+    "region_name": "Nairobi",
+    "country": "Kenya",
+    "country_code": "ke"
+  },
+  "38.629906,34.805403": {
+    "osm_type": "relation",
+    "osm_id": 154449,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.643056,34.828889": {
+    "osm_type": "relation",
+    "osm_id": 154449,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.651891,34.859738": {
+    "osm_type": "relation",
+    "osm_id": 154449,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.659123,34.843266": {
+    "osm_type": "relation",
+    "osm_id": 154449,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.373408,34.735033": {
+    "osm_type": "relation",
+    "osm_id": 154449,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.253904,34.302753": {
+    "osm_type": "relation",
+    "osm_id": 154454,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.301198,34.259433": {
+    "osm_type": "relation",
+    "osm_id": 154454,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "38.641180,34.844353": {
+    "osm_type": "relation",
+    "osm_id": 154449,
+    "region_name": "İç Anadolu Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "36.896891,30.713323": {
+    "osm_type": "relation",
+    "osm_id": 223132,
+    "region_name": "Akdeniz Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "36.431128,30.456383": {
+    "osm_type": "relation",
+    "osm_id": 223132,
+    "region_name": "Akdeniz Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "36.258845,29.985148": {
+    "osm_type": "relation",
+    "osm_id": 223132,
+    "region_name": "Akdeniz Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "36.199913,29.639550": {
+    "osm_type": "relation",
+    "osm_id": 223132,
+    "region_name": "Akdeniz Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "36.261410,29.315485": {
+    "osm_type": "relation",
+    "osm_id": 223132,
+    "region_name": "Akdeniz Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "36.554234,29.420206": {
+    "osm_type": "relation",
+    "osm_id": 223136,
+    "region_name": "Ege Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "37.913696,29.118710": {
+    "osm_type": "relation",
+    "osm_id": 223169,
+    "region_name": "Ege Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "37.950845,27.369954": {
+    "osm_type": "relation",
+    "osm_id": 223167,
+    "region_name": "Ege Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "37.940926,27.341458": {
+    "osm_type": "relation",
+    "osm_id": 223167,
+    "region_name": "Ege Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "37.965386,29.102683": {
+    "osm_type": "relation",
+    "osm_id": 223169,
+    "region_name": "Ege Bölgesi",
+    "country": "Türkiye",
+    "country_code": "tr"
+  },
+  "42.037500,1.214722": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "45.547608,10.724313": {
+    "osm_type": "relation",
+    "osm_id": 43648,
+    "region_name": "Veneto",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "45.506015,10.735112": {
+    "osm_type": "relation",
+    "osm_id": 43648,
+    "region_name": "Veneto",
+    "country": "Italia",
+    "country_code": "it"
+  },
+  "41.736844,1.977755": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.699836,1.976838": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "44.812545,20.461230": {
+    "osm_type": "relation",
+    "osm_id": 1658166,
+    "region_name": "Србија",
+    "country": "Србија",
+    "country_code": "rs"
+  },
+  "44.660818,21.677787": {
+    "osm_type": "relation",
+    "osm_id": 1658166,
+    "region_name": "Србија",
+    "country": "Србија",
+    "country_code": "rs"
+  },
+  "49.282729,-123.120738": {
+    "osm_type": "relation",
+    "osm_id": 390867,
+    "region_name": "British Columbia",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "49.165884,-123.940065": {
+    "osm_type": "relation",
+    "osm_id": 390867,
+    "region_name": "British Columbia",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "49.152984,-125.906618": {
+    "osm_type": "relation",
+    "osm_id": 390867,
+    "region_name": "British Columbia",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "49.323732,-124.310627": {
+    "osm_type": "relation",
+    "osm_id": 390867,
+    "region_name": "British Columbia",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "49.305500,-124.428831": {
+    "osm_type": "relation",
+    "osm_id": 390867,
+    "region_name": "British Columbia",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "51.178430,-115.570790": {
+    "osm_type": "relation",
+    "osm_id": 391186,
+    "region_name": "Alberta",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "52.873290,-118.082284": {
+    "osm_type": "relation",
+    "osm_id": 391186,
+    "region_name": "Alberta",
+    "country": "Canada",
+    "country_code": "ca"
+  },
+  "51.425370,-116.177255": {
+    "osm_type": "relation",
+    "osm_id": 391186,
+    "region_name": "Alberta",
+    "country": "Canada",
+    "country_code": "ca"
+  }
+}
