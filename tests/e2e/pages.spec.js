@@ -53,7 +53,7 @@ test.describe("Skating page", () => {
     await expect(page).toHaveTitle(
       "Barcelona Inline Skating Routes - Erica Bertugli",
     );
-    await expect(page.locator("h1")).toHaveText("Inline Skating");
+    await expect(page.locator("h1")).toHaveText("Urban Inline Skating");
     await expect(page.locator("#map")).toBeVisible();
   });
 
