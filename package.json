@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.62.0",
-    "html-validate": "^11.5.6",
+    "html-validate": "^11.6.0",
     "linkinator": "^8.0.2",
-    "mapshaper": "0.7.48",
+    "mapshaper": "0.7.49",
     "pa11y-ci": "^4.1.1",
     "serve": "^14.2.0"
   }
