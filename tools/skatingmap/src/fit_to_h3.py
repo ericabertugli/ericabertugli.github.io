@@ -14,13 +14,14 @@ Usage:
 import argparse
 import csv
 import logging
-import math
 from collections import Counter
 from pathlib import Path
 
 import h3
 from fitparse import FitFile
 from shapely.geometry import LineString
+
+from geo_utils import haversine_distance
 
 logging.basicConfig(level=logging.WARNING, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -47,17 +48,6 @@ def extract_gps_points(fit_path: Path) -> list[tuple[float, float, str]]:
     except Exception as e:
         print(f"Warning: Could not parse {fit_path.name}: {e}")
     return points
-
-
-def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    """Calculate distance in meters between two GPS points."""
-    R = 6371000
-    phi1 = math.radians(lat1)
-    phi2 = math.radians(lat2)
-    dphi = math.radians(lat2 - lat1)
-    dlambda = math.radians(lon2 - lon1)
-    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
-    return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
 def densify_track(
