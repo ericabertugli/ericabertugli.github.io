@@ -4660,5 +4660,26 @@
     "region_name": "Alberta",
     "country": "Canada",
     "country_code": "ca"
+  },
+  "42.342738,3.185899": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "41.504081,2.392256": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
+  },
+  "42.158117,2.910730": {
+    "osm_type": "relation",
+    "osm_id": 349053,
+    "region_name": "Catalunya",
+    "country": "España",
+    "country_code": "es"
   }
 }
