@@ -17,10 +17,10 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.62.1",
-    "html-validate": "^11.12.0",
+    "@playwright/test": "^1.63.0",
+    "html-validate": "^11.15.0",
     "linkinator": "^8.1.0",
-    "mapshaper": "^0.7.56",
+    "mapshaper": "^0.7.59",
     "pa11y-ci": "^4.1.1",
     "serve": "^14.2.6"
   }
