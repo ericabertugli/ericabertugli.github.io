@@ -18,10 +18,10 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "html-validate": "^11.16.1",
+    "html-validate": "^11.16.2",
     "linkinator": "^8.1.0",
-    "mapshaper": "^0.7.70",
-    "pa11y-ci": "^4.1.1",
+    "mapshaper": "^0.7.80",
+    "pa11y-ci": "^5.0.0",
     "serve": "^14.2.6"
   }
 }
