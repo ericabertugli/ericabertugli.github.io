@@ -1,4 +1,4 @@
-const CACHE_NAME = 'erica-site-v1';
+const CACHE_NAME = 'erica-site-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
