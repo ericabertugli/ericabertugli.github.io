@@ -63,7 +63,7 @@ jobs:
 
       - uses: astral-sh/setup-uv@v5
         with:
-          python-version: "3.13"
+          python-version: "3.14"
 
       - name: Python unit tests
         run: uv run --group dev pytest -v
@@ -75,7 +75,7 @@ jobs:
 
       - uses: astral-sh/setup-uv@v5
         with:
-          python-version: "3.13"
+          python-version: "3.14"
 
       - name: Validate GeoJSON output
         working-directory: tools/skatingmap
