@@ -1,5 +1,18 @@
 import { test, expect } from "@playwright/test";
 
+async function mockCartoTiles(page) {
+  await page.route("https://*.basemaps.cartocdn.com/**", async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: "image/png",
+      body: Buffer.from(
+        "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+        "base64",
+      ),
+    });
+  });
+}
+
 test.describe("Homepage", () => {
   test("renders correctly", async ({ page }) => {
     await page.goto("/");
@@ -36,6 +49,13 @@ test.describe("Travel page", () => {
     await expect(page.locator("#map")).toBeVisible();
   });
 
+  test("map renders tiles", async ({ page }) => {
+    await mockCartoTiles(page);
+
+    await page.goto("/pages/traveling.html", { waitUntil: "networkidle" });
+    await expect(page.locator("#map .leaflet-tile-loaded").first()).toBeVisible();
+  });
+
   test("back link is present", async ({ page }) => {
     await page.goto("/pages/traveling.html");
 
@@ -55,6 +75,13 @@ test.describe("Skating page", () => {
     );
     await expect(page.locator("h1")).toHaveText("Urban Inline Skating");
     await expect(page.locator("#map")).toBeVisible();
+  });
+
+  test("map renders tiles", async ({ page }) => {
+    await mockCartoTiles(page);
+
+    await page.goto("/pages/skating.html", { waitUntil: "networkidle" });
+    await expect(page.locator("#map .leaflet-tile-loaded").first()).toBeVisible();
   });
 
   test("disclaimer is visible", async ({ page }) => {
