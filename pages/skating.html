@@ -406,13 +406,14 @@
     ></script>
     <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
     <script src="https://unpkg.com/leaflet.fullscreen@3.0.2/Control.FullScreen.js"></script>
+    <script src="../assets/js/carto-api-key.js"></script>
     <script>
       const map = L.map("map", {
         fullscreenControl: true,
       }).setView([41.3874, 2.1686], 13);
 
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+        `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=${cartoApiKey}`,
         {
           maxZoom: 19,
           attribution:

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'erica-site-v1';
+const CACHE_NAME = 'erica-site-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -9,6 +9,7 @@ const STATIC_ASSETS = [
   '/pages/skating.html',
   '/pages/traveling.html',
   '/assets/css/cookie-consent.css',
+  '/assets/js/carto-api-key.js',
   '/assets/js/cookie-consent.js',
   '/assets/images/favicon.png',
   '/assets/images/profile.jpeg',
