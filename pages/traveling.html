@@ -192,8 +192,13 @@
 
       L.control.zoom({ position: "bottomright" }).addTo(map);
 
+      const cartoApiKey =
+        location.hostname === "localhost"
+          ? "cb1_4twk_2_2d7beca4b40b9180d1635427"
+          : "cb1_4twk_1_2e045e9da6621a30dd46eecd";
+
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_4twk_1_2e045e9da6621a30dd46eecd",
+        `https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=${cartoApiKey}`,
         {
           attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
