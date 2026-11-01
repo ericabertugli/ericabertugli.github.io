@@ -4681,5 +4681,89 @@
     "region_name": "Catalunya",
     "country": "España",
     "country_code": "es"
+  },
+  "47.559599,7.588576": {
+    "osm_type": "relation",
+    "osm_id": 1699639,
+    "region_name": "Basel-Stadt",
+    "country": "Schweiz;Suisse;Svizzera;Svizra",
+    "country_code": "ch"
+  },
+  "47.050168,8.309307": {
+    "osm_type": "relation",
+    "osm_id": 1685677,
+    "region_name": "Luzern",
+    "country": "Schweiz;Suisse;Svizzera;Svizra",
+    "country_code": "ch"
+  },
+  "47.376887,8.541694": {
+    "osm_type": "relation",
+    "osm_id": 1690227,
+    "region_name": "Zürich",
+    "country": "Schweiz;Suisse;Svizzera;Svizra",
+    "country_code": "ch"
+  },
+  "47.055985,8.485161": {
+    "osm_type": "relation",
+    "osm_id": 1688583,
+    "region_name": "Schwyz",
+    "country": "Schweiz;Suisse;Svizzera;Svizra",
+    "country_code": "ch"
+  },
+  "44.589652,-1.213334": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "44.394660,-1.164218": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "44.431320,-1.176506": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "44.325426,-1.147067": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "44.212862,-1.293683": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.637844,-1.420939": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.493380,-1.475739": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
+  },
+  "43.778821,-1.407420": {
+    "osm_type": "relation",
+    "osm_id": 3792880,
+    "region_name": "Nouvelle-Aquitaine",
+    "country": "France",
+    "country_code": "fr"
   }
 }
