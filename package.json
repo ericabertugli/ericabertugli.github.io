@@ -20,7 +20,7 @@
     "@playwright/test": "^1.64.1",
     "html-validate": "^11.17.0",
     "linkinator": "^8.1.0",
-    "mapshaper": "^0.7.94",
+    "mapshaper": "^0.7.100",
     "pa11y-ci": "^5.0.0",
     "serve": "^14.2.6"
   }
