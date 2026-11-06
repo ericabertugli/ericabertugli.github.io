@@ -12,6 +12,32 @@ Scripts to build all data for the skating map: fetch skating-friendly paths and 
 - Reads the database and outputs `data/routes.geojson`
 - Can filter by way type or export all
 
+**`src/enrich_slopes.py`** — Enriches ways with slope data from elevation API.
+- Queries OpenTopoData EU-DEM 25m elevation API
+- Computes slope % between resampled points along each way
+- Stores steepest ascent (`max_slope`) and descent (`min_slope`) per way
+- Only processes unenriched ways by default (safe to run repeatedly)
+
+```bash
+uv run python src/enrich_slopes.py
+uv run python src/enrich_slopes.py --db path/to/db.sqlite --interval 50
+uv run python src/enrich_slopes.py --recompute
+```
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--db` | SQLite database path | `data/skating_routes.db` |
+| `--interval` | Sampling interval in meters | `50` |
+| `--recompute` | Recompute all ways, not just new ones | off |
+
+**Slope sign convention:**
+- **Positive slope** = ascent (going uphill)
+- **Negative slope** = descent (going downhill)
+- `min_slope <= -5%` flags a dangerous descent for inline skaters
+- `max_slope >= +5%` flags a hard climb
+
+The slope enrichment also runs automatically as part of `generate_heatmap.py` (unless `--skip-slopes` is passed).
+
 **`src/fetch_drinking_water.py`** — Fetches drinking water locations.
 - Queries Overpass API for `amenity=drinking_water` nodes
 - Outputs `data/drinking_water.geojson`
