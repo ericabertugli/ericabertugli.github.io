@@ -1,0 +1,35 @@
+name: Auto-merge Dependabot PRs
+
+# Merges Dependabot pull requests as soon as CI (the Tests workflow) passes.
+# shortcut: assumes Tests is the only PR CI and squash is the only allowed merge method; update if either changes
+on:
+  workflow_run:
+    workflows: [Tests]
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    # Only act on successful Tests runs that came from a pull request
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Squash-merge the Dependabot PR
+        run: |
+          PR=$(gh pr view "$BRANCH" --repo "$REPO" --json number,author,state \
+            --jq 'select(.state == "OPEN" and (.author.login == "app/dependabot" or .author.login == "dependabot[bot]")) | .number' || true)
+          if [ -n "$PR" ]; then
+            gh pr merge "$PR" --repo "$REPO" --squash
+            echo "Auto-merged Dependabot PR #$PR after CI passed"
+          else
+            echo "No open Dependabot PR for $BRANCH; nothing to do"
+          fi
+        env:
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
